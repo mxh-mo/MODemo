@@ -84,7 +84,7 @@
 		FDB19BC026B3E234009C49ED /* NSObject+arrayContain.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19B7F26B3E234009C49ED /* NSObject+arrayContain.m */; };
 		FDB19BC126B3E234009C49ED /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19B8026B3E234009C49ED /* NSObject+Swizzling.m */; };
 		FDB19BC526B3E272009C49ED /* MOOCMockDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19BC226B3E272009C49ED /* MOOCMockDemoTests.m */; };
-		FDB19BC626B3E272009C49ED /* MOSurveyOCMockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19BC326B3E272009C49ED /* MOSurveyOCMockTests.m */; };
+		FDB19BC626B3E272009C49ED /* MODemoOCMockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19BC326B3E272009C49ED /* MODemoOCMockTests.m */; };
 		FDB19BC726B3E272009C49ED /* MOMarsRoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19BC426B3E272009C49ED /* MOMarsRoverTests.m */; };
 /* End PBXBuildFile section */
 
@@ -252,7 +252,7 @@
 		FDB19B7F26B3E234009C49ED /* NSObject+arrayContain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+arrayContain.m"; sourceTree = "<group>"; };
 		FDB19B8026B3E234009C49ED /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
 		FDB19BC226B3E272009C49ED /* MOOCMockDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCMockDemoTests.m; sourceTree = "<group>"; };
-		FDB19BC326B3E272009C49ED /* MOSurveyOCMockTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOSurveyOCMockTests.m; sourceTree = "<group>"; };
+		FDB19BC326B3E272009C49ED /* MODemoOCMockTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MODemoOCMockTests.m; sourceTree = "<group>"; };
 		FDB19BC426B3E272009C49ED /* MOMarsRoverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMarsRoverTests.m; sourceTree = "<group>"; };
 		FDB19BCC26B3E460009C49ED /* MODemoOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MODemoOC-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -375,7 +375,7 @@
 			children = (
 				FDB19BC426B3E272009C49ED /* MOMarsRoverTests.m */,
 				FDB19BC226B3E272009C49ED /* MOOCMockDemoTests.m */,
-				FDB19BC326B3E272009C49ED /* MOSurveyOCMockTests.m */,
+				FDB19BC326B3E272009C49ED /* MODemoOCMockTests.m */,
 				FDB19ADC26B3DD94009C49ED /* MODemoOCTests.m */,
 				FDB19ADE26B3DD94009C49ED /* Info.plist */,
 			);
@@ -996,7 +996,7 @@
 			files = (
 				FDB19BC526B3E272009C49ED /* MOOCMockDemoTests.m in Sources */,
 				FDB19BC726B3E272009C49ED /* MOMarsRoverTests.m in Sources */,
-				FDB19BC626B3E272009C49ED /* MOSurveyOCMockTests.m in Sources */,
+				FDB19BC626B3E272009C49ED /* MODemoOCMockTests.m in Sources */,
 				FDB19ADD26B3DD94009C49ED /* MODemoOCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
