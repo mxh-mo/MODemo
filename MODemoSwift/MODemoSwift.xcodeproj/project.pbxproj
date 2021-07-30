@@ -40,6 +40,8 @@
 		FDB19C7126B3FB66009C49ED /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5C26B3FB65009C49ED /* MOUITestsViewController.swift */; };
 		FDB19C7226B3FB66009C49ED /* MOArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5D26B3FB66009C49ED /* MOArrayDataSource.swift */; };
 		FDB19C7526B3FC06009C49ED /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FDB19C7426B3FC06009C49ED /* index.html */; };
+		FDB19C7726B4079F009C49ED /* MOTestsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */; };
+		FDB19C7926B407BE009C49ED /* MOUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C7826B407BE009C49ED /* MOUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,8 @@
 		FDB19C5C26B3FB65009C49ED /* MOUITestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOUITestsViewController.swift; sourceTree = "<group>"; };
 		FDB19C5D26B3FB66009C49ED /* MOArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOArrayDataSource.swift; sourceTree = "<group>"; };
 		FDB19C7426B3FC06009C49ED /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerUITests.swift; sourceTree = "<group>"; };
+		FDB19C7826B407BE009C49ED /* MOUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				FDB19C2C26B3FB24009C49ED /* MODemoSwiftTests.swift */,
+				FDB19C7826B407BE009C49ED /* MOUnitTests.swift */,
 				FDB19C2E26B3FB24009C49ED /* Info.plist */,
 			);
 			path = MODemoSwiftTests;
@@ -222,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				FDB19C3726B3FB24009C49ED /* MODemoSwiftUITests.swift */,
+				FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */,
 				FDB19C3926B3FB24009C49ED /* Info.plist */,
 			);
 			path = MODemoSwiftUITests;
@@ -509,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB19C2D26B3FB24009C49ED /* MODemoSwiftTests.swift in Sources */,
+				FDB19C7926B407BE009C49ED /* MOUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB19C7726B4079F009C49ED /* MOTestsViewControllerUITests.swift in Sources */,
 				FDB19C3826B3FB24009C49ED /* MODemoSwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
