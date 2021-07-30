@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21B2464FE01D04F18D0D7CE6 /* Pods_MODemoOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEF1E8B6EC438A1150D4913 /* Pods_MODemoOC.framework */; };
+		57523A46773BCDB72C09B486 /* Pods_MODemoOC_MODemoOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6521AB37E56E743F9BC025E /* Pods_MODemoOC_MODemoOCUITests.framework */; };
+		D940C56C514C42019EC04252 /* Pods_MODemoOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BE74AA1D01FCF9B491BE2E /* Pods_MODemoOCTests.framework */; };
+		FDB19AC226B3DD93009C49ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19AC126B3DD93009C49ED /* AppDelegate.m */; };
+		FDB19AC526B3DD93009C49ED /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19AC426B3DD93009C49ED /* SceneDelegate.m */; };
+		FDB19AC826B3DD93009C49ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19AC726B3DD93009C49ED /* ViewController.m */; };
+		FDB19ACB26B3DD93009C49ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB19AC926B3DD93009C49ED /* Main.storyboard */; };
+		FDB19ACD26B3DD94009C49ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB19ACC26B3DD94009C49ED /* Assets.xcassets */; };
+		FDB19AD026B3DD94009C49ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB19ACE26B3DD94009C49ED /* LaunchScreen.storyboard */; };
+		FDB19AD326B3DD94009C49ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19AD226B3DD94009C49ED /* main.m */; };
+		FDB19ADD26B3DD94009C49ED /* MODemoOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19ADC26B3DD94009C49ED /* MODemoOCTests.m */; };
+		FDB19AE826B3DD94009C49ED /* MODemoOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19AE726B3DD94009C49ED /* MODemoOCUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDB19AD926B3DD94009C49ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB19AB526B3DD93009C49ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB19ABC26B3DD93009C49ED;
+			remoteInfo = MODemoOC;
+		};
+		FDB19AE426B3DD94009C49ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB19AB526B3DD93009C49ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB19ABC26B3DD93009C49ED;
+			remoteInfo = MODemoOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03315B7847B38AAC057026B3 /* Pods-MODemoOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoOC.debug.xcconfig"; path = "Target Support Files/Pods-MODemoOC/Pods-MODemoOC.debug.xcconfig"; sourceTree = "<group>"; };
+		09B3CFD86AF627732DEB6ABA /* Pods-MODemoOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoOCTests.release.xcconfig"; path = "Target Support Files/Pods-MODemoOCTests/Pods-MODemoOCTests.release.xcconfig"; sourceTree = "<group>"; };
+		2AEF1E8B6EC438A1150D4913 /* Pods_MODemoOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MODemoOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BE74AA1D01FCF9B491BE2E /* Pods_MODemoOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MODemoOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98793B8FBEA1395C07D22E38 /* Pods-MODemoOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoOCTests.debug.xcconfig"; path = "Target Support Files/Pods-MODemoOCTests/Pods-MODemoOCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AC37EDF9A21D7CF6349B069 /* Pods-MODemoOC-MODemoOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoOC-MODemoOCUITests.release.xcconfig"; path = "Target Support Files/Pods-MODemoOC-MODemoOCUITests/Pods-MODemoOC-MODemoOCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A1E2BF376A5EF1B6A58748B9 /* Pods-MODemoOC-MODemoOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoOC-MODemoOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-MODemoOC-MODemoOCUITests/Pods-MODemoOC-MODemoOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6521AB37E56E743F9BC025E /* Pods_MODemoOC_MODemoOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MODemoOC_MODemoOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F198CC957718798C58E175CF /* Pods-MODemoOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoOC.release.xcconfig"; path = "Target Support Files/Pods-MODemoOC/Pods-MODemoOC.release.xcconfig"; sourceTree = "<group>"; };
+		FDB19ABD26B3DD93009C49ED /* MODemoOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODemoOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB19AC026B3DD93009C49ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FDB19AC126B3DD93009C49ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDB19AC326B3DD93009C49ED /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FDB19AC426B3DD93009C49ED /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FDB19AC626B3DD93009C49ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FDB19AC726B3DD93009C49ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FDB19ACA26B3DD93009C49ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDB19ACC26B3DD94009C49ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDB19ACF26B3DD94009C49ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDB19AD126B3DD94009C49ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB19AD226B3DD94009C49ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDB19AD826B3DD94009C49ED /* MODemoOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MODemoOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB19ADC26B3DD94009C49ED /* MODemoOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MODemoOCTests.m; sourceTree = "<group>"; };
+		FDB19ADE26B3DD94009C49ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB19AE326B3DD94009C49ED /* MODemoOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MODemoOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB19AE726B3DD94009C49ED /* MODemoOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MODemoOCUITests.m; sourceTree = "<group>"; };
+		FDB19AE926B3DD94009C49ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDB19ABA26B3DD93009C49ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B2464FE01D04F18D0D7CE6 /* Pods_MODemoOC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19AD526B3DD94009C49ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D940C56C514C42019EC04252 /* Pods_MODemoOCTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19AE026B3DD94009C49ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57523A46773BCDB72C09B486 /* Pods_MODemoOC_MODemoOCUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		275A63B9B3255E8DCA68405E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AEF1E8B6EC438A1150D4913 /* Pods_MODemoOC.framework */,
+				C6521AB37E56E743F9BC025E /* Pods_MODemoOC_MODemoOCUITests.framework */,
+				44BE74AA1D01FCF9B491BE2E /* Pods_MODemoOCTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA710DCFA7835B9C459A27EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03315B7847B38AAC057026B3 /* Pods-MODemoOC.debug.xcconfig */,
+				F198CC957718798C58E175CF /* Pods-MODemoOC.release.xcconfig */,
+				A1E2BF376A5EF1B6A58748B9 /* Pods-MODemoOC-MODemoOCUITests.debug.xcconfig */,
+				9AC37EDF9A21D7CF6349B069 /* Pods-MODemoOC-MODemoOCUITests.release.xcconfig */,
+				98793B8FBEA1395C07D22E38 /* Pods-MODemoOCTests.debug.xcconfig */,
+				09B3CFD86AF627732DEB6ABA /* Pods-MODemoOCTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FDB19AB426B3DD93009C49ED = {
+			isa = PBXGroup;
+			children = (
+				FDB19ABF26B3DD93009C49ED /* MODemoOC */,
+				FDB19ADB26B3DD94009C49ED /* MODemoOCTests */,
+				FDB19AE626B3DD94009C49ED /* MODemoOCUITests */,
+				FDB19ABE26B3DD93009C49ED /* Products */,
+				CA710DCFA7835B9C459A27EC /* Pods */,
+				275A63B9B3255E8DCA68405E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FDB19ABE26B3DD93009C49ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19ABD26B3DD93009C49ED /* MODemoOC.app */,
+				FDB19AD826B3DD94009C49ED /* MODemoOCTests.xctest */,
+				FDB19AE326B3DD94009C49ED /* MODemoOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDB19ABF26B3DD93009C49ED /* MODemoOC */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19AC026B3DD93009C49ED /* AppDelegate.h */,
+				FDB19AC126B3DD93009C49ED /* AppDelegate.m */,
+				FDB19AC326B3DD93009C49ED /* SceneDelegate.h */,
+				FDB19AC426B3DD93009C49ED /* SceneDelegate.m */,
+				FDB19AC626B3DD93009C49ED /* ViewController.h */,
+				FDB19AC726B3DD93009C49ED /* ViewController.m */,
+				FDB19AC926B3DD93009C49ED /* Main.storyboard */,
+				FDB19ACC26B3DD94009C49ED /* Assets.xcassets */,
+				FDB19ACE26B3DD94009C49ED /* LaunchScreen.storyboard */,
+				FDB19AD126B3DD94009C49ED /* Info.plist */,
+				FDB19AD226B3DD94009C49ED /* main.m */,
+			);
+			path = MODemoOC;
+			sourceTree = "<group>";
+		};
+		FDB19ADB26B3DD94009C49ED /* MODemoOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19ADC26B3DD94009C49ED /* MODemoOCTests.m */,
+				FDB19ADE26B3DD94009C49ED /* Info.plist */,
+			);
+			path = MODemoOCTests;
+			sourceTree = "<group>";
+		};
+		FDB19AE626B3DD94009C49ED /* MODemoOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19AE726B3DD94009C49ED /* MODemoOCUITests.m */,
+				FDB19AE926B3DD94009C49ED /* Info.plist */,
+			);
+			path = MODemoOCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDB19ABC26B3DD93009C49ED /* MODemoOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB19AEC26B3DD94009C49ED /* Build configuration list for PBXNativeTarget "MODemoOC" */;
+			buildPhases = (
+				95F796A5EE1E15F684C7968B /* [CP] Check Pods Manifest.lock */,
+				FDB19AB926B3DD93009C49ED /* Sources */,
+				FDB19ABA26B3DD93009C49ED /* Frameworks */,
+				FDB19ABB26B3DD93009C49ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MODemoOC;
+			productName = MODemoOC;
+			productReference = FDB19ABD26B3DD93009C49ED /* MODemoOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDB19AD726B3DD94009C49ED /* MODemoOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB19AEF26B3DD94009C49ED /* Build configuration list for PBXNativeTarget "MODemoOCTests" */;
+			buildPhases = (
+				462377D652A32654EE1BB5AC /* [CP] Check Pods Manifest.lock */,
+				FDB19AD426B3DD94009C49ED /* Sources */,
+				FDB19AD526B3DD94009C49ED /* Frameworks */,
+				FDB19AD626B3DD94009C49ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB19ADA26B3DD94009C49ED /* PBXTargetDependency */,
+			);
+			name = MODemoOCTests;
+			productName = MODemoOCTests;
+			productReference = FDB19AD826B3DD94009C49ED /* MODemoOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDB19AE226B3DD94009C49ED /* MODemoOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB19AF226B3DD94009C49ED /* Build configuration list for PBXNativeTarget "MODemoOCUITests" */;
+			buildPhases = (
+				585CFB2E5E31FAFD6BEDBC1F /* [CP] Check Pods Manifest.lock */,
+				FDB19ADF26B3DD94009C49ED /* Sources */,
+				FDB19AE026B3DD94009C49ED /* Frameworks */,
+				FDB19AE126B3DD94009C49ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB19AE526B3DD94009C49ED /* PBXTargetDependency */,
+			);
+			name = MODemoOCUITests;
+			productName = MODemoOCUITests;
+			productReference = FDB19AE326B3DD94009C49ED /* MODemoOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDB19AB526B3DD93009C49ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FDB19ABC26B3DD93009C49ED = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					FDB19AD726B3DD94009C49ED = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FDB19ABC26B3DD93009C49ED;
+					};
+					FDB19AE226B3DD94009C49ED = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FDB19ABC26B3DD93009C49ED;
+					};
+				};
+			};
+			buildConfigurationList = FDB19AB826B3DD93009C49ED /* Build configuration list for PBXProject "MODemoOC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDB19AB426B3DD93009C49ED;
+			productRefGroup = FDB19ABE26B3DD93009C49ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDB19ABC26B3DD93009C49ED /* MODemoOC */,
+				FDB19AD726B3DD94009C49ED /* MODemoOCTests */,
+				FDB19AE226B3DD94009C49ED /* MODemoOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDB19ABB26B3DD93009C49ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB19AD026B3DD94009C49ED /* LaunchScreen.storyboard in Resources */,
+				FDB19ACD26B3DD94009C49ED /* Assets.xcassets in Resources */,
+				FDB19ACB26B3DD93009C49ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19AD626B3DD94009C49ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19AE126B3DD94009C49ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		462377D652A32654EE1BB5AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MODemoOCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		585CFB2E5E31FAFD6BEDBC1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MODemoOC-MODemoOCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95F796A5EE1E15F684C7968B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MODemoOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDB19AB926B3DD93009C49ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB19AC826B3DD93009C49ED /* ViewController.m in Sources */,
+				FDB19AC226B3DD93009C49ED /* AppDelegate.m in Sources */,
+				FDB19AD326B3DD94009C49ED /* main.m in Sources */,
+				FDB19AC526B3DD93009C49ED /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19AD426B3DD94009C49ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB19ADD26B3DD94009C49ED /* MODemoOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19ADF26B3DD94009C49ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB19AE826B3DD94009C49ED /* MODemoOCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDB19ADA26B3DD94009C49ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB19ABC26B3DD93009C49ED /* MODemoOC */;
+			targetProxy = FDB19AD926B3DD94009C49ED /* PBXContainerItemProxy */;
+		};
+		FDB19AE526B3DD94009C49ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB19ABC26B3DD93009C49ED /* MODemoOC */;
+			targetProxy = FDB19AE426B3DD94009C49ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDB19AC926B3DD93009C49ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB19ACA26B3DD93009C49ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDB19ACE26B3DD94009C49ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB19ACF26B3DD94009C49ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDB19AEA26B3DD94009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FDB19AEB26B3DD94009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDB19AED26B3DD94009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03315B7847B38AAC057026B3 /* Pods-MODemoOC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDB19AEE26B3DD94009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F198CC957718798C58E175CF /* Pods-MODemoOC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDB19AF026B3DD94009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98793B8FBEA1395C07D22E38 /* Pods-MODemoOCTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoOCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MODemoOC.app/MODemoOC";
+			};
+			name = Debug;
+		};
+		FDB19AF126B3DD94009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09B3CFD86AF627732DEB6ABA /* Pods-MODemoOCTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoOCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MODemoOC.app/MODemoOC";
+			};
+			name = Release;
+		};
+		FDB19AF326B3DD94009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1E2BF376A5EF1B6A58748B9 /* Pods-MODemoOC-MODemoOCUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MODemoOC;
+			};
+			name = Debug;
+		};
+		FDB19AF426B3DD94009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC37EDF9A21D7CF6349B069 /* Pods-MODemoOC-MODemoOCUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MODemoOC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDB19AB826B3DD93009C49ED /* Build configuration list for PBXProject "MODemoOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19AEA26B3DD94009C49ED /* Debug */,
+				FDB19AEB26B3DD94009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB19AEC26B3DD94009C49ED /* Build configuration list for PBXNativeTarget "MODemoOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19AED26B3DD94009C49ED /* Debug */,
+				FDB19AEE26B3DD94009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB19AEF26B3DD94009C49ED /* Build configuration list for PBXNativeTarget "MODemoOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19AF026B3DD94009C49ED /* Debug */,
+				FDB19AF126B3DD94009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB19AF226B3DD94009C49ED /* Build configuration list for PBXNativeTarget "MODemoOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19AF326B3DD94009C49ED /* Debug */,
+				FDB19AF426B3DD94009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDB19AB526B3DD93009C49ED /* Project object */;
+}
