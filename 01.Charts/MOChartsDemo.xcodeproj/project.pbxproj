@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0607B0976A4D3DF2DA1288 /* Pods_MOChartsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8896D2CEAE44D6F5F0A4CC4 /* Pods_MOChartsDemo.framework */; };
+		C07CA2C2258C805D00A198A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA2C1258C805D00A198A1 /* AppDelegate.m */; };
+		C07CA2C5258C805D00A198A1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA2C4258C805D00A198A1 /* SceneDelegate.m */; };
+		C07CA2C8258C805D00A198A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA2C7258C805D00A198A1 /* ViewController.m */; };
+		C07CA2CB258C805D00A198A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07CA2C9258C805D00A198A1 /* Main.storyboard */; };
+		C07CA2CD258C806000A198A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C07CA2CC258C806000A198A1 /* Assets.xcassets */; };
+		C07CA2D0258C806000A198A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07CA2CE258C806000A198A1 /* LaunchScreen.storyboard */; };
+		C07CA2D3258C806000A198A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA2D2258C806000A198A1 /* main.m */; };
+		C07CA300258C833A00A198A1 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07CA2FF258C833A00A198A1 /* Charts.framework */; };
+		C07CA309258C843500A198A1 /* MOLineValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA308258C843500A198A1 /* MOLineValueFormatter.m */; };
+		C07CA312258C852E00A198A1 /* MOLineChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA30E258C852D00A198A1 /* MOLineChartsView.m */; };
+		C07CA313258C852E00A198A1 /* MOPieChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA30F258C852D00A198A1 /* MOPieChartsView.m */; };
+		C07CA314258C852E00A198A1 /* MOBarChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA310258C852D00A198A1 /* MOBarChartsView.m */; };
+		C07CA318258C855F00A198A1 /* MOPieValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA316258C855F00A198A1 /* MOPieValueFormatter.m */; };
+		C07CA31C258C85F200A198A1 /* MOBarValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C07CA31A258C85F200A198A1 /* MOBarValueFormatter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C07CA2BD258C805D00A198A1 /* MOChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07CA2C0258C805D00A198A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C07CA2C1258C805D00A198A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C07CA2C3258C805D00A198A1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C07CA2C4258C805D00A198A1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C07CA2C6258C805D00A198A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C07CA2C7258C805D00A198A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C07CA2CA258C805D00A198A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C07CA2CC258C806000A198A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C07CA2CF258C806000A198A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C07CA2D1258C806000A198A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07CA2D2258C806000A198A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C07CA2E3258C814700A198A1 /* MOChartsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MOChartsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		C07CA2FF258C833A00A198A1 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07CA307258C843500A198A1 /* MOLineValueFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOLineValueFormatter.h; sourceTree = "<group>"; };
+		C07CA308258C843500A198A1 /* MOLineValueFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOLineValueFormatter.m; sourceTree = "<group>"; };
+		C07CA30C258C852D00A198A1 /* MOPieChartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPieChartsView.h; sourceTree = "<group>"; };
+		C07CA30D258C852D00A198A1 /* MOLineChartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOLineChartsView.h; sourceTree = "<group>"; };
+		C07CA30E258C852D00A198A1 /* MOLineChartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOLineChartsView.m; sourceTree = "<group>"; };
+		C07CA30F258C852D00A198A1 /* MOPieChartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPieChartsView.m; sourceTree = "<group>"; };
+		C07CA310258C852D00A198A1 /* MOBarChartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBarChartsView.m; sourceTree = "<group>"; };
+		C07CA311258C852E00A198A1 /* MOBarChartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBarChartsView.h; sourceTree = "<group>"; };
+		C07CA316258C855F00A198A1 /* MOPieValueFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPieValueFormatter.m; sourceTree = "<group>"; };
+		C07CA317258C855F00A198A1 /* MOPieValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPieValueFormatter.h; sourceTree = "<group>"; };
+		C07CA31A258C85F200A198A1 /* MOBarValueFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBarValueFormatter.m; sourceTree = "<group>"; };
+		C07CA31B258C85F200A198A1 /* MOBarValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBarValueFormatter.h; sourceTree = "<group>"; };
+		EEC5773B2439358E49908289 /* Pods-MOChartsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOChartsDemo.debug.xcconfig"; path = "Target Support Files/Pods-MOChartsDemo/Pods-MOChartsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F8896D2CEAE44D6F5F0A4CC4 /* Pods_MOChartsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOChartsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5C9C380560807E8DCEA23D /* Pods-MOChartsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOChartsDemo.release.xcconfig"; path = "Target Support Files/Pods-MOChartsDemo/Pods-MOChartsDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C07CA2BA258C805D00A198A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07CA300258C833A00A198A1 /* Charts.framework in Frameworks */,
+				0C0607B0976A4D3DF2DA1288 /* Pods_MOChartsDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E0B3C57756356A9AF9B42D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEC5773B2439358E49908289 /* Pods-MOChartsDemo.debug.xcconfig */,
+				FB5C9C380560807E8DCEA23D /* Pods-MOChartsDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		66820547FD83529B8B9D5645 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C07CA2FF258C833A00A198A1 /* Charts.framework */,
+				F8896D2CEAE44D6F5F0A4CC4 /* Pods_MOChartsDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C07CA2B4258C805D00A198A1 = {
+			isa = PBXGroup;
+			children = (
+				C07CA2BF258C805D00A198A1 /* MOChartsDemo */,
+				C07CA2BE258C805D00A198A1 /* Products */,
+				0E0B3C57756356A9AF9B42D5 /* Pods */,
+				66820547FD83529B8B9D5645 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C07CA2BE258C805D00A198A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C07CA2BD258C805D00A198A1 /* MOChartsDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C07CA2BF258C805D00A198A1 /* MOChartsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C07CA2C0258C805D00A198A1 /* AppDelegate.h */,
+				C07CA2C1258C805D00A198A1 /* AppDelegate.m */,
+				C07CA2C3258C805D00A198A1 /* SceneDelegate.h */,
+				C07CA2C4258C805D00A198A1 /* SceneDelegate.m */,
+				C07CA2C6258C805D00A198A1 /* ViewController.h */,
+				C07CA2C7258C805D00A198A1 /* ViewController.m */,
+				C07CA30D258C852D00A198A1 /* MOLineChartsView.h */,
+				C07CA30E258C852D00A198A1 /* MOLineChartsView.m */,
+				C07CA311258C852E00A198A1 /* MOBarChartsView.h */,
+				C07CA310258C852D00A198A1 /* MOBarChartsView.m */,
+				C07CA30C258C852D00A198A1 /* MOPieChartsView.h */,
+				C07CA30F258C852D00A198A1 /* MOPieChartsView.m */,
+				C07CA307258C843500A198A1 /* MOLineValueFormatter.h */,
+				C07CA308258C843500A198A1 /* MOLineValueFormatter.m */,
+				C07CA31B258C85F200A198A1 /* MOBarValueFormatter.h */,
+				C07CA31A258C85F200A198A1 /* MOBarValueFormatter.m */,
+				C07CA317258C855F00A198A1 /* MOPieValueFormatter.h */,
+				C07CA316258C855F00A198A1 /* MOPieValueFormatter.m */,
+				C07CA2C9258C805D00A198A1 /* Main.storyboard */,
+				C07CA2CC258C806000A198A1 /* Assets.xcassets */,
+				C07CA2CE258C806000A198A1 /* LaunchScreen.storyboard */,
+				C07CA2D1258C806000A198A1 /* Info.plist */,
+				C07CA2D2258C806000A198A1 /* main.m */,
+				C07CA2E3258C814700A198A1 /* MOChartsDemo-Bridging-Header.h */,
+			);
+			path = MOChartsDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C07CA2BC258C805D00A198A1 /* MOChartsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07CA2D6258C806000A198A1 /* Build configuration list for PBXNativeTarget "MOChartsDemo" */;
+			buildPhases = (
+				C0E544575C37D6D03C7A5C8D /* [CP] Check Pods Manifest.lock */,
+				C07CA2B9258C805D00A198A1 /* Sources */,
+				C07CA2BA258C805D00A198A1 /* Frameworks */,
+				C07CA2BB258C805D00A198A1 /* Resources */,
+				F251F62C08F149F3E1D1B211 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MOChartsDemo;
+			productName = MOChartsDemo;
+			productReference = C07CA2BD258C805D00A198A1 /* MOChartsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C07CA2B5258C805D00A198A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					C07CA2BC258C805D00A198A1 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+				};
+			};
+			buildConfigurationList = C07CA2B8258C805D00A198A1 /* Build configuration list for PBXProject "MOChartsDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C07CA2B4258C805D00A198A1;
+			productRefGroup = C07CA2BE258C805D00A198A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C07CA2BC258C805D00A198A1 /* MOChartsDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C07CA2BB258C805D00A198A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07CA2D0258C806000A198A1 /* LaunchScreen.storyboard in Resources */,
+				C07CA2CD258C806000A198A1 /* Assets.xcassets in Resources */,
+				C07CA2CB258C805D00A198A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0E544575C37D6D03C7A5C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOChartsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F251F62C08F149F3E1D1B211 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MOChartsDemo/Pods-MOChartsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MOChartsDemo/Pods-MOChartsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MOChartsDemo/Pods-MOChartsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C07CA2B9258C805D00A198A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07CA2C8258C805D00A198A1 /* ViewController.m in Sources */,
+				C07CA318258C855F00A198A1 /* MOPieValueFormatter.m in Sources */,
+				C07CA312258C852E00A198A1 /* MOLineChartsView.m in Sources */,
+				C07CA2C2258C805D00A198A1 /* AppDelegate.m in Sources */,
+				C07CA2D3258C806000A198A1 /* main.m in Sources */,
+				C07CA313258C852E00A198A1 /* MOPieChartsView.m in Sources */,
+				C07CA309258C843500A198A1 /* MOLineValueFormatter.m in Sources */,
+				C07CA31C258C85F200A198A1 /* MOBarValueFormatter.m in Sources */,
+				C07CA2C5258C805D00A198A1 /* SceneDelegate.m in Sources */,
+				C07CA314258C852E00A198A1 /* MOBarChartsView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C07CA2C9258C805D00A198A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07CA2CA258C805D00A198A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C07CA2CE258C806000A198A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07CA2CF258C806000A198A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C07CA2D4258C806000A198A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C07CA2D5258C806000A198A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C07CA2D7258C806000A198A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC5773B2439358E49908289 /* Pods-MOChartsDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WUQQBVA6S;
+				INFOPLIST_FILE = MOChartsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaoyan.MOChartsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MOChartsDemo/MOChartsDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C07CA2D8258C806000A198A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB5C9C380560807E8DCEA23D /* Pods-MOChartsDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WUQQBVA6S;
+				INFOPLIST_FILE = MOChartsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaoyan.MOChartsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MOChartsDemo/MOChartsDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C07CA2B8258C805D00A198A1 /* Build configuration list for PBXProject "MOChartsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07CA2D4258C806000A198A1 /* Debug */,
+				C07CA2D5258C806000A198A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07CA2D6258C806000A198A1 /* Build configuration list for PBXNativeTarget "MOChartsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07CA2D7258C806000A198A1 /* Debug */,
+				C07CA2D8258C806000A198A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C07CA2B5258C805D00A198A1 /* Project object */;
+}
