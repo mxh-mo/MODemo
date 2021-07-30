@@ -1,0 +1,61 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>JS交互</title>
+        <style>
+            body {
+                font-size:30px;
+                text-align:center;
+            }
+        * {
+            margin: 30px;
+            padding: 0;
+        }
+        h1{
+<!--            color: red;-->
+        }
+        button {
+            width: 300px;
+            height: 50px;
+            font-size: 30px;
+        }
+       </style>
+    </head>
+    <body>
+        <h1>WKWebview与iOS交互</h1>
+        <h2></h2>
+        <button onclick="testA()">点击alert APP弹框</button>
+        <button onclick="testConfrim()">点击Confrim APP弹窗</button>
+        <button onclick="testPrompt('你是谁？？？')">点击Prompt APP弹窗</button>
+        <button onclick="buttonAction()">向APP传递数据</button>
+        <script type="text/javascript">
+            // APP调用js
+            function changeHead(){
+              document.querySelector('h1').style.color = "red"
+            }
+            // 接受APP传过来的参数
+            function swiftTestObject(name, age) {
+              var object = {name:name, age:age};
+              return object;
+            }
+            function testConfrim() {
+              confirm("确定修改数据吗？")
+            }
+            function testPrompt(title) {
+              prompt(title, "莫小言")
+            }
+            // 无参数函数
+            function testA() {
+              alert("我是JS中的弹窗消息");
+            }
+            // 向APP传递数据
+            function buttonAction() {
+              try {
+                window.webkit.messageHandlers.moxiaoyan.postMessage("JS: 客户下单啦~");
+              } catch (e) {
+                console.log(e);
+              }
+            }
+        </script>
+    </body>
+</html>

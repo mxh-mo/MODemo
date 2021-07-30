@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11413983D7272D865AB695C3 /* Pods_MODemoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6064CDFF2F78E01F5AAC9F /* Pods_MODemoSwiftTests.framework */; };
+		4C662755A0DCC33C0DCE62C5 /* Pods_MODemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9794A26E5DAA8EA3E8204CF /* Pods_MODemoSwift.framework */; };
+		7E39CACF1702F3B736938004 /* Pods_MODemoSwift_MODemoSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4ECFA3E751DBF7A7311F27 /* Pods_MODemoSwift_MODemoSwiftUITests.framework */; };
+		FDB19C1626B3FB22009C49ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1526B3FB22009C49ED /* AppDelegate.swift */; };
+		FDB19C1826B3FB22009C49ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1726B3FB22009C49ED /* SceneDelegate.swift */; };
+		FDB19C1A26B3FB22009C49ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1926B3FB22009C49ED /* ViewController.swift */; };
+		FDB19C1D26B3FB22009C49ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB19C1B26B3FB22009C49ED /* Main.storyboard */; };
+		FDB19C1F26B3FB23009C49ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB19C1E26B3FB23009C49ED /* Assets.xcassets */; };
+		FDB19C2226B3FB23009C49ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB19C2026B3FB23009C49ED /* LaunchScreen.storyboard */; };
+		FDB19C2D26B3FB24009C49ED /* MODemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C2C26B3FB24009C49ED /* MODemoSwiftTests.swift */; };
+		FDB19C3826B3FB24009C49ED /* MODemoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C3726B3FB24009C49ED /* MODemoSwiftUITests.swift */; };
+		FDB19C5E26B3FB66009C49ED /* MOWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4526B3FB65009C49ED /* MOWKWebViewController.swift */; };
+		FDB19C5F26B3FB66009C49ED /* MOTouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4626B3FB65009C49ED /* MOTouchIDViewController.swift */; };
+		FDB19C6026B3FB66009C49ED /* MOLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4826B3FB65009C49ED /* MOLocationManager.swift */; };
+		FDB19C6126B3FB66009C49ED /* MOFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4926B3FB65009C49ED /* MOFirstViewController.swift */; };
+		FDB19C6226B3FB66009C49ED /* MOMultiDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4A26B3FB65009C49ED /* MOMultiDelegateViewController.swift */; };
+		FDB19C6326B3FB66009C49ED /* MOTableViewStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4B26B3FB65009C49ED /* MOTableViewStyleViewController.swift */; };
+		FDB19C6426B3FB66009C49ED /* MOReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4D26B3FB65009C49ED /* MOReminderViewController.swift */; };
+		FDB19C6526B3FB66009C49ED /* MOCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4E26B3FB65009C49ED /* MOCalendarViewController.swift */; };
+		FDB19C6626B3FB66009C49ED /* MOAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4F26B3FB65009C49ED /* MOAlgorithm.swift */; };
+		FDB19C6726B3FB66009C49ED /* MOAuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5126B3FB65009C49ED /* MOAuthorizationManager.swift */; };
+		FDB19C6826B3FB66009C49ED /* MOAuthorizationCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5226B3FB65009C49ED /* MOAuthorizationCamera.swift */; };
+		FDB19C6926B3FB66009C49ED /* MOAuthorizationPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5326B3FB65009C49ED /* MOAuthorizationPhoto.swift */; };
+		FDB19C6A26B3FB66009C49ED /* MOQRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5426B3FB65009C49ED /* MOQRScanViewController.swift */; };
+		FDB19C6B26B3FB66009C49ED /* MOViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5526B3FB65009C49ED /* MOViewTestViewController.swift */; };
+		FDB19C6C26B3FB66009C49ED /* MOPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5626B3FB65009C49ED /* MOPopViewController.swift */; };
+		FDB19C6D26B3FB66009C49ED /* MOShareDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5726B3FB65009C49ED /* MOShareDocumentViewController.swift */; };
+		FDB19C6E26B3FB66009C49ED /* MOFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5826B3FB65009C49ED /* MOFileManager.swift */; };
+		FDB19C6F26B3FB66009C49ED /* MOApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5926B3FB65009C49ED /* MOApplePayViewController.swift */; };
+		FDB19C7026B3FB66009C49ED /* MOPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5B26B3FB65009C49ED /* MOPerson.swift */; };
+		FDB19C7126B3FB66009C49ED /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5C26B3FB65009C49ED /* MOUITestsViewController.swift */; };
+		FDB19C7226B3FB66009C49ED /* MOArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5D26B3FB66009C49ED /* MOArrayDataSource.swift */; };
+		FDB19C7526B3FC06009C49ED /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FDB19C7426B3FC06009C49ED /* index.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDB19C2926B3FB24009C49ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB19C0A26B3FB22009C49ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB19C1126B3FB22009C49ED;
+			remoteInfo = MODemoSwift;
+		};
+		FDB19C3426B3FB24009C49ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB19C0A26B3FB22009C49ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB19C1126B3FB22009C49ED;
+			remoteInfo = MODemoSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		275316C6FE75A7839DC9B4A8 /* Pods-MODemoSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-MODemoSwiftTests/Pods-MODemoSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D6064CDFF2F78E01F5AAC9F /* Pods_MODemoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MODemoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BC262E5DDBB8973487FF0A /* Pods-MODemoSwift-MODemoSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoSwift-MODemoSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-MODemoSwift-MODemoSwiftUITests/Pods-MODemoSwift-MODemoSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E4ECFA3E751DBF7A7311F27 /* Pods_MODemoSwift_MODemoSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MODemoSwift_MODemoSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		865FA8CC29A7C81E26B4ED01 /* Pods-MODemoSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-MODemoSwiftTests/Pods-MODemoSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9794A26E5DAA8EA3E8204CF /* Pods_MODemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MODemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2739E5B15905186A88D3AD /* Pods-MODemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoSwift.debug.xcconfig"; path = "Target Support Files/Pods-MODemoSwift/Pods-MODemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		AD0FB419EB39483834A9B8BA /* Pods-MODemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoSwift.release.xcconfig"; path = "Target Support Files/Pods-MODemoSwift/Pods-MODemoSwift.release.xcconfig"; sourceTree = "<group>"; };
+		F70E474EA380440DD78D3C87 /* Pods-MODemoSwift-MODemoSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoSwift-MODemoSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-MODemoSwift-MODemoSwiftUITests/Pods-MODemoSwift-MODemoSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FDB19C1226B3FB22009C49ED /* MODemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB19C1526B3FB22009C49ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDB19C1726B3FB22009C49ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FDB19C1926B3FB22009C49ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDB19C1C26B3FB22009C49ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDB19C1E26B3FB23009C49ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDB19C2126B3FB23009C49ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDB19C2326B3FB23009C49ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB19C2826B3FB24009C49ED /* MODemoSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MODemoSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB19C2C26B3FB24009C49ED /* MODemoSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODemoSwiftTests.swift; sourceTree = "<group>"; };
+		FDB19C2E26B3FB24009C49ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB19C3326B3FB24009C49ED /* MODemoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MODemoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB19C3726B3FB24009C49ED /* MODemoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODemoSwiftUITests.swift; sourceTree = "<group>"; };
+		FDB19C3926B3FB24009C49ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB19C4526B3FB65009C49ED /* MOWKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOWKWebViewController.swift; sourceTree = "<group>"; };
+		FDB19C4626B3FB65009C49ED /* MOTouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOTouchIDViewController.swift; sourceTree = "<group>"; };
+		FDB19C4826B3FB65009C49ED /* MOLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOLocationManager.swift; sourceTree = "<group>"; };
+		FDB19C4926B3FB65009C49ED /* MOFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOFirstViewController.swift; sourceTree = "<group>"; };
+		FDB19C4A26B3FB65009C49ED /* MOMultiDelegateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOMultiDelegateViewController.swift; sourceTree = "<group>"; };
+		FDB19C4B26B3FB65009C49ED /* MOTableViewStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOTableViewStyleViewController.swift; sourceTree = "<group>"; };
+		FDB19C4D26B3FB65009C49ED /* MOReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOReminderViewController.swift; sourceTree = "<group>"; };
+		FDB19C4E26B3FB65009C49ED /* MOCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOCalendarViewController.swift; sourceTree = "<group>"; };
+		FDB19C4F26B3FB65009C49ED /* MOAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAlgorithm.swift; sourceTree = "<group>"; };
+		FDB19C5126B3FB65009C49ED /* MOAuthorizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAuthorizationManager.swift; sourceTree = "<group>"; };
+		FDB19C5226B3FB65009C49ED /* MOAuthorizationCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAuthorizationCamera.swift; sourceTree = "<group>"; };
+		FDB19C5326B3FB65009C49ED /* MOAuthorizationPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAuthorizationPhoto.swift; sourceTree = "<group>"; };
+		FDB19C5426B3FB65009C49ED /* MOQRScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOQRScanViewController.swift; sourceTree = "<group>"; };
+		FDB19C5526B3FB65009C49ED /* MOViewTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOViewTestViewController.swift; sourceTree = "<group>"; };
+		FDB19C5626B3FB65009C49ED /* MOPopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOPopViewController.swift; sourceTree = "<group>"; };
+		FDB19C5726B3FB65009C49ED /* MOShareDocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOShareDocumentViewController.swift; sourceTree = "<group>"; };
+		FDB19C5826B3FB65009C49ED /* MOFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOFileManager.swift; sourceTree = "<group>"; };
+		FDB19C5926B3FB65009C49ED /* MOApplePayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOApplePayViewController.swift; sourceTree = "<group>"; };
+		FDB19C5B26B3FB65009C49ED /* MOPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOPerson.swift; sourceTree = "<group>"; };
+		FDB19C5C26B3FB65009C49ED /* MOUITestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOUITestsViewController.swift; sourceTree = "<group>"; };
+		FDB19C5D26B3FB66009C49ED /* MOArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOArrayDataSource.swift; sourceTree = "<group>"; };
+		FDB19C7426B3FC06009C49ED /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDB19C0F26B3FB22009C49ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C662755A0DCC33C0DCE62C5 /* Pods_MODemoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C2526B3FB24009C49ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11413983D7272D865AB695C3 /* Pods_MODemoSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C3026B3FB24009C49ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E39CACF1702F3B736938004 /* Pods_MODemoSwift_MODemoSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13964AB22F51474D51A8AF88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB2739E5B15905186A88D3AD /* Pods-MODemoSwift.debug.xcconfig */,
+				AD0FB419EB39483834A9B8BA /* Pods-MODemoSwift.release.xcconfig */,
+				68BC262E5DDBB8973487FF0A /* Pods-MODemoSwift-MODemoSwiftUITests.debug.xcconfig */,
+				F70E474EA380440DD78D3C87 /* Pods-MODemoSwift-MODemoSwiftUITests.release.xcconfig */,
+				275316C6FE75A7839DC9B4A8 /* Pods-MODemoSwiftTests.debug.xcconfig */,
+				865FA8CC29A7C81E26B4ED01 /* Pods-MODemoSwiftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC68EDB9B805A61ED5294318 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9794A26E5DAA8EA3E8204CF /* Pods_MODemoSwift.framework */,
+				7E4ECFA3E751DBF7A7311F27 /* Pods_MODemoSwift_MODemoSwiftUITests.framework */,
+				4D6064CDFF2F78E01F5AAC9F /* Pods_MODemoSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDB19C0926B3FB22009C49ED = {
+			isa = PBXGroup;
+			children = (
+				FDB19C1426B3FB22009C49ED /* MODemoSwift */,
+				FDB19C2B26B3FB24009C49ED /* MODemoSwiftTests */,
+				FDB19C3626B3FB24009C49ED /* MODemoSwiftUITests */,
+				FDB19C1326B3FB22009C49ED /* Products */,
+				13964AB22F51474D51A8AF88 /* Pods */,
+				CC68EDB9B805A61ED5294318 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FDB19C1326B3FB22009C49ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C1226B3FB22009C49ED /* MODemoSwift.app */,
+				FDB19C2826B3FB24009C49ED /* MODemoSwiftTests.xctest */,
+				FDB19C3326B3FB24009C49ED /* MODemoSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDB19C1426B3FB22009C49ED /* MODemoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C1526B3FB22009C49ED /* AppDelegate.swift */,
+				FDB19C1726B3FB22009C49ED /* SceneDelegate.swift */,
+				FDB19C1926B3FB22009C49ED /* ViewController.swift */,
+				FDB19C5D26B3FB66009C49ED /* MOArrayDataSource.swift */,
+				FDB19C4F26B3FB65009C49ED /* MOAlgorithm.swift */,
+				FDB19C5826B3FB65009C49ED /* MOFileManager.swift */,
+				FDB19C5526B3FB65009C49ED /* MOViewTestViewController.swift */,
+				FDB19C4B26B3FB65009C49ED /* MOTableViewStyleViewController.swift */,
+				FDB19C5726B3FB65009C49ED /* MOShareDocumentViewController.swift */,
+				FDB19C4726B3FB65009C49ED /* MOMultiDelegate */,
+				FDB19C7326B3FBE7009C49ED /* MOWebView */,
+				FDB19C4C26B3FB65009C49ED /* MOEventKit */,
+				FDB19C5026B3FB65009C49ED /* MOAuthorization */,
+				FDB19C5426B3FB65009C49ED /* MOQRScanViewController.swift */,
+				FDB19C5626B3FB65009C49ED /* MOPopViewController.swift */,
+				FDB19C5926B3FB65009C49ED /* MOApplePayViewController.swift */,
+				FDB19C4626B3FB65009C49ED /* MOTouchIDViewController.swift */,
+				FDB19C5A26B3FB65009C49ED /* MOTests */,
+				FDB19C1B26B3FB22009C49ED /* Main.storyboard */,
+				FDB19C1E26B3FB23009C49ED /* Assets.xcassets */,
+				FDB19C2026B3FB23009C49ED /* LaunchScreen.storyboard */,
+				FDB19C2326B3FB23009C49ED /* Info.plist */,
+			);
+			path = MODemoSwift;
+			sourceTree = "<group>";
+		};
+		FDB19C2B26B3FB24009C49ED /* MODemoSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C2C26B3FB24009C49ED /* MODemoSwiftTests.swift */,
+				FDB19C2E26B3FB24009C49ED /* Info.plist */,
+			);
+			path = MODemoSwiftTests;
+			sourceTree = "<group>";
+		};
+		FDB19C3626B3FB24009C49ED /* MODemoSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C3726B3FB24009C49ED /* MODemoSwiftUITests.swift */,
+				FDB19C3926B3FB24009C49ED /* Info.plist */,
+			);
+			path = MODemoSwiftUITests;
+			sourceTree = "<group>";
+		};
+		FDB19C4726B3FB65009C49ED /* MOMultiDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C4826B3FB65009C49ED /* MOLocationManager.swift */,
+				FDB19C4926B3FB65009C49ED /* MOFirstViewController.swift */,
+				FDB19C4A26B3FB65009C49ED /* MOMultiDelegateViewController.swift */,
+			);
+			path = MOMultiDelegate;
+			sourceTree = "<group>";
+		};
+		FDB19C4C26B3FB65009C49ED /* MOEventKit */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C4D26B3FB65009C49ED /* MOReminderViewController.swift */,
+				FDB19C4E26B3FB65009C49ED /* MOCalendarViewController.swift */,
+			);
+			path = MOEventKit;
+			sourceTree = "<group>";
+		};
+		FDB19C5026B3FB65009C49ED /* MOAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C5126B3FB65009C49ED /* MOAuthorizationManager.swift */,
+				FDB19C5226B3FB65009C49ED /* MOAuthorizationCamera.swift */,
+				FDB19C5326B3FB65009C49ED /* MOAuthorizationPhoto.swift */,
+			);
+			path = MOAuthorization;
+			sourceTree = "<group>";
+		};
+		FDB19C5A26B3FB65009C49ED /* MOTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C5B26B3FB65009C49ED /* MOPerson.swift */,
+				FDB19C5C26B3FB65009C49ED /* MOUITestsViewController.swift */,
+			);
+			path = MOTests;
+			sourceTree = "<group>";
+		};
+		FDB19C7326B3FBE7009C49ED /* MOWebView */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C7426B3FC06009C49ED /* index.html */,
+				FDB19C4526B3FB65009C49ED /* MOWKWebViewController.swift */,
+			);
+			path = MOWebView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDB19C1126B3FB22009C49ED /* MODemoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB19C3C26B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemoSwift" */;
+			buildPhases = (
+				D686BEB8F7DF67C7869D2E6F /* [CP] Check Pods Manifest.lock */,
+				FDB19C0E26B3FB22009C49ED /* Sources */,
+				FDB19C0F26B3FB22009C49ED /* Frameworks */,
+				FDB19C1026B3FB22009C49ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MODemoSwift;
+			productName = MODemoSwift;
+			productReference = FDB19C1226B3FB22009C49ED /* MODemoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDB19C2726B3FB24009C49ED /* MODemoSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB19C3F26B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemoSwiftTests" */;
+			buildPhases = (
+				93ADACF06099B8AF0CF1D889 /* [CP] Check Pods Manifest.lock */,
+				FDB19C2426B3FB24009C49ED /* Sources */,
+				FDB19C2526B3FB24009C49ED /* Frameworks */,
+				FDB19C2626B3FB24009C49ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB19C2A26B3FB24009C49ED /* PBXTargetDependency */,
+			);
+			name = MODemoSwiftTests;
+			productName = MODemoSwiftTests;
+			productReference = FDB19C2826B3FB24009C49ED /* MODemoSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDB19C3226B3FB24009C49ED /* MODemoSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB19C4226B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemoSwiftUITests" */;
+			buildPhases = (
+				C75BB608FE2498363B653CB2 /* [CP] Check Pods Manifest.lock */,
+				FDB19C2F26B3FB24009C49ED /* Sources */,
+				FDB19C3026B3FB24009C49ED /* Frameworks */,
+				FDB19C3126B3FB24009C49ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB19C3526B3FB24009C49ED /* PBXTargetDependency */,
+			);
+			name = MODemoSwiftUITests;
+			productName = MODemoSwiftUITests;
+			productReference = FDB19C3326B3FB24009C49ED /* MODemoSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDB19C0A26B3FB22009C49ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FDB19C1126B3FB22009C49ED = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					FDB19C2726B3FB24009C49ED = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FDB19C1126B3FB22009C49ED;
+					};
+					FDB19C3226B3FB24009C49ED = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FDB19C1126B3FB22009C49ED;
+					};
+				};
+			};
+			buildConfigurationList = FDB19C0D26B3FB22009C49ED /* Build configuration list for PBXProject "MODemoSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDB19C0926B3FB22009C49ED;
+			productRefGroup = FDB19C1326B3FB22009C49ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDB19C1126B3FB22009C49ED /* MODemoSwift */,
+				FDB19C2726B3FB24009C49ED /* MODemoSwiftTests */,
+				FDB19C3226B3FB24009C49ED /* MODemoSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDB19C1026B3FB22009C49ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB19C2226B3FB23009C49ED /* LaunchScreen.storyboard in Resources */,
+				FDB19C7526B3FC06009C49ED /* index.html in Resources */,
+				FDB19C1F26B3FB23009C49ED /* Assets.xcassets in Resources */,
+				FDB19C1D26B3FB22009C49ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C2626B3FB24009C49ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C3126B3FB24009C49ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93ADACF06099B8AF0CF1D889 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MODemoSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C75BB608FE2498363B653CB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MODemoSwift-MODemoSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D686BEB8F7DF67C7869D2E6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MODemoSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDB19C0E26B3FB22009C49ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB19C7226B3FB66009C49ED /* MOArrayDataSource.swift in Sources */,
+				FDB19C6F26B3FB66009C49ED /* MOApplePayViewController.swift in Sources */,
+				FDB19C6826B3FB66009C49ED /* MOAuthorizationCamera.swift in Sources */,
+				FDB19C6B26B3FB66009C49ED /* MOViewTestViewController.swift in Sources */,
+				FDB19C6426B3FB66009C49ED /* MOReminderViewController.swift in Sources */,
+				FDB19C5F26B3FB66009C49ED /* MOTouchIDViewController.swift in Sources */,
+				FDB19C1A26B3FB22009C49ED /* ViewController.swift in Sources */,
+				FDB19C6326B3FB66009C49ED /* MOTableViewStyleViewController.swift in Sources */,
+				FDB19C6026B3FB66009C49ED /* MOLocationManager.swift in Sources */,
+				FDB19C5E26B3FB66009C49ED /* MOWKWebViewController.swift in Sources */,
+				FDB19C6926B3FB66009C49ED /* MOAuthorizationPhoto.swift in Sources */,
+				FDB19C1626B3FB22009C49ED /* AppDelegate.swift in Sources */,
+				FDB19C6C26B3FB66009C49ED /* MOPopViewController.swift in Sources */,
+				FDB19C6D26B3FB66009C49ED /* MOShareDocumentViewController.swift in Sources */,
+				FDB19C6726B3FB66009C49ED /* MOAuthorizationManager.swift in Sources */,
+				FDB19C6A26B3FB66009C49ED /* MOQRScanViewController.swift in Sources */,
+				FDB19C6126B3FB66009C49ED /* MOFirstViewController.swift in Sources */,
+				FDB19C6526B3FB66009C49ED /* MOCalendarViewController.swift in Sources */,
+				FDB19C1826B3FB22009C49ED /* SceneDelegate.swift in Sources */,
+				FDB19C6E26B3FB66009C49ED /* MOFileManager.swift in Sources */,
+				FDB19C6226B3FB66009C49ED /* MOMultiDelegateViewController.swift in Sources */,
+				FDB19C7126B3FB66009C49ED /* MOUITestsViewController.swift in Sources */,
+				FDB19C7026B3FB66009C49ED /* MOPerson.swift in Sources */,
+				FDB19C6626B3FB66009C49ED /* MOAlgorithm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C2426B3FB24009C49ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB19C2D26B3FB24009C49ED /* MODemoSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C2F26B3FB24009C49ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB19C3826B3FB24009C49ED /* MODemoSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDB19C2A26B3FB24009C49ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB19C1126B3FB22009C49ED /* MODemoSwift */;
+			targetProxy = FDB19C2926B3FB24009C49ED /* PBXContainerItemProxy */;
+		};
+		FDB19C3526B3FB24009C49ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB19C1126B3FB22009C49ED /* MODemoSwift */;
+			targetProxy = FDB19C3426B3FB24009C49ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDB19C1B26B3FB22009C49ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB19C1C26B3FB22009C49ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDB19C2026B3FB23009C49ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB19C2126B3FB23009C49ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDB19C3A26B3FB24009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDB19C3B26B3FB24009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDB19C3D26B3FB24009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB2739E5B15905186A88D3AD /* Pods-MODemoSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDB19C3E26B3FB24009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0FB419EB39483834A9B8BA /* Pods-MODemoSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDB19C4026B3FB24009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 275316C6FE75A7839DC9B4A8 /* Pods-MODemoSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MODemoSwift.app/MODemoSwift";
+			};
+			name = Debug;
+		};
+		FDB19C4126B3FB24009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 865FA8CC29A7C81E26B4ED01 /* Pods-MODemoSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MODemoSwift.app/MODemoSwift";
+			};
+			name = Release;
+		};
+		FDB19C4326B3FB24009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68BC262E5DDBB8973487FF0A /* Pods-MODemoSwift-MODemoSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MODemoSwift;
+			};
+			name = Debug;
+		};
+		FDB19C4426B3FB24009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70E474EA380440DD78D3C87 /* Pods-MODemoSwift-MODemoSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MODemoSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDB19C0D26B3FB22009C49ED /* Build configuration list for PBXProject "MODemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19C3A26B3FB24009C49ED /* Debug */,
+				FDB19C3B26B3FB24009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB19C3C26B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19C3D26B3FB24009C49ED /* Debug */,
+				FDB19C3E26B3FB24009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB19C3F26B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemoSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19C4026B3FB24009C49ED /* Debug */,
+				FDB19C4126B3FB24009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB19C4226B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemoSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19C4326B3FB24009C49ED /* Debug */,
+				FDB19C4426B3FB24009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDB19C0A26B3FB22009C49ED /* Project object */;
+}
