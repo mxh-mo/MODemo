@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:01.&#x6570;&#x636e;&#x7c7b;&#x578b;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:02.&#x8fd0;&#x7b97;&#x7b26;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:03.&#x5b57;&#x7b26;&#x4e32;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:04.&#x6570;&#x7ec4;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:05.&#x5b57;&#x5178;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:06.&#x5143;&#x7ec4;Tuples.playground">
+   </FileRef>
+   <FileRef
+      location = "group:07.&#x51fd;&#x6570;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:08.&#x95ed;&#x5305;Closures.playground">
+   </FileRef>
+   <FileRef
+      location = "group:09.&#x679a;&#x4e3e;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:10.&#x7ed3;&#x6784;&#x4f53;&#x548c;&#x7c7b;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:11.&#x4e0b;&#x6807;&#x811a;&#x672c;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:12.&#x53ef;&#x9009;&#x94fe;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:13.&#x5f31;&#x5f15;&#x7528;&#x548c;&#x65e0;&#x4e3b;&#x5f15;&#x7528;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:14.&#x7c7b;&#x578b;&#x8f6c;&#x6362;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:15.&#x6269;&#x5c55;extension.playground">
+   </FileRef>
+   <FileRef
+      location = "group:16.&#x534f;&#x8bae;Protocol.playground">
+   </FileRef>
+   <FileRef
+      location = "group:17.&#x6cdb;&#x578b;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:18.&#x8bbf;&#x95ee;&#x63a7;&#x5236;.playground">
+   </FileRef>
+   <FileRef
+      location = "group:19.Error.playground">
+   </FileRef>
+</Workspace>
