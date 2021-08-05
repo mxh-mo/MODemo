@@ -42,6 +42,7 @@
 		FDB19C7526B3FC06009C49ED /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FDB19C7426B3FC06009C49ED /* index.html */; };
 		FDB19C7726B4079F009C49ED /* MOTestsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */; };
 		FDB19C7926B407BE009C49ED /* MOUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C7826B407BE009C49ED /* MOUnitTests.swift */; };
+		FDB19CCC26B8E25C009C49ED /* MOScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		FDB19C7426B3FC06009C49ED /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerUITests.swift; sourceTree = "<group>"; };
 		FDB19C7826B407BE009C49ED /* MOUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOUnitTests.swift; sourceTree = "<group>"; };
+		FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				FDB19C5626B3FB65009C49ED /* MOPopViewController.swift */,
 				FDB19C5926B3FB65009C49ED /* MOApplePayViewController.swift */,
 				FDB19C4626B3FB65009C49ED /* MOTouchIDViewController.swift */,
+				FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */,
 				FDB19C5A26B3FB65009C49ED /* MOTests */,
 				FDB19C1B26B3FB22009C49ED /* Main.storyboard */,
 				FDB19C1E26B3FB23009C49ED /* Assets.xcassets */,
@@ -498,6 +501,7 @@
 				FDB19C6C26B3FB66009C49ED /* MOPopViewController.swift in Sources */,
 				FDB19C6D26B3FB66009C49ED /* MOShareDocumentViewController.swift in Sources */,
 				FDB19C6726B3FB66009C49ED /* MOAuthorizationManager.swift in Sources */,
+				FDB19CCC26B8E25C009C49ED /* MOScannerViewController.swift in Sources */,
 				FDB19C6A26B3FB66009C49ED /* MOQRScanViewController.swift in Sources */,
 				FDB19C6126B3FB66009C49ED /* MOFirstViewController.swift in Sources */,
 				FDB19C6526B3FB66009C49ED /* MOCalendarViewController.swift in Sources */,
@@ -688,6 +692,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U955R2H5Y2;
 				INFOPLIST_FILE = MODemoSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -708,6 +713,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U955R2H5Y2;
 				INFOPLIST_FILE = MODemoSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
