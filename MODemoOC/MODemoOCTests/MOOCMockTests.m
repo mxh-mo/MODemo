@@ -13,11 +13,11 @@
 #import "MOPerson+Tests.h"
 #import "MOTitleLineView.h"
 
-@interface MODemoOCMockTests : XCTestCase
+@interface MOOCMockTests : XCTestCase
 
 @end
 
-@implementation MODemoOCMockTests
+@implementation MOOCMockTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
