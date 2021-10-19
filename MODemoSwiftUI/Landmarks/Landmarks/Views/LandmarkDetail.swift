@@ -1,32 +1,35 @@
 //
-//  ContentView.swift
+//  LandmarkDetail.swift
 //  Landmarks
 //
-//  Created by MikiMo on 2021/10/16.
+//  Created by MikiMo on 2021/10/19.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetail: View {
+    var landmark: Landmark
+    
     var body: some View {
-        VStack {
-            MapView()
+        ScrollView {
+            MapView(coordinate: landmark.locationCoordinate)    /// 经纬度
                 .ignoresSafeArea(edges: .top)   // 忽略top安全范围
                 .frame(height: 300)
             
-            CircleImage()
+            CircleImage(image: landmark.image)  /// 图片
                 .offset(y: -130)    // 图片偏移
                 .padding(.bottom, -130)     // 下边距减少
                 
             
             VStack(alignment: .leading) { // 左对齐
-                Text("Turtle Rock")
+                Text(landmark.name) /// 地名
                     .font(.title)
+                
                 HStack {
-                    Text("Joshua Tree Notional Park")
+                    Text(landmark.park) /// 公园
                         .font(.subheadline)
                     Spacer()    // 撑开空闲区域
-                    Text("California")
+                    Text(landmark.state)    /// 州
                         .font(.subheadline)
                 }
                 .font(.subheadline)
@@ -34,20 +37,22 @@ struct ContentView: View {
                 
                 Divider()   // 间距
                 
-                Text("About Turtle Rock")
+                Text("About \(landmark.name)")
                     .font(.title2)
-                Text("Descriptive text goes here.")
+                Text(landmark.description) /// 描述
                 
             }
             .padding() // 内边距
             
             Spacer()
         }
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline) // .inline 小标题 .large 大标题(上滑动会变成小标题)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetail(landmark: landmarks[0])
     }
 }
