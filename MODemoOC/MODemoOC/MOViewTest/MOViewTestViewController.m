@@ -9,6 +9,7 @@
 
 #import "MOViewTestViewController.h"
 #import "MOTitleLineView.h"
+#import "MOFollowLightView.h"
 
 @interface MOViewTestViewController () <MOTitleLineViewDelegate>
 
@@ -27,6 +28,20 @@
     [self labelCompressionResistance];
     // segment view
     [self titleAndLineView];
+    // 追光动效
+    [self followLightView];
+}
+
+#pragma mark - 追光动效
+
+- (void)followLightView {
+    CGRect imageFrame = CGRectMake(20, 220, 300, 188);
+    CGFloat borderWidth = 10.0;
+    MOFollowLightView *view = [[MOFollowLightView alloc] initWithFrame:CGRectMake(imageFrame.origin.x - borderWidth,
+                                                                                  imageFrame.origin.y - borderWidth,
+                                                                                  imageFrame.size.width + borderWidth * 2,
+                                                                                  imageFrame.size.height + borderWidth * 2)];
+    [self.view addSubview:view];
 }
 
 #pragma mark - titleAndLineView

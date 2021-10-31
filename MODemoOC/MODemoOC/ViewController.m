@@ -20,23 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    NSString *URL = nil;
-    if (URL.length <= 0) {
-        NSLog(@"为空");
-    } else {
-        NSLog(@"不为空");
-    }
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(orientChange:)
-                                                 name:UIDeviceOrientationDidChangeNotification
-                                               object:nil];
-//    [self setupView];
-}
-
-- (void)orientChange:(NSNotification *)noti {
-    NSLog(@"MOMO");
+    [self setupView];
 }
 
 - (void)setupView { //

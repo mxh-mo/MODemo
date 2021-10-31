@@ -10,6 +10,7 @@
 		21B2464FE01D04F18D0D7CE6 /* Pods_MODemoOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEF1E8B6EC438A1150D4913 /* Pods_MODemoOC.framework */; };
 		57523A46773BCDB72C09B486 /* Pods_MODemoOC_MODemoOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6521AB37E56E743F9BC025E /* Pods_MODemoOC_MODemoOCUITests.framework */; };
 		D940C56C514C42019EC04252 /* Pods_MODemoOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BE74AA1D01FCF9B491BE2E /* Pods_MODemoOCTests.framework */; };
+		FD335D05272E793F00521DBC /* MOFollowLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD335D04272E793F00521DBC /* MOFollowLightView.m */; };
 		FDB19AC226B3DD93009C49ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19AC126B3DD93009C49ED /* AppDelegate.m */; };
 		FDB19AC526B3DD93009C49ED /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19AC426B3DD93009C49ED /* SceneDelegate.m */; };
 		FDB19AC826B3DD93009C49ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB19AC726B3DD93009C49ED /* ViewController.m */; };
@@ -116,6 +117,8 @@
 		A1E2BF376A5EF1B6A58748B9 /* Pods-MODemoOC-MODemoOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoOC-MODemoOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-MODemoOC-MODemoOCUITests/Pods-MODemoOC-MODemoOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6521AB37E56E743F9BC025E /* Pods_MODemoOC_MODemoOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MODemoOC_MODemoOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F198CC957718798C58E175CF /* Pods-MODemoOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoOC.release.xcconfig"; path = "Target Support Files/Pods-MODemoOC/Pods-MODemoOC.release.xcconfig"; sourceTree = "<group>"; };
+		FD335D03272E793F00521DBC /* MOFollowLightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOFollowLightView.h; sourceTree = "<group>"; };
+		FD335D04272E793F00521DBC /* MOFollowLightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOFollowLightView.m; sourceTree = "<group>"; };
 		FDB19ABD26B3DD93009C49ED /* MODemoOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODemoOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB19AC026B3DD93009C49ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FDB19AC126B3DD93009C49ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -530,10 +533,12 @@
 		FDB19B3626B3E233009C49ED /* MOViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				FDB19B3826B3E233009C49ED /* MOTitleLineView.h */,
-				FDB19B3926B3E233009C49ED /* MOTitleLineView.m */,
 				FDB19B3A26B3E233009C49ED /* MOViewTestViewController.h */,
 				FDB19B3726B3E233009C49ED /* MOViewTestViewController.m */,
+				FDB19B3826B3E233009C49ED /* MOTitleLineView.h */,
+				FDB19B3926B3E233009C49ED /* MOTitleLineView.m */,
+				FD335D03272E793F00521DBC /* MOFollowLightView.h */,
+				FD335D04272E793F00521DBC /* MOFollowLightView.m */,
 			);
 			path = MOViewTest;
 			sourceTree = "<group>";
@@ -951,6 +956,7 @@
 				FDB19BB526B3E234009C49ED /* UIViewController+Swizzling.m in Sources */,
 				FDB19BB726B3E234009C49ED /* UILabel+Swizzling.m in Sources */,
 				FDB19B9026B3E234009C49ED /* MOControlCenterViewController.m in Sources */,
+				FD335D05272E793F00521DBC /* MOFollowLightView.m in Sources */,
 				FDB19B8526B3E234009C49ED /* MOProxy.m in Sources */,
 				FDB19AC226B3DD93009C49ED /* AppDelegate.m in Sources */,
 				FDB19BAB26B3E234009C49ED /* MOWaterRippleViewController.m in Sources */,
