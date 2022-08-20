@@ -12,16 +12,15 @@ class MOTableViewController: UITableViewController, MOSubScrollViewProtocol {
     // MARK: - MOSubScrollViewProtocol
     var willBeginDragging: MOSubScrollWillBeginDragging?
     var didScroll: MOSubScrollDidScroll?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    var scrollView: UIScrollView {
+        get {
+            return self.tableView
+        }
     }
     
     // MARK: - UIScrollViewDelegate
 
     override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        super.scrollViewWillBeginDragging(scrollView)
         guard let willBeginDragging = self.willBeginDragging else {
             return
         }
@@ -29,7 +28,6 @@ class MOTableViewController: UITableViewController, MOSubScrollViewProtocol {
     }
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        super.scrollViewDidScroll(scrollView)
         guard let didScroll = self.didScroll else {
             return
         }

@@ -44,6 +44,12 @@
 		FDB19C7726B4079F009C49ED /* MOTestsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */; };
 		FDB19C7926B407BE009C49ED /* MOUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C7826B407BE009C49ED /* MOUnitTests.swift */; };
 		FDB19CCC26B8E25C009C49ED /* MOScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */; };
+		FDD079C228ADC30500078BFA /* MOWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD079BC28ADC30500078BFA /* MOWebViewController.swift */; };
+		FDD079C328ADC30500078BFA /* MONestedScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD079BD28ADC30500078BFA /* MONestedScrollViewController.swift */; };
+		FDD079C428ADC30500078BFA /* MOMultiTabContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD079BE28ADC30500078BFA /* MOMultiTabContainerViewController.swift */; };
+		FDD079C528ADC30500078BFA /* MOTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD079BF28ADC30500078BFA /* MOTableViewController.swift */; };
+		FDD079C628ADC30500078BFA /* MOMultiResponseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD079C028ADC30500078BFA /* MOMultiResponseScrollView.swift */; };
+		FDD084AD28ADE00100078BFA /* MOSubScrollViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD084AC28ADE00100078BFA /* MOSubScrollViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +119,12 @@
 		FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerUITests.swift; sourceTree = "<group>"; };
 		FDB19C7826B407BE009C49ED /* MOUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOUnitTests.swift; sourceTree = "<group>"; };
 		FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOScannerViewController.swift; sourceTree = "<group>"; };
+		FDD079BC28ADC30500078BFA /* MOWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOWebViewController.swift; sourceTree = "<group>"; };
+		FDD079BD28ADC30500078BFA /* MONestedScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MONestedScrollViewController.swift; sourceTree = "<group>"; };
+		FDD079BE28ADC30500078BFA /* MOMultiTabContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOMultiTabContainerViewController.swift; sourceTree = "<group>"; };
+		FDD079BF28ADC30500078BFA /* MOTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOTableViewController.swift; sourceTree = "<group>"; };
+		FDD079C028ADC30500078BFA /* MOMultiResponseScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOMultiResponseScrollView.swift; sourceTree = "<group>"; };
+		FDD084AC28ADE00100078BFA /* MOSubScrollViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOSubScrollViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +216,7 @@
 				FDB19C7326B3FBE7009C49ED /* MOWebView */,
 				FDB19C4C26B3FB65009C49ED /* MOEventKit */,
 				FDB19C5026B3FB65009C49ED /* MOAuthorization */,
+				FDD079BB28ADC2F700078BFA /* MONestedScrollView */,
 				FDB19C5426B3FB65009C49ED /* MOQRScanViewController.swift */,
 				FDB19C5626B3FB65009C49ED /* MOPopViewController.swift */,
 				FDB19C5926B3FB65009C49ED /* MOApplePayViewController.swift */,
@@ -284,6 +297,19 @@
 				FDB19C4526B3FB65009C49ED /* MOWKWebViewController.swift */,
 			);
 			path = MOWebView;
+			sourceTree = "<group>";
+		};
+		FDD079BB28ADC2F700078BFA /* MONestedScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FDD079BD28ADC30500078BFA /* MONestedScrollViewController.swift */,
+				FDD079BE28ADC30500078BFA /* MOMultiTabContainerViewController.swift */,
+				FDD079BF28ADC30500078BFA /* MOTableViewController.swift */,
+				FDD079BC28ADC30500078BFA /* MOWebViewController.swift */,
+				FDD079C028ADC30500078BFA /* MOMultiResponseScrollView.swift */,
+				FDD084AC28ADE00100078BFA /* MOSubScrollViewProtocol.swift */,
+			);
+			path = MONestedScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,10 +517,12 @@
 			files = (
 				FDB19C7226B3FB66009C49ED /* MOArrayDataSource.swift in Sources */,
 				FDB19C6F26B3FB66009C49ED /* MOApplePayViewController.swift in Sources */,
+				FDD079C628ADC30500078BFA /* MOMultiResponseScrollView.swift in Sources */,
 				FDB19C6826B3FB66009C49ED /* MOAuthorizationCamera.swift in Sources */,
 				FDB19C6B26B3FB66009C49ED /* MOViewTestViewController.swift in Sources */,
 				FDB19C6426B3FB66009C49ED /* MOReminderViewController.swift in Sources */,
 				FDB19C5F26B3FB66009C49ED /* MOTouchIDViewController.swift in Sources */,
+				FDD079C328ADC30500078BFA /* MONestedScrollViewController.swift in Sources */,
 				FDB19C1A26B3FB22009C49ED /* ViewController.swift in Sources */,
 				FDB19C6326B3FB66009C49ED /* MOTableViewStyleViewController.swift in Sources */,
 				FDB19C6026B3FB66009C49ED /* MOLocationManager.swift in Sources */,
@@ -506,14 +534,18 @@
 				FDB19C6726B3FB66009C49ED /* MOAuthorizationManager.swift in Sources */,
 				FDB19CCC26B8E25C009C49ED /* MOScannerViewController.swift in Sources */,
 				FDB19C6A26B3FB66009C49ED /* MOQRScanViewController.swift in Sources */,
+				FDD079C428ADC30500078BFA /* MOMultiTabContainerViewController.swift in Sources */,
 				FDB19C6126B3FB66009C49ED /* MOFirstViewController.swift in Sources */,
 				FDB19C6526B3FB66009C49ED /* MOCalendarViewController.swift in Sources */,
+				FDD079C528ADC30500078BFA /* MOTableViewController.swift in Sources */,
 				FDB19C1826B3FB22009C49ED /* SceneDelegate.swift in Sources */,
 				FDB19C6E26B3FB66009C49ED /* MOFileManager.swift in Sources */,
 				FDB19C6226B3FB66009C49ED /* MOMultiDelegateViewController.swift in Sources */,
+				FDD084AD28ADE00100078BFA /* MOSubScrollViewProtocol.swift in Sources */,
 				FDB19C7126B3FB66009C49ED /* MOUITestsViewController.swift in Sources */,
 				FDB19C7026B3FB66009C49ED /* MOPerson.swift in Sources */,
 				FDB19C6626B3FB66009C49ED /* MOAlgorithm.swift in Sources */,
+				FDD079C228ADC30500078BFA /* MOWebViewController.swift in Sources */,
 				FDA55CCF26BCDED700F00633 /* MOExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

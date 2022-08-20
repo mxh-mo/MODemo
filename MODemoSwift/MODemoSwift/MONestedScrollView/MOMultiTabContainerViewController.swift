@@ -7,9 +7,12 @@
 
 import UIKit
 
+typealias MOSubScrollDidChange = (UIScrollView) -> ()
+
 class MOMultiTabContainerViewController: UIViewController, MOSubScrollViewProtocol {
-    
+        
     // MARK: - MOSubScrollViewProtocol
+    
     var willBeginDragging: MOSubScrollWillBeginDragging? {
         didSet {
             self.tabViewCtl.willBeginDragging = willBeginDragging
@@ -22,12 +25,9 @@ class MOMultiTabContainerViewController: UIViewController, MOSubScrollViewProtoc
             self.webViewCtl.didScroll = didScroll
         }
     }
-    
-    // MARK: - Initail Methods
+    var subScrollDidChange: MOSubScrollDidChange?
 
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    // MARK: - Initail Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,12 +65,20 @@ class MOMultiTabContainerViewController: UIViewController, MOSubScrollViewProtoc
 
     @objc func didSelectedSegement() {
         let index = self.segmentControl.selectedSegmentIndex
+        let currentScrollView: UIScrollView
         
         if (index == 0) {
             self.scrollView.contentOffset = CGPoint(x: 0.0, y: self.scrollView.contentOffset.y)
+            currentScrollView = self.tabViewCtl.scrollView
         } else {
             self.scrollView.contentOffset = CGPoint(x: self.tabViewCtl.view.frame.width, y: self.scrollView.contentOffset.y)
+            currentScrollView = self.webViewCtl.scrollView
         }
+        
+        guard let subScrollDidChange = subScrollDidChange else {
+            return
+        }
+        subScrollDidChange(currentScrollView)
     }
     
     // MARK: - Getter Methods

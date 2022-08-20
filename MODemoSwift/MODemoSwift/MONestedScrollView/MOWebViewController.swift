@@ -13,10 +13,16 @@ class MOWebViewController: UIViewController, MOSubScrollViewProtocol {
     // MARK: - MOSubScrollViewProtocol
     var willBeginDragging: MOSubScrollWillBeginDragging?
     var didScroll: MOSubScrollDidScroll?
+    var scrollView: UIScrollView {
+        get {
+            return self.webView.scrollView
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.webView.scrollView.bounces = false // 需要兼容
         self.view.addSubview(self.webView)
         
         let request = URLRequest(url: URL(string: "https://www.baidu.com")!)

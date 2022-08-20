@@ -15,12 +15,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationController?.pushViewController(MONestedScrollViewController(), animated: true)
         setupView()
 //        test()
     }
     
     private func setupView() {
         let section0 = [
+            MOCellModel("NestedScrollView", "MONestedScrollViewController"),
             MOCellModel("View Test", "MOViewTestViewController"),
             MOCellModel("UITests", "MOUITestsViewController"),
             MOCellModel("TableViewStyle", "MOTableViewStyleViewController"),
