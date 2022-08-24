@@ -8,7 +8,8 @@
 
 import Foundation
 
-// MARK: 链表
+// MARK: - 链表
+
 public class ListNode {
     public var val: Int
     public var next: ListNode?
@@ -18,7 +19,8 @@ public class ListNode {
     }
 }
 
-// MARK: 二叉树
+// MARK: - 二叉树
+
 public class TreeNode {
     public var val: Int
     public var left: TreeNode?
@@ -37,7 +39,9 @@ func test() {
 }
 
 var coinArray: [Int] = []
+
 // MARK: - 最少硬币数
+
 func leastCoin(_ n: Int) -> Int {
     // 给定一个数额，计算由1、7、9面值的硬币组成的，最少硬币数是几个
     if n <= 0 {
@@ -46,6 +50,7 @@ func leastCoin(_ n: Int) -> Int {
     coinArray = [Int](repeating: 0, count: n)
     return lestCoinFor(n)
 }
+
 func lestCoinFor(_ n: Int) -> Int {
     if n <= 0 {
         return 0
@@ -73,6 +78,7 @@ func lestCoinFor(_ n: Int) -> Int {
 }
 
 // MARK: - m*n矩阵路径总数
+
 func totalRoad(_ n: Int, _ m: Int) -> Int {
     if n <= 0 || m <= 0 {
         return 0
@@ -83,7 +89,8 @@ func totalRoad(_ n: Int, _ m: Int) -> Int {
     return totalRoad(n - 1, m) + totalRoad(n, m - 1)
 }
 
-// MARK: 盛水最多的容器
+// MARK: - 盛水最多的容器
+
 func maxArea(_ height: [Int]) -> Int {
     if height.count <= 1 {
         return 0
@@ -107,7 +114,8 @@ func maxArea(_ height: [Int]) -> Int {
     return maxArea
 }
 
-// MARK: 买卖股票最佳时机
+// MARK: - 买卖股票最佳时机
+
 func maxProfit(_ prices: [Int]) -> Int {
     if prices.isEmpty {
         return 0
@@ -127,7 +135,8 @@ func maxProfit(_ prices: [Int]) -> Int {
     return maxProfit
 }
 
-// MARK: 二叉树前序遍历(非递归)
+// MARK: -  二叉树前序遍历(非递归)
+
 func preOrder(_ root: TreeNode?) {
     var current: TreeNode? = root
     var stack: [TreeNode] = []
@@ -143,7 +152,8 @@ func preOrder(_ root: TreeNode?) {
         }
     }
 }
-// MARK: 二叉树中序遍历(非递归)
+// MARK: - 二叉树中序遍历(非递归)
+
 func inOrder(_ root: TreeNode?) {
     var current: TreeNode? = root
     var stack: [TreeNode] = []
@@ -158,7 +168,9 @@ func inOrder(_ root: TreeNode?) {
         }
     }
 }
-// MARK: 二叉树后序遍历(非递归)
+
+// MARK: - 二叉树后序遍历(非递归)
+
 func postOrder(_ root: TreeNode?) {
     var stack: [TreeNode] = []
     var current: TreeNode? = root
@@ -182,14 +194,15 @@ func postOrder(_ root: TreeNode?) {
     }
 }
 
-// MARK: 最长子串 长度
-func lengthOfLongestSubstring(_ s: String) -> Int {
-    if s.isEmpty {
+// MARK: - 最长子串 长度
+
+func lengthOfLongestSubstring(_ string: String) -> Int {
+    if string.isEmpty {
         return 0
     }
     var maxStr = String()
     var curStr = String()
-    for char in s {
+    for char in string {
         while curStr.contains(char) {
             curStr.remove(at: curStr.startIndex)
         }
@@ -201,29 +214,33 @@ func lengthOfLongestSubstring(_ s: String) -> Int {
     return maxStr.count
 }
 
-// MARK: 回文串
+// MARK: - 回文串
+
 func isPalindrome(_ head: ListNode?) -> Bool {
     if head == nil {
         return true
     }
     let midNode: ListNode? = findMidNode(head)
     let lastHalfHead: ListNode? = reversedLink(midNode?.next) ?? nil
-    var link1: ListNode? = head
-    var link2: ListNode? = lastHalfHead
     
-    var res: Bool = true
-    while res && link2 != nil {
-        if link1?.val == link2?.val {
-            link1 = link1?.next
-            link2 = link2?.next
+    var forward: ListNode? = head   // 正序链表
+    var back: ListNode? = lastHalfHead  // 逆序链表
+    
+    var result: Bool = true
+    while result && back != nil {
+        if forward?.val == back?.val {
+            forward = forward?.next
+            back = back?.next
         } else {
-            res = false
+            result = false
+            break
         }
     }
-    return res
+    return result
 }
 
-// MARK: 快慢指针找中间结点
+// MARK: - 快慢指针找中间结点
+
 func findMidNode(_ head: ListNode?) -> ListNode? {
     var slow: ListNode? = head
     var fast: ListNode? = head
@@ -234,7 +251,8 @@ func findMidNode(_ head: ListNode?) -> ListNode? {
     return slow
 }
 
-// MARK: 反转链表
+// MARK: - 反转链表
+
 func reversedLink(_ head: ListNode?) -> ListNode? {
     var cur: ListNode? = head
     var pre: ListNode? = nil
@@ -247,21 +265,23 @@ func reversedLink(_ head: ListNode?) -> ListNode? {
     return pre
 }
 
+// MARK: - Helper Methods
+
 fileprivate func creatList(_ nums: [Int]) -> ListNode? {
     if nums.isEmpty {
         return nil
     }
+    var result: ListNode? = nil
     var current: ListNode? = nil
-    var res: ListNode? = nil
     for value in nums {
         if current == nil {
             current = ListNode(value)
-            res = current
+            result = current
         } else {
             current?.next = ListNode(value)
             current = current?.next
         }
     }
-    return res
+    return result
 }
 
