@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         let section0 = [
             MOCellModel("View Test", "MOViewTestViewController"),
             MOCellModel("UITests", "MOUITestsViewController"),
+            MOCellModel("Responder chain", "MOResponderChainViewController"),
             MOCellModel("TableViewStyle", "MOTableViewStyleViewController"),
             MOCellModel("ShareDocument", "MOShareDocumentViewController"),
             MOCellModel("MultiDelegate", "MOMultiDelegateViewController"),

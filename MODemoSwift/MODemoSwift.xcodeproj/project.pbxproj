@@ -10,6 +10,7 @@
 		11413983D7272D865AB695C3 /* Pods_MODemoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6064CDFF2F78E01F5AAC9F /* Pods_MODemoSwiftTests.framework */; };
 		4C662755A0DCC33C0DCE62C5 /* Pods_MODemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9794A26E5DAA8EA3E8204CF /* Pods_MODemoSwift.framework */; };
 		7E39CACF1702F3B736938004 /* Pods_MODemoSwift_MODemoSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4ECFA3E751DBF7A7311F27 /* Pods_MODemoSwift_MODemoSwiftUITests.framework */; };
+		FD2E57CB28FA54CA005F4C8E /* MOResponderChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */; };
 		FDA55CCF26BCDED700F00633 /* MOExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA55CCE26BCDED700F00633 /* MOExtensions.swift */; };
 		FDB19C1626B3FB22009C49ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1526B3FB22009C49ED /* AppDelegate.swift */; };
 		FDB19C1826B3FB22009C49ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1726B3FB22009C49ED /* SceneDelegate.swift */; };
@@ -73,6 +74,7 @@
 		AB2739E5B15905186A88D3AD /* Pods-MODemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoSwift.debug.xcconfig"; path = "Target Support Files/Pods-MODemoSwift/Pods-MODemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		AD0FB419EB39483834A9B8BA /* Pods-MODemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoSwift.release.xcconfig"; path = "Target Support Files/Pods-MODemoSwift/Pods-MODemoSwift.release.xcconfig"; sourceTree = "<group>"; };
 		F70E474EA380440DD78D3C87 /* Pods-MODemoSwift-MODemoSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoSwift-MODemoSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-MODemoSwift-MODemoSwiftUITests/Pods-MODemoSwift-MODemoSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOResponderChainViewController.swift; sourceTree = "<group>"; };
 		FDA55CCE26BCDED700F00633 /* MOExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOExtensions.swift; sourceTree = "<group>"; };
 		FDB19C1226B3FB22009C49ED /* MODemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB19C1526B3FB22009C49ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				FDB19C4F26B3FB65009C49ED /* MOAlgorithm.swift */,
 				FDB19C5826B3FB65009C49ED /* MOFileManager.swift */,
 				FDB19C5526B3FB65009C49ED /* MOViewTestViewController.swift */,
+				FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */,
 				FDB19C4B26B3FB65009C49ED /* MOTableViewStyleViewController.swift */,
 				FDB19C5726B3FB65009C49ED /* MOShareDocumentViewController.swift */,
 				FDB19C4726B3FB65009C49ED /* MOMultiDelegate */,
@@ -490,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB19C7226B3FB66009C49ED /* MOArrayDataSource.swift in Sources */,
+				FD2E57CB28FA54CA005F4C8E /* MOResponderChainViewController.swift in Sources */,
 				FDB19C6F26B3FB66009C49ED /* MOApplePayViewController.swift in Sources */,
 				FDB19C6826B3FB66009C49ED /* MOAuthorizationCamera.swift in Sources */,
 				FDB19C6B26B3FB66009C49ED /* MOViewTestViewController.swift in Sources */,
