@@ -9,7 +9,7 @@ import UIKit
 
 class MOMultiDelegateViewController: UIViewController {
     
-    private let first: MOFirstViewController = MOFirstViewController()
+    private let first: MOOneViewController = MOOneViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()

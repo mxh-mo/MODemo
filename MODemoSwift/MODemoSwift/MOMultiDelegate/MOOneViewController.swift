@@ -1,5 +1,5 @@
 //
-//  MOFirstViewController.swift
+//  MOOneViewController.swift
 //  09_MultiDelegate_Swift
 //
 //  Created by MikiMo on 2019/9/4.
@@ -8,15 +8,15 @@
 
 import UIKit
 
-class MOFirstViewController: UIViewController {
+class MOOneViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
 
-extension MOFirstViewController: MOLocationManagerDelegate {
+extension MOOneViewController: MOLocationManagerDelegate {
     func locationUpdate(_ locs: [String]) {
-        print("MOFirstViewController: \(locs)")
+        print("MOOneViewController: \(locs)")
     }
 }

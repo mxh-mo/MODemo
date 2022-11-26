@@ -7,7 +7,9 @@
 
 import Foundation
 
-
+func moPrint(_ target: NSObject, _ line: Int, _ params: Any) {
+    print("\(Date()): <\(type(of: target)), \(String(format: "%p", target))> \(line): \(params)")
+}
 
 extension String {
     // 参考： https://juejin.cn/post/6856418701584007176
