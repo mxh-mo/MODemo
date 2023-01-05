@@ -3,6 +3,7 @@
 //  MODemoSwift
 //
 //  Created by mikimo on 2023/1/4.
+//  Copyright © 2020 moxiaoyan. All rights reserved.
 //
 //  算法：树相关
 
@@ -22,6 +23,35 @@ public class TreeNode {
         self.isFirst = false
     }
 }
+
+// MARK: - Helper Methods
+var creatIndex = 0
+fileprivate func creatTree(_ nums: [Int]) -> TreeNode? {
+    let root = TreeNode(0)
+    if creatIndex >= nums.count {
+        return nil
+    }
+    let value = nums[creatIndex]
+    if value == 0 {
+        return nil
+    }
+    let node = TreeNode(value)
+    node.left = creatTree(nums)
+    node.right = creatTree(nums)
+    return node
+}
+//
+//fileprivate func printTree(_ list: TreeNode?) {
+//}
+
+func treeTest() {
+    
+}
+
+// MARK: - 合并二叉树
+
+//func mergeTrees(_ root1: TreeNode?, _ root2: TreeNode?) -> TreeNode? {
+//}
 
 // MARK: -  二叉树前序遍历(非递归)
 
