@@ -9,6 +9,7 @@ target 'MODemoSwift' do
 
   target 'MODemoSwiftTests' do
     inherit! :search_paths
+    pod 'OCMock', '~> 3.8.1'
     # Pods for testing
   end
 

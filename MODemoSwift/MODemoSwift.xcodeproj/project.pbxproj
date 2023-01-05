@@ -12,6 +12,7 @@
 		7E39CACF1702F3B736938004 /* Pods_MODemoSwift_MODemoSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4ECFA3E751DBF7A7311F27 /* Pods_MODemoSwift_MODemoSwiftUITests.framework */; };
 		FD2E57CB28FA54CA005F4C8E /* MOResponderChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */; };
 		FD41FA732966513E00716136 /* MOAlgorithmStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD41FA722966513E00716136 /* MOAlgorithmStrings.swift */; };
+		FD41FA76296783C900716136 /* MOMarsRoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD41FA75296783C800716136 /* MOMarsRoverTests.m */; };
 		FD47CB14296549E100F3AF0A /* MOAlgorithmLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB13296549E100F3AF0A /* MOAlgorithmLists.swift */; };
 		FD47CB1729654D2700F3AF0A /* MOAligorithmTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB1629654D2700F3AF0A /* MOAligorithmTrees.swift */; };
 		FDA55CCF26BCDED700F00633 /* MOExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA55CCE26BCDED700F00633 /* MOExtensions.swift */; };
@@ -84,6 +85,8 @@
 		F70E474EA380440DD78D3C87 /* Pods-MODemoSwift-MODemoSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoSwift-MODemoSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-MODemoSwift-MODemoSwiftUITests/Pods-MODemoSwift-MODemoSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOResponderChainViewController.swift; sourceTree = "<group>"; };
 		FD41FA722966513E00716136 /* MOAlgorithmStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOAlgorithmStrings.swift; sourceTree = "<group>"; };
+		FD41FA74296783C800716136 /* MODemoSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MODemoSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD41FA75296783C800716136 /* MOMarsRoverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOMarsRoverTests.m; path = ../../MODemoOC/MODemoOCTests/MOMarsRoverTests.m; sourceTree = "<group>"; };
 		FD47CB13296549E100F3AF0A /* MOAlgorithmLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAlgorithmLists.swift; sourceTree = "<group>"; };
 		FD47CB1629654D2700F3AF0A /* MOAligorithmTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOAligorithmTrees.swift; sourceTree = "<group>"; };
 		FDA55CCE26BCDED700F00633 /* MOExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOExtensions.swift; sourceTree = "<group>"; };
@@ -253,9 +256,11 @@
 		FDB19C2B26B3FB24009C49ED /* MODemoSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				FD41FA75296783C800716136 /* MOMarsRoverTests.m */,
 				FDB19C2C26B3FB24009C49ED /* MODemoSwiftTests.swift */,
 				FDB19C7826B407BE009C49ED /* MOUnitTests.swift */,
 				FDB19C2E26B3FB24009C49ED /* Info.plist */,
+				FD41FA74296783C800716136 /* MODemoSwiftTests-Bridging-Header.h */,
 			);
 			path = MODemoSwiftTests;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 					};
 					FDB19C2726B3FB24009C49ED = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1400;
 						TestTargetID = FDB19C1126B3FB22009C49ED;
 					};
 					FDB19C3226B3FB24009C49ED = {
@@ -576,6 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD41FA76296783C900716136 /* MOMarsRoverTests.m in Sources */,
 				FDB19C2D26B3FB24009C49ED /* MODemoSwiftTests.swift in Sources */,
 				FDB19C7926B407BE009C49ED /* MOUnitTests.swift in Sources */,
 			);
@@ -789,6 +796,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U955R2H5Y2;
 				INFOPLIST_FILE = MODemoSwiftTests/Info.plist;
@@ -800,6 +808,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MODemoSwiftTests/MODemoSwiftTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MODemoSwift.app/MODemoSwift";
@@ -812,6 +822,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U955R2H5Y2;
 				INFOPLIST_FILE = MODemoSwiftTests/Info.plist;
@@ -823,6 +834,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MODemoSwiftTests/MODemoSwiftTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MODemoSwift.app/MODemoSwift";
