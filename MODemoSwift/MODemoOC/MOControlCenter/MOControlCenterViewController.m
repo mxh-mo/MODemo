@@ -20,7 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     //  UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     //  btn.backgroundColor = [UIColor redColor];
     //  btn.frame = CGRectMake(100, 100, 100, 50);

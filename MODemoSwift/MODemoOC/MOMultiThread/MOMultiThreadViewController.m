@@ -17,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     // GCD：C，生命周期：自动管理
     // 优点：线程安全；跟block结合，代码简洁；更接近底层，高效；
     // 缺点：基于C实现

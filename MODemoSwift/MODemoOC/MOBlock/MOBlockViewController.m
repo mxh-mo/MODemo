@@ -39,7 +39,6 @@ int globalCount = 0; // 全局变量
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     // Block的三种类型
     //  [self blockType];
     

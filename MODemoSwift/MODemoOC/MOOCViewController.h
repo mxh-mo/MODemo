@@ -5,9 +5,9 @@
 //  Created by MikiMo on 2021/7/30.
 //
 
-#import <UIKit/UIKit.h>
+#import "MOBaseViewController.h"
 
-@interface MOOCViewController : UIViewController
+@interface MOOCViewController : MOBaseViewController
 
 
 @end

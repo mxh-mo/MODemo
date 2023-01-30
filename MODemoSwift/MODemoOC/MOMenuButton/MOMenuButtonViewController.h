@@ -5,11 +5,11 @@
 //  Created by MikiMo on 2020/12/18.
 //
 
-#import <UIKit/UIKit.h>
+#import "MOBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MOMenuButtonViewController : UIViewController
+@interface MOMenuButtonViewController : MOBaseViewController
 
 @end
 

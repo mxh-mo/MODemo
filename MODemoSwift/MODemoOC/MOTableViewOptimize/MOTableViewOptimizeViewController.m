@@ -15,7 +15,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     // 提前计算并缓存好高度
     // 滑动时按需加载, 防止卡顿 配合SDWebImage https://github.com/johnil/VVeboTableViewDemo
     //  dispatch_async(DISPATCH_QUEUE_PRIORITY_DEFAULT, ^{
