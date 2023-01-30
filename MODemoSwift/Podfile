@@ -6,10 +6,12 @@ target 'MODemoSwift' do
   use_frameworks!
 
   # Pods for MODemoSwift
+  pod 'Masonry'
 
   target 'MODemoSwiftTests' do
     inherit! :search_paths
     pod 'OCMock', '~> 3.8.1'
+    pod 'OCHamcrest', '~> 8.0'
     # Pods for testing
   end
 

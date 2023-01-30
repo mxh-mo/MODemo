@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     private func setupView() {
         let section0 = [
+            MOCellModel("OC Demo", "MOOCViewController"),
             MOCellModel("View Test", "MOViewTestViewController"),
             MOCellModel("UITests", "MOUITestsViewController"),
             MOCellModel("Custom Transition Animation", "MOFirstViewController"),

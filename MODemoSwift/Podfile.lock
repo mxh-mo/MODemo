@@ -1,3 +1,24 @@
-PODFILE CHECKSUM: 8e9685849cea7b3bd314bc4fe87f9f7b75fe36f7
+PODS:
+  - Masonry (1.1.0)
+  - OCHamcrest (8.0.0)
+  - OCMock (3.8.1)
 
-COCOAPODS: 1.11.3
+DEPENDENCIES:
+  - Masonry
+  - OCHamcrest (~> 8.0)
+  - OCMock (~> 3.8.1)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - OCHamcrest
+    - OCMock
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  OCHamcrest: a613690381f1dac7637c18962c10dbe8feca4bb5
+  OCMock: 29f6e52085b4e7d9b075cbf03ed7c3112f82f934
+
+PODFILE CHECKSUM: e6d7c35c8ef09b6a24a575d22ff4d8c708fdf847
+
+COCOAPODS: 1.11.2

@@ -6,7 +6,7 @@
 //
 
 #import "MOMenuButtonViewController.h"
-#import "MODemoOC-Swift.h"
+#import "MODemoSwift-Swift.h"
 #define kImgNamed(str) [UIImage imageNamed:str]
 
 @interface MOMenuButtonViewController () <KYButtonDelegate>

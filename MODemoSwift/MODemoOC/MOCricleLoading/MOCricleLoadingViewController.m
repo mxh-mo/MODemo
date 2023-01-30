@@ -7,7 +7,7 @@
 
 #import "MOCricleLoadingViewController.h"
 #import "MOCircleLoadingView.h"
-#import "MODemoOC-Swift.h"
+#import "MODemoSwift-Swift.h"
 
 @interface MOCricleLoadingViewController ()
 

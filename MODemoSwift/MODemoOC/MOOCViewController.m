@@ -1,22 +1,22 @@
 //
-//  ViewController.m
+//  MOOCViewController.m
 //  MODemoOC
 //
 //  Created by MikiMo on 2020/12/18.
 //
 
-#import "ViewController.h"
+#import "MOOCViewController.h"
 #import "MOArrayDataSource.h"
 #import "MOPerson.h"
 
-@interface ViewController () <UITableViewDelegate>
+@interface MOOCViewController () <UITableViewDelegate>
 
 @property (nonatomic, strong) MOArrayDataSource *dataSource;
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
 
-@implementation ViewController
+@implementation MOOCViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

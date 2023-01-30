@@ -61,6 +61,9 @@ class MOArrayDataSource: NSObject, UITableViewDataSource {
     
     // MARK: - 根据String生成ViewController
     func classFromString(_ className: String) -> UIViewController? {
+        if className == "MOOCViewController" {
+            return MOOCViewController()
+        }
         // 项目名称不能包含: 数字 - or 其他一些特殊符号, 否则转换不了
         guard let appName = Bundle.main.infoDictionary!["CFBundleName"] as? String else {
             print("未获取到命名空间")

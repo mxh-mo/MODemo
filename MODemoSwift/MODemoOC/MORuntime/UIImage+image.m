@@ -19,11 +19,11 @@
     // method_exchangedImplementations 交换两个方法的地址
     
     // 1、获取系统方法
-    Method imageNamedMethod = class_getClassMethod(self, @selector(imageNamed:));
-    // 2、获取自定义的方法
-    Method in_imageNamedMethod = class_getClassMethod(self, @selector(in_imageNamed:));
-    // 3、交换方法地址
-    method_exchangeImplementations(imageNamedMethod, in_imageNamedMethod);
+//    Method imageNamedMethod = class_getClassMethod(self, @selector(imageNamed:));
+//    // 2、获取自定义的方法
+//    Method in_imageNamedMethod = class_getClassMethod(self, @selector(in_imageNamed:));
+//    // 3、交换方法地址
+//    method_exchangeImplementations(imageNamedMethod, in_imageNamedMethod);
 }
 
 + (UIImage *)in_imageNamed:(NSString *)name {
