@@ -12,7 +12,6 @@ import Foundation
 
 var coinArray: [Int] = []
 func leastCoin(_ n: Int) -> Int {
-    // 给定一个数额，计算由1、7、9面值的硬币组成的，最少硬币数是几个
     if n <= 0 {
         return 0
     }

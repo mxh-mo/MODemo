@@ -8,6 +8,7 @@
 #import "MOOCViewController.h"
 #import "MOArrayDataSource.h"
 #import "MOPerson.h"
+#include "MOAlorithm.h"
 
 @interface MOOCViewController () <UITableViewDelegate>
 
@@ -21,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
+    
+    runAlorithm();
 }
 
 - (void)setupView { //
