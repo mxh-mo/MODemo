@@ -87,6 +87,7 @@
 		FD47CB1729654D2700F3AF0A /* MOAligorithmTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB1629654D2700F3AF0A /* MOAligorithmTrees.swift */; };
 		FD74074129888C34001E4A5E /* MOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD74074029888C34001E4A5E /* MOBaseViewController.m */; };
 		FD74074529888EF8001E4A5E /* MOAlorithm.c in Sources */ = {isa = PBXBuildFile; fileRef = FD74074429888EF8001E4A5E /* MOAlorithm.c */; };
+		FD740748298AAAF6001E4A5E /* MOAlgorithmLists.c in Sources */ = {isa = PBXBuildFile; fileRef = FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */; };
 		FDA55CCF26BCDED700F00633 /* MOExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA55CCE26BCDED700F00633 /* MOExtensions.swift */; };
 		FDB19C1626B3FB22009C49ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1526B3FB22009C49ED /* AppDelegate.swift */; };
 		FDB19C1826B3FB22009C49ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1726B3FB22009C49ED /* SceneDelegate.swift */; };
@@ -291,6 +292,8 @@
 		FD74074029888C34001E4A5E /* MOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBaseViewController.m; sourceTree = "<group>"; };
 		FD74074329888EF8001E4A5E /* MOAlorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAlorithm.h; sourceTree = "<group>"; };
 		FD74074429888EF8001E4A5E /* MOAlorithm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MOAlorithm.c; sourceTree = "<group>"; };
+		FD740746298AAAF6001E4A5E /* MOAlgorithmLists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAlgorithmLists.h; sourceTree = "<group>"; };
+		FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MOAlgorithmLists.c; sourceTree = "<group>"; };
 		FDA55CCE26BCDED700F00633 /* MOExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOExtensions.swift; sourceTree = "<group>"; };
 		FDB19C1226B3FB22009C49ED /* MODemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB19C1526B3FB22009C49ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -721,6 +724,8 @@
 			children = (
 				FD74074329888EF8001E4A5E /* MOAlorithm.h */,
 				FD74074429888EF8001E4A5E /* MOAlorithm.c */,
+				FD740746298AAAF6001E4A5E /* MOAlgorithmLists.h */,
+				FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */,
 			);
 			path = MOAlorithm;
 			sourceTree = "<group>";
@@ -936,7 +941,7 @@
 				CLASSPREFIX = MO;
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
-				ORGANIZATIONNAME = "";
+				ORGANIZATIONNAME = moxiaoyan;
 				TargetAttributes = {
 					FDB19C1126B3FB22009C49ED = {
 						CreatedOnToolsVersion = 12.5;
@@ -1211,6 +1216,7 @@
 				FD40819E298749CA00C83D11 /* MOFollowLightView.m in Sources */,
 				FDB19C6226B3FB66009C49ED /* MOMultiDelegateViewController.swift in Sources */,
 				FD40818F298749CA00C83D11 /* KYButtonDelegate.swift in Sources */,
+				FD740748298AAAF6001E4A5E /* MOAlgorithmLists.c in Sources */,
 				FDB19C7126B3FB66009C49ED /* MOUITestsViewController.swift in Sources */,
 				FDB19C7026B3FB66009C49ED /* MOPerson.swift in Sources */,
 				FD74074529888EF8001E4A5E /* MOAlorithm.c in Sources */,
