@@ -10,6 +10,7 @@
 #import "MOPerson.h"
 #include "MOAlorithm.h"
 #include "MOAlgorithmLists.h"
+#import "MOAlgorithmList.h"
 
 @interface MOOCViewController () <UITableViewDelegate>
 
@@ -24,8 +25,9 @@
     [super viewDidLoad];
     [self setupView];
     
-//    runAlorithm();
-    runAlorithmLists();
+    [MOAlgorithmList run];
+    //    runAlorithm();
+    //    runAlorithmLists();
 }
 
 - (void)setupView { //

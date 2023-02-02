@@ -88,6 +88,7 @@
 		FD74074129888C34001E4A5E /* MOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD74074029888C34001E4A5E /* MOBaseViewController.m */; };
 		FD74074529888EF8001E4A5E /* MOAlorithm.c in Sources */ = {isa = PBXBuildFile; fileRef = FD74074429888EF8001E4A5E /* MOAlorithm.c */; };
 		FD740748298AAAF6001E4A5E /* MOAlgorithmLists.c in Sources */ = {isa = PBXBuildFile; fileRef = FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */; };
+		FD741B25298C7DFF001E4A5E /* MOAlgorithmList.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD741B24298C7DFF001E4A5E /* MOAlgorithmList.mm */; };
 		FDA55CCF26BCDED700F00633 /* MOExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA55CCE26BCDED700F00633 /* MOExtensions.swift */; };
 		FDB19C1626B3FB22009C49ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1526B3FB22009C49ED /* AppDelegate.swift */; };
 		FDB19C1826B3FB22009C49ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1726B3FB22009C49ED /* SceneDelegate.swift */; };
@@ -294,6 +295,9 @@
 		FD74074429888EF8001E4A5E /* MOAlorithm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MOAlorithm.c; sourceTree = "<group>"; };
 		FD740746298AAAF6001E4A5E /* MOAlgorithmLists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAlgorithmLists.h; sourceTree = "<group>"; };
 		FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MOAlgorithmLists.c; sourceTree = "<group>"; };
+		FD741B15298B34B7001E4A5E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FD741B23298C7DFF001E4A5E /* MOAlgorithmList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAlgorithmList.h; sourceTree = "<group>"; };
+		FD741B24298C7DFF001E4A5E /* MOAlgorithmList.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MOAlgorithmList.mm; sourceTree = "<group>"; };
 		FDA55CCE26BCDED700F00633 /* MOExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOExtensions.swift; sourceTree = "<group>"; };
 		FDB19C1226B3FB22009C49ED /* MODemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB19C1526B3FB22009C49ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -384,6 +388,7 @@
 		CC68EDB9B805A61ED5294318 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD741B15298B34B7001E4A5E /* libc++.tbd */,
 				A9794A26E5DAA8EA3E8204CF /* Pods_MODemoSwift.framework */,
 				7E4ECFA3E751DBF7A7311F27 /* Pods_MODemoSwift_MODemoSwiftUITests.framework */,
 				4D6064CDFF2F78E01F5AAC9F /* Pods_MODemoSwiftTests.framework */,
@@ -726,6 +731,8 @@
 				FD74074429888EF8001E4A5E /* MOAlorithm.c */,
 				FD740746298AAAF6001E4A5E /* MOAlgorithmLists.h */,
 				FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */,
+				FD741B23298C7DFF001E4A5E /* MOAlgorithmList.h */,
+				FD741B24298C7DFF001E4A5E /* MOAlgorithmList.mm */,
 			);
 			path = MOAlorithm;
 			sourceTree = "<group>";
@@ -1149,6 +1156,7 @@
 				FDB19C7226B3FB66009C49ED /* MOArrayDataSource.swift in Sources */,
 				FD2E57CB28FA54CA005F4C8E /* MOResponderChainViewController.swift in Sources */,
 				FD408189298749C900C83D11 /* MOBlockViewController.m in Sources */,
+				FD741B25298C7DFF001E4A5E /* MOAlgorithmList.mm in Sources */,
 				FD4081A6298749CA00C83D11 /* MOPlaceholderView.m in Sources */,
 				FD408188298749C900C83D11 /* MOCricleLoadingViewController.m in Sources */,
 				FD41FA732966513E00716136 /* MOAlgorithmStrings.swift in Sources */,
@@ -1417,6 +1425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U955R2H5Y2;
@@ -1441,6 +1450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U955R2H5Y2;
