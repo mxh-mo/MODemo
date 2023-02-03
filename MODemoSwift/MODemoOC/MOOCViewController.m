@@ -25,7 +25,7 @@
     [super viewDidLoad];
     [self setupView];
     
-    [MOAlgorithmList run];
+//    [MOAlgorithmList run];
     //    runAlorithm();
     //    runAlorithmLists();
 }
