@@ -23,9 +23,9 @@
         self.layer.borderColor = [UIColor colorWithRed:244/255.0 green:244/255.0 blue:248/255.0 alpha:1].CGColor;
         self.layer.borderWidth = 5.0f;
         
-        _secondImgV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mo_water_ripple_second"]];
+        _secondImgV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ticpod_water_ripple_back"]];
         _secondImgV.frame = CGRectMake(-self.bounds.size.width, 0, self.bounds.size.width * 2, self.bounds.size.height);
-        _firstImgV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mo_water_ripple_frist"]];
+        _firstImgV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ticpod_water_ripple_front"]];
         _firstImgV.frame = CGRectMake(-self.bounds.size.width, 0, self.bounds.size.width * 2, self.bounds.size.height);
         [self addSubview:_secondImgV];
         [self addSubview:_firstImgV];
