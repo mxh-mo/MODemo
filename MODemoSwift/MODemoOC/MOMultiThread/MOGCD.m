@@ -7,6 +7,7 @@
 //
 
 #import "MOGCD.h"
+#import <pthread/pthread.h>
 
 @implementation MOGCD
 
@@ -71,14 +72,50 @@ static dispatch_queue_t current_file_queue() {
         // 参考2：https://www.jianshu.com/p/a84c2bf0d77b
         // 参考3：https://www.cnblogs.com/yajunLi/p/6274282.html
         
-        [self apply];
+//        [self apply];
         //    [self maxConcurrent]; // 用信号量控制并行线程数量
         
         // 希望异步加载实现同步效果
         //    NSDictionary *dic = [self syncLoadDic2];
         //    NSLog(@"%@", dic);
+
+        // 将函数添加到队列中：
+//        [self asyncF];
+        [self qosTest];
     }
     return self;
+}
+
+- (void)qosTest {
+    // 自定义队列优先级
+    dispatch_queue_attr_t attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_CONCURRENT, QOS_CLASS_UTILITY, -1);
+    //    QOS_CLASS_USER_INTERACTIVE
+    //    QOS_CLASS_USER_INITIATED
+    //    QOS_CLASS_DEFAULT
+    //    QOS_CLASS_UTILITY
+    //    QOS_CLASS_BACKGROUND
+    //    QOS_CLASS_UNSPECIFIED
+    dispatch_queue_t queue1 = dispatch_queue_create("queue1", attr);
+    dispatch_queue_t queue2 = dispatch_queue_create("queue2", DISPATCH_QUEUE_CONCURRENT);
+    // 设置 q2 的优先级 跟 q1 一样
+    dispatch_set_target_queue(queue2, queue1);
+
+//    // 创建有优先级的事件
+//    dispatch_queue_t queue = dispatch_queue_create("momo", DISPATCH_QUEUE_CONCURRENT);
+//    dispatch_block_t block = dispatch_block_create_with_qos_class(0, QOS_CLASS_UTILITY, -8, ^{
+//
+//    });
+//    dispatch_async(queue, block);
+}
+
+- (void)asyncF {
+    int context = 10;
+    dispatch_async_f(dispatch_get_main_queue(), &context, test);
+}
+
+void test(void *context) {
+    int *value = context;
+    NSLog(@"value: %d", *value);
 }
 
 /// 第一种：用信号量 dispatch_semaphore
@@ -540,7 +577,7 @@ static dispatch_queue_t current_file_queue() {
     // 例：处理数组
     NSArray *array = @[@"a", @"b", @"c", @"d"];
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_apply(array.count, queue, ^(size_t index) { // index倒序
+    dispatch_apply(array.count, queue, ^(size_t index) {
         NSLog(@"index:%zu %@", index, array[index]);
     });
     //  dispatch_apply(1, dispatch_get_main_queue(), ^(size_t index) { // 死锁

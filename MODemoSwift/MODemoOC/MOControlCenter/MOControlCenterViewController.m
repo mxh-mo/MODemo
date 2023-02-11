@@ -67,7 +67,6 @@
 - (void)showLockScreenInfo {
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     if (!_commandCenter) {
-        __weak typeof(self) weakSelf = self;
         MPRemoteCommandCenter *commandCenter = [MPRemoteCommandCenter sharedCommandCenter];
         _commandCenter = commandCenter;
         // 远程控制播放
