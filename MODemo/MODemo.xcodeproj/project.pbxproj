@@ -1,0 +1,1606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11413983D7272D865AB695C3 /* Pods_MODemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6064CDFF2F78E01F5AAC9F /* Pods_MODemoTests.framework */; };
+		4C662755A0DCC33C0DCE62C5 /* Pods_MODemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9794A26E5DAA8EA3E8204CF /* Pods_MODemo.framework */; };
+		7E39CACF1702F3B736938004 /* Pods_MODemo_MODemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4ECFA3E751DBF7A7311F27 /* Pods_MODemo_MODemoUITests.framework */; };
+		FD2E57CB28FA54CA005F4C8E /* MOResponderChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */; };
+		FD4080F52987499100C83D11 /* MOOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080F32987499100C83D11 /* MOOCViewController.m */; };
+		FD4080F8298749A700C83D11 /* MOArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080F7298749A700C83D11 /* MOArrayDataSource.m */; };
+		FD408186298749C900C83D11 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FB298749C900C83D11 /* CircleLoadingView.swift */; };
+		FD408187298749C900C83D11 /* MOCircleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FC298749C900C83D11 /* MOCircleLoadingView.m */; };
+		FD408188298749C900C83D11 /* MOCricleLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FD298749C900C83D11 /* MOCricleLoadingViewController.m */; };
+		FD408189298749C900C83D11 /* MOBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408101298749C900C83D11 /* MOBlockViewController.m */; };
+		FD40818A298749C900C83D11 /* MOMenuButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408103298749C900C83D11 /* MOMenuButtonViewController.m */; };
+		FD40818B298749C900C83D11 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD408105298749C900C83D11 /* UIColorExtension.swift */; };
+		FD40818C298749C900C83D11 /* OverLayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD408106298749C900C83D11 /* OverLayView.swift */; };
+		FD40818D298749CA00C83D11 /* KYButtonCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD408107298749C900C83D11 /* KYButtonCells.swift */; };
+		FD40818E298749CA00C83D11 /* ButtonLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD408108298749C900C83D11 /* ButtonLayer.swift */; };
+		FD40818F298749CA00C83D11 /* KYButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD408109298749C900C83D11 /* KYButtonDelegate.swift */; };
+		FD408190298749CA00C83D11 /* KYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD40810A298749C900C83D11 /* KYButton.swift */; };
+		FD408191298749CA00C83D11 /* MMNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40810E298749C900C83D11 /* MMNetworkManager.m */; };
+		FD408192298749CA00C83D11 /* MONativeNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40810F298749C900C83D11 /* MONativeNetworkViewController.m */; };
+		FD408193298749CA00C83D11 /* MMNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408110298749C900C83D11 /* MMNetworkModel.m */; };
+		FD408194298749CA00C83D11 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408111298749C900C83D11 /* NSObject+Extension.m */; };
+		FD408195298749CA00C83D11 /* MODrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408116298749C900C83D11 /* MODrawerViewController.m */; };
+		FD408196298749CA00C83D11 /* MOLeftDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408117298749C900C83D11 /* MOLeftDrawerView.m */; };
+		FD408197298749CA00C83D11 /* MOBottomDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40811B298749C900C83D11 /* MOBottomDrawerView.m */; };
+		FD408198298749CA00C83D11 /* MOGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408120298749C900C83D11 /* MOGCD.m */; };
+		FD408199298749CA00C83D11 /* MOOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408121298749C900C83D11 /* MOOperationQueue.m */; };
+		FD40819A298749CA00C83D11 /* MONSThread.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408122298749C900C83D11 /* MONSThread.m */; };
+		FD40819B298749CA00C83D11 /* MOMultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408124298749C900C83D11 /* MOMultiThreadViewController.m */; };
+		FD40819C298749CA00C83D11 /* MOViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408126298749C900C83D11 /* MOViewTestViewController.m */; };
+		FD40819D298749CA00C83D11 /* MOTitleLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408129298749C900C83D11 /* MOTitleLineView.m */; };
+		FD40819E298749CA00C83D11 /* MOFollowLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40812B298749C900C83D11 /* MOFollowLightView.m */; };
+		FD40819F298749CA00C83D11 /* MOResponderTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40812E298749C900C83D11 /* MOResponderTestView.m */; };
+		FD4081A0298749CA00C83D11 /* MOResponderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408130298749C900C83D11 /* MOResponderViewController.m */; };
+		FD4081A1298749CA00C83D11 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408132298749C900C83D11 /* UIButton+Extension.m */; };
+		FD4081A2298749CA00C83D11 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408136298749C900C83D11 /* UIViewController+Swizzling.m */; };
+		FD4081A3298749CA00C83D11 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40813A298749C900C83D11 /* UIImage+image.m */; };
+		FD4081A4298749CA00C83D11 /* UILabel+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40813C298749C900C83D11 /* UILabel+Swizzling.m */; };
+		FD4081A5298749CA00C83D11 /* UITableView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408141298749C900C83D11 /* UITableView+Placeholder.m */; };
+		FD4081A6298749CA00C83D11 /* MOPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408142298749C900C83D11 /* MOPlaceholderView.m */; };
+		FD4081A7298749CA00C83D11 /* UINavigationItem+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408143298749C900C83D11 /* UINavigationItem+Swizzling.m */; };
+		FD4081A8298749CA00C83D11 /* MORuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408144298749C900C83D11 /* MORuntimeViewController.m */; };
+		FD4081A9298749CA00C83D11 /* UIButton+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408145298749C900C83D11 /* UIButton+Swizzling.m */; };
+		FD4081AA298749CA00C83D11 /* NSObject+property.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408146298749C900C83D11 /* NSObject+property.m */; };
+		FD4081AB298749CA00C83D11 /* NSMutableArray+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408149298749C900C83D11 /* NSMutableArray+Swizzling.m */; };
+		FD4081AC298749CA00C83D11 /* NSObject+arrayContain.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40814B298749C900C83D11 /* NSObject+arrayContain.m */; };
+		FD4081AD298749CA00C83D11 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40814C298749C900C83D11 /* NSObject+Swizzling.m */; };
+		FD4081AE298749CA00C83D11 /* MOImageButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40814F298749C900C83D11 /* MOImageButtonViewController.m */; };
+		FD4081AF298749CA00C83D11 /* GCWebviewJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408153298749C900C83D11 /* GCWebviewJSBridge.m */; };
+		FD4081B0298749CA00C83D11 /* GCWebviewJSBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408155298749C900C83D11 /* GCWebviewJSBridge_JS.m */; };
+		FD4081B1298749CA00C83D11 /* GCWebviewJSBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408156298749C900C83D11 /* GCWebviewJSBridgeBase.m */; };
+		FD4081B2298749CA00C83D11 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FD408158298749C900C83D11 /* index.html */; };
+		FD4081B3298749CA00C83D11 /* MOWebViewJSBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408159298749C900C83D11 /* MOWebViewJSBridgeViewController.m */; };
+		FD4081B4298749CA00C83D11 /* MOWaterRipperView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40815C298749C900C83D11 /* MOWaterRipperView.m */; };
+		FD4081B5298749CA00C83D11 /* MOWaterRippleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40815D298749C900C83D11 /* MOWaterRippleViewController.m */; };
+		FD4081B6298749CA00C83D11 /* MOOCMockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408162298749C900C83D11 /* MOOCMockDemo.m */; };
+		FD4081B7298749CA00C83D11 /* MOPerson+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408163298749C900C83D11 /* MOPerson+Tests.m */; };
+		FD4081B8298749CA00C83D11 /* TDD练习：火星车问题 in Resources */ = {isa = PBXBuildFile; fileRef = FD408164298749C900C83D11 /* TDD练习：火星车问题 */; };
+		FD4081B9298749CA00C83D11 /* MOMarsRover.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408165298749C900C83D11 /* MOMarsRover.m */; };
+		FD4081BA298749CA00C83D11 /* MOLocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408169298749C900C83D11 /* MOLocksViewController.m */; };
+		FD4081BB298749CA00C83D11 /* MOPrivateAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40816C298749C900C83D11 /* MOPrivateAPIViewController.m */; };
+		FD4081BC298749CA00C83D11 /* MOKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40816F298749C900C83D11 /* MOKVCViewController.m */; };
+		FD4081BD298749CA00C83D11 /* MOControlCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408172298749C900C83D11 /* MOControlCenterViewController.m */; };
+		FD4081BE298749CA00C83D11 /* news.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD408173298749C900C83D11 /* news.mp3 */; };
+		FD4081BF298749CA00C83D11 /* MOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408176298749C900C83D11 /* MOPerson.m */; };
+		FD4081C0298749CA00C83D11 /* MOStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408178298749C900C83D11 /* MOStudent.m */; };
+		FD4081C1298749CA00C83D11 /* MOTableViewOptimizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40817B298749C900C83D11 /* MOTableViewOptimizeViewController.m */; };
+		FD4081C2298749CA00C83D11 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40817F298749C900C83D11 /* YYWeakProxy.m */; };
+		FD4081C3298749CA00C83D11 /* NSTimer+MOBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408183298749C900C83D11 /* NSTimer+MOBlock.m */; };
+		FD4081C4298749CA00C83D11 /* MOTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408184298749C900C83D11 /* MOTimerViewController.m */; };
+		FD4081C5298749CA00C83D11 /* MOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408185298749C900C83D11 /* MOProxy.m */; };
+		FD4081D329874C3300C83D11 /* MOMarsRoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4081CA29874A7D00C83D11 /* MOMarsRoverTests.m */; };
+		FD4081D429874C3300C83D11 /* MOOCHamcreatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4081C829874A7D00C83D11 /* MOOCHamcreatTests.m */; };
+		FD4081D529874C3300C83D11 /* MOOCMockDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4081C929874A7D00C83D11 /* MOOCMockDemoTests.m */; };
+		FD4081D629874C3300C83D11 /* MOOCMockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4081C729874A7D00C83D11 /* MOOCMockTests.m */; };
+		FD4081D729874C3300C83D11 /* MODemoOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4081CB29874A7D00C83D11 /* MODemoOCTests.m */; };
+		FD41FA732966513E00716136 /* MOAlgorithmStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD41FA722966513E00716136 /* MOAlgorithmStrings.swift */; };
+		FD47CB14296549E100F3AF0A /* MOAlgorithmLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB13296549E100F3AF0A /* MOAlgorithmLists.swift */; };
+		FD47CB1729654D2700F3AF0A /* MOAligorithmTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB1629654D2700F3AF0A /* MOAligorithmTrees.swift */; };
+		FD74074129888C34001E4A5E /* MOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD74074029888C34001E4A5E /* MOBaseViewController.m */; };
+		FD74074529888EF8001E4A5E /* MOAlorithm.c in Sources */ = {isa = PBXBuildFile; fileRef = FD74074429888EF8001E4A5E /* MOAlorithm.c */; };
+		FD740748298AAAF6001E4A5E /* MOAlgorithmLists.c in Sources */ = {isa = PBXBuildFile; fileRef = FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */; };
+		FD741B25298C7DFF001E4A5E /* MOAlgorithmList.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD741B24298C7DFF001E4A5E /* MOAlgorithmList.mm */; };
+		FDA55CCF26BCDED700F00633 /* MOExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA55CCE26BCDED700F00633 /* MOExtensions.swift */; };
+		FDB19C1626B3FB22009C49ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1526B3FB22009C49ED /* AppDelegate.swift */; };
+		FDB19C1826B3FB22009C49ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1726B3FB22009C49ED /* SceneDelegate.swift */; };
+		FDB19C1A26B3FB22009C49ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1926B3FB22009C49ED /* ViewController.swift */; };
+		FDB19C1D26B3FB22009C49ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB19C1B26B3FB22009C49ED /* Main.storyboard */; };
+		FDB19C1F26B3FB23009C49ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB19C1E26B3FB23009C49ED /* Assets.xcassets */; };
+		FDB19C2226B3FB23009C49ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB19C2026B3FB23009C49ED /* LaunchScreen.storyboard */; };
+		FDB19C2D26B3FB24009C49ED /* MODemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C2C26B3FB24009C49ED /* MODemoTests.swift */; };
+		FDB19C3826B3FB24009C49ED /* MODemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C3726B3FB24009C49ED /* MODemoUITests.swift */; };
+		FDB19C5E26B3FB66009C49ED /* MOWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4526B3FB65009C49ED /* MOWKWebViewController.swift */; };
+		FDB19C5F26B3FB66009C49ED /* MOTouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4626B3FB65009C49ED /* MOTouchIDViewController.swift */; };
+		FDB19C6026B3FB66009C49ED /* MOLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4826B3FB65009C49ED /* MOLocationManager.swift */; };
+		FDB19C6126B3FB66009C49ED /* MOOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4926B3FB65009C49ED /* MOOneViewController.swift */; };
+		FDB19C6226B3FB66009C49ED /* MOMultiDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4A26B3FB65009C49ED /* MOMultiDelegateViewController.swift */; };
+		FDB19C6326B3FB66009C49ED /* MOTableViewStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4B26B3FB65009C49ED /* MOTableViewStyleViewController.swift */; };
+		FDB19C6426B3FB66009C49ED /* MOReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4D26B3FB65009C49ED /* MOReminderViewController.swift */; };
+		FDB19C6526B3FB66009C49ED /* MOCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4E26B3FB65009C49ED /* MOCalendarViewController.swift */; };
+		FDB19C6626B3FB66009C49ED /* MOAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C4F26B3FB65009C49ED /* MOAlgorithm.swift */; };
+		FDB19C6726B3FB66009C49ED /* MOAuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5126B3FB65009C49ED /* MOAuthorizationManager.swift */; };
+		FDB19C6826B3FB66009C49ED /* MOAuthorizationCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5226B3FB65009C49ED /* MOAuthorizationCamera.swift */; };
+		FDB19C6926B3FB66009C49ED /* MOAuthorizationPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5326B3FB65009C49ED /* MOAuthorizationPhoto.swift */; };
+		FDB19C6A26B3FB66009C49ED /* MOQRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5426B3FB65009C49ED /* MOQRScanViewController.swift */; };
+		FDB19C6B26B3FB66009C49ED /* MOViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5526B3FB65009C49ED /* MOViewTestViewController.swift */; };
+		FDB19C6C26B3FB66009C49ED /* MOPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5626B3FB65009C49ED /* MOPopViewController.swift */; };
+		FDB19C6D26B3FB66009C49ED /* MOShareDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5726B3FB65009C49ED /* MOShareDocumentViewController.swift */; };
+		FDB19C6E26B3FB66009C49ED /* MOFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5826B3FB65009C49ED /* MOFileManager.swift */; };
+		FDB19C6F26B3FB66009C49ED /* MOApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5926B3FB65009C49ED /* MOApplePayViewController.swift */; };
+		FDB19C7026B3FB66009C49ED /* MOPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5B26B3FB65009C49ED /* MOPerson.swift */; };
+		FDB19C7126B3FB66009C49ED /* MOUITestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5C26B3FB65009C49ED /* MOUITestsViewController.swift */; };
+		FDB19C7226B3FB66009C49ED /* MOArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C5D26B3FB66009C49ED /* MOArrayDataSource.swift */; };
+		FDB19C7726B4079F009C49ED /* MOTestsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */; };
+		FDB19C7926B407BE009C49ED /* MOUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C7826B407BE009C49ED /* MOUnitTests.swift */; };
+		FDB19CCC26B8E25C009C49ED /* MOScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */; };
+		FDDBEE8F2917906800AAA80D /* MOFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBEE8E2917906800AAA80D /* MOFirstViewController.swift */; };
+		FDDBEE912917907200AAA80D /* MOSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBEE902917907200AAA80D /* MOSecondViewController.swift */; };
+		FDF5B5A12932148700E9855E /* MOPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5B5A02932148700E9855E /* MOPresentationController.swift */; };
+		FDF5B5A529321F7C00E9855E /* MOPushOrPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5B5A429321F7C00E9855E /* MOPushOrPresentAnimator.swift */; };
+		FDF5B5A92932206500E9855E /* MOPopOrDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5B5A82932206500E9855E /* MOPopOrDismissAnimator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDB19C2926B3FB24009C49ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB19C0A26B3FB22009C49ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB19C1126B3FB22009C49ED;
+			remoteInfo = MODemo;
+		};
+		FDB19C3426B3FB24009C49ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB19C0A26B3FB22009C49ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB19C1126B3FB22009C49ED;
+			remoteInfo = MODemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		275316C6FE75A7839DC9B4A8 /* Pods-MODemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoTests.debug.xcconfig"; path = "Target Support Files/Pods-MODemoTests/Pods-MODemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D6064CDFF2F78E01F5AAC9F /* Pods_MODemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MODemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BC262E5DDBB8973487FF0A /* Pods-MODemo-MODemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo-MODemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MODemo-MODemoUITests/Pods-MODemo-MODemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E4ECFA3E751DBF7A7311F27 /* Pods_MODemo_MODemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MODemo_MODemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		865FA8CC29A7C81E26B4ED01 /* Pods-MODemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemoTests.release.xcconfig"; path = "Target Support Files/Pods-MODemoTests/Pods-MODemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9794A26E5DAA8EA3E8204CF /* Pods_MODemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MODemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2739E5B15905186A88D3AD /* Pods-MODemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo.debug.xcconfig"; path = "Target Support Files/Pods-MODemo/Pods-MODemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AD0FB419EB39483834A9B8BA /* Pods-MODemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo.release.xcconfig"; path = "Target Support Files/Pods-MODemo/Pods-MODemo.release.xcconfig"; sourceTree = "<group>"; };
+		F70E474EA380440DD78D3C87 /* Pods-MODemo-MODemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo-MODemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MODemo-MODemoUITests/Pods-MODemo-MODemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOResponderChainViewController.swift; sourceTree = "<group>"; };
+		FD405250299E0FE100BC73D2 /* MODemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MODemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD4080F32987499100C83D11 /* MOOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCViewController.m; sourceTree = "<group>"; };
+		FD4080F42987499100C83D11 /* MOOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCViewController.h; sourceTree = "<group>"; };
+		FD4080F6298749A700C83D11 /* MOArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOArrayDataSource.h; sourceTree = "<group>"; };
+		FD4080F7298749A700C83D11 /* MOArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOArrayDataSource.m; sourceTree = "<group>"; };
+		FD4080FA298749C900C83D11 /* MOCricleLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCricleLoadingViewController.h; sourceTree = "<group>"; };
+		FD4080FB298749C900C83D11 /* CircleLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
+		FD4080FC298749C900C83D11 /* MOCircleLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOCircleLoadingView.m; sourceTree = "<group>"; };
+		FD4080FD298749C900C83D11 /* MOCricleLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOCricleLoadingViewController.m; sourceTree = "<group>"; };
+		FD4080FE298749C900C83D11 /* MOCircleLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCircleLoadingView.h; sourceTree = "<group>"; };
+		FD408100298749C900C83D11 /* MOBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBlockViewController.h; sourceTree = "<group>"; };
+		FD408101298749C900C83D11 /* MOBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBlockViewController.m; sourceTree = "<group>"; };
+		FD408103298749C900C83D11 /* MOMenuButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMenuButtonViewController.m; sourceTree = "<group>"; };
+		FD408105298749C900C83D11 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		FD408106298749C900C83D11 /* OverLayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverLayView.swift; sourceTree = "<group>"; };
+		FD408107298749C900C83D11 /* KYButtonCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYButtonCells.swift; sourceTree = "<group>"; };
+		FD408108298749C900C83D11 /* ButtonLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonLayer.swift; sourceTree = "<group>"; };
+		FD408109298749C900C83D11 /* KYButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYButtonDelegate.swift; sourceTree = "<group>"; };
+		FD40810A298749C900C83D11 /* KYButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYButton.swift; sourceTree = "<group>"; };
+		FD40810B298749C900C83D11 /* MOMenuButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOMenuButtonViewController.h; sourceTree = "<group>"; };
+		FD40810D298749C900C83D11 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		FD40810E298749C900C83D11 /* MMNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNetworkManager.m; sourceTree = "<group>"; };
+		FD40810F298749C900C83D11 /* MONativeNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONativeNetworkViewController.m; sourceTree = "<group>"; };
+		FD408110298749C900C83D11 /* MMNetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNetworkModel.m; sourceTree = "<group>"; };
+		FD408111298749C900C83D11 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		FD408112298749C900C83D11 /* MONativeNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONativeNetworkViewController.h; sourceTree = "<group>"; };
+		FD408113298749C900C83D11 /* MMNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNetworkManager.h; sourceTree = "<group>"; };
+		FD408114298749C900C83D11 /* MMNetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNetworkModel.h; sourceTree = "<group>"; };
+		FD408116298749C900C83D11 /* MODrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MODrawerViewController.m; sourceTree = "<group>"; };
+		FD408117298749C900C83D11 /* MOLeftDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOLeftDrawerView.m; sourceTree = "<group>"; };
+		FD408118298749C900C83D11 /* MOBottomDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBottomDrawerView.h; sourceTree = "<group>"; };
+		FD408119298749C900C83D11 /* MOLeftDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOLeftDrawerView.h; sourceTree = "<group>"; };
+		FD40811A298749C900C83D11 /* MODrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MODrawerViewController.h; sourceTree = "<group>"; };
+		FD40811B298749C900C83D11 /* MOBottomDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBottomDrawerView.m; sourceTree = "<group>"; };
+		FD40811D298749C900C83D11 /* MOOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOperationQueue.h; sourceTree = "<group>"; };
+		FD40811E298749C900C83D11 /* MONSThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONSThread.h; sourceTree = "<group>"; };
+		FD40811F298749C900C83D11 /* MOMultiThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOMultiThreadViewController.h; sourceTree = "<group>"; };
+		FD408120298749C900C83D11 /* MOGCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOGCD.m; sourceTree = "<group>"; };
+		FD408121298749C900C83D11 /* MOOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOperationQueue.m; sourceTree = "<group>"; };
+		FD408122298749C900C83D11 /* MONSThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONSThread.m; sourceTree = "<group>"; };
+		FD408123298749C900C83D11 /* MOGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOGCD.h; sourceTree = "<group>"; };
+		FD408124298749C900C83D11 /* MOMultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMultiThreadViewController.m; sourceTree = "<group>"; };
+		FD408126298749C900C83D11 /* MOViewTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOViewTestViewController.m; sourceTree = "<group>"; };
+		FD408127298749C900C83D11 /* MOTitleLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTitleLineView.h; sourceTree = "<group>"; };
+		FD408128298749C900C83D11 /* MOFollowLightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOFollowLightView.h; sourceTree = "<group>"; };
+		FD408129298749C900C83D11 /* MOTitleLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTitleLineView.m; sourceTree = "<group>"; };
+		FD40812A298749C900C83D11 /* MOViewTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOViewTestViewController.h; sourceTree = "<group>"; };
+		FD40812B298749C900C83D11 /* MOFollowLightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOFollowLightView.m; sourceTree = "<group>"; };
+		FD40812D298749C900C83D11 /* MOResponderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOResponderViewController.h; sourceTree = "<group>"; };
+		FD40812E298749C900C83D11 /* MOResponderTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOResponderTestView.m; sourceTree = "<group>"; };
+		FD40812F298749C900C83D11 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		FD408130298749C900C83D11 /* MOResponderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOResponderViewController.m; sourceTree = "<group>"; };
+		FD408131298749C900C83D11 /* MOResponderTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOResponderTestView.h; sourceTree = "<group>"; };
+		FD408132298749C900C83D11 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		FD408134298749C900C83D11 /* MORuntimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MORuntimeViewController.h; sourceTree = "<group>"; };
+		FD408135298749C900C83D11 /* UINavigationItem+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Swizzling.h"; sourceTree = "<group>"; };
+		FD408136298749C900C83D11 /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
+		FD408137298749C900C83D11 /* UIButton+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Swizzling.h"; sourceTree = "<group>"; };
+		FD408138298749C900C83D11 /* NSObject+property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+property.h"; sourceTree = "<group>"; };
+		FD408139298749C900C83D11 /* NSObject+arrayContain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+arrayContain.h"; sourceTree = "<group>"; };
+		FD40813A298749C900C83D11 /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		FD40813B298749C900C83D11 /* NSMutableArray+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Swizzling.h"; sourceTree = "<group>"; };
+		FD40813C298749C900C83D11 /* UILabel+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Swizzling.m"; sourceTree = "<group>"; };
+		FD40813D298749C900C83D11 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		FD40813F298749C900C83D11 /* UITableView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Placeholder.h"; sourceTree = "<group>"; };
+		FD408140298749C900C83D11 /* MOPlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPlaceholderView.h; sourceTree = "<group>"; };
+		FD408141298749C900C83D11 /* UITableView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Placeholder.m"; sourceTree = "<group>"; };
+		FD408142298749C900C83D11 /* MOPlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPlaceholderView.m; sourceTree = "<group>"; };
+		FD408143298749C900C83D11 /* UINavigationItem+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Swizzling.m"; sourceTree = "<group>"; };
+		FD408144298749C900C83D11 /* MORuntimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MORuntimeViewController.m; sourceTree = "<group>"; };
+		FD408145298749C900C83D11 /* UIButton+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Swizzling.m"; sourceTree = "<group>"; };
+		FD408146298749C900C83D11 /* NSObject+property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+property.m"; sourceTree = "<group>"; };
+		FD408147298749C900C83D11 /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
+		FD408148298749C900C83D11 /* UILabel+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Swizzling.h"; sourceTree = "<group>"; };
+		FD408149298749C900C83D11 /* NSMutableArray+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Swizzling.m"; sourceTree = "<group>"; };
+		FD40814A298749C900C83D11 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		FD40814B298749C900C83D11 /* NSObject+arrayContain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+arrayContain.m"; sourceTree = "<group>"; };
+		FD40814C298749C900C83D11 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		FD40814E298749C900C83D11 /* MOImageButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOImageButtonViewController.h; sourceTree = "<group>"; };
+		FD40814F298749C900C83D11 /* MOImageButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOImageButtonViewController.m; sourceTree = "<group>"; };
+		FD408152298749C900C83D11 /* GCWebviewJSBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCWebviewJSBridge_JS.h; sourceTree = "<group>"; };
+		FD408153298749C900C83D11 /* GCWebviewJSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCWebviewJSBridge.m; sourceTree = "<group>"; };
+		FD408154298749C900C83D11 /* GCWebviewJSBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCWebviewJSBridgeBase.h; sourceTree = "<group>"; };
+		FD408155298749C900C83D11 /* GCWebviewJSBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCWebviewJSBridge_JS.m; sourceTree = "<group>"; };
+		FD408156298749C900C83D11 /* GCWebviewJSBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCWebviewJSBridgeBase.m; sourceTree = "<group>"; };
+		FD408157298749C900C83D11 /* GCWebviewJSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCWebviewJSBridge.h; sourceTree = "<group>"; };
+		FD408158298749C900C83D11 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		FD408159298749C900C83D11 /* MOWebViewJSBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOWebViewJSBridgeViewController.m; sourceTree = "<group>"; };
+		FD40815A298749C900C83D11 /* MOWebViewJSBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOWebViewJSBridgeViewController.h; sourceTree = "<group>"; };
+		FD40815C298749C900C83D11 /* MOWaterRipperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOWaterRipperView.m; sourceTree = "<group>"; };
+		FD40815D298749C900C83D11 /* MOWaterRippleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOWaterRippleViewController.m; sourceTree = "<group>"; };
+		FD40815E298749C900C83D11 /* MOWaterRipperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOWaterRipperView.h; sourceTree = "<group>"; };
+		FD40815F298749C900C83D11 /* MOWaterRippleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOWaterRippleViewController.h; sourceTree = "<group>"; };
+		FD408161298749C900C83D11 /* MOMarsRover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOMarsRover.h; sourceTree = "<group>"; };
+		FD408162298749C900C83D11 /* MOOCMockDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCMockDemo.m; sourceTree = "<group>"; };
+		FD408163298749C900C83D11 /* MOPerson+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MOPerson+Tests.m"; sourceTree = "<group>"; };
+		FD408164298749C900C83D11 /* TDD练习：火星车问题 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TDD练习：火星车问题"; sourceTree = "<group>"; };
+		FD408165298749C900C83D11 /* MOMarsRover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMarsRover.m; sourceTree = "<group>"; };
+		FD408166298749C900C83D11 /* MOPerson+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MOPerson+Tests.h"; sourceTree = "<group>"; };
+		FD408167298749C900C83D11 /* MOOCMockDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCMockDemo.h; sourceTree = "<group>"; };
+		FD408169298749C900C83D11 /* MOLocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOLocksViewController.m; sourceTree = "<group>"; };
+		FD40816A298749C900C83D11 /* MOLocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOLocksViewController.h; sourceTree = "<group>"; };
+		FD40816C298749C900C83D11 /* MOPrivateAPIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPrivateAPIViewController.m; sourceTree = "<group>"; };
+		FD40816D298749C900C83D11 /* MOPrivateAPIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPrivateAPIViewController.h; sourceTree = "<group>"; };
+		FD40816F298749C900C83D11 /* MOKVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOKVCViewController.m; sourceTree = "<group>"; };
+		FD408170298749C900C83D11 /* MOKVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOKVCViewController.h; sourceTree = "<group>"; };
+		FD408172298749C900C83D11 /* MOControlCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOControlCenterViewController.m; sourceTree = "<group>"; };
+		FD408173298749C900C83D11 /* news.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = news.mp3; sourceTree = "<group>"; };
+		FD408174298749C900C83D11 /* MOControlCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOControlCenterViewController.h; sourceTree = "<group>"; };
+		FD408176298749C900C83D11 /* MOPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOPerson.m; sourceTree = "<group>"; };
+		FD408177298749C900C83D11 /* MOStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOStudent.h; sourceTree = "<group>"; };
+		FD408178298749C900C83D11 /* MOStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOStudent.m; sourceTree = "<group>"; };
+		FD408179298749C900C83D11 /* MOPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOPerson.h; sourceTree = "<group>"; };
+		FD40817B298749C900C83D11 /* MOTableViewOptimizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTableViewOptimizeViewController.m; sourceTree = "<group>"; };
+		FD40817C298749C900C83D11 /* MOTableViewOptimizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTableViewOptimizeViewController.h; sourceTree = "<group>"; };
+		FD40817E298749C900C83D11 /* NSTimer+MOBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+MOBlock.h"; sourceTree = "<group>"; };
+		FD40817F298749C900C83D11 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		FD408180298749C900C83D11 /* MOTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTimerViewController.h; sourceTree = "<group>"; };
+		FD408181298749C900C83D11 /* MOProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOProxy.h; sourceTree = "<group>"; };
+		FD408182298749C900C83D11 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		FD408183298749C900C83D11 /* NSTimer+MOBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+MOBlock.m"; sourceTree = "<group>"; };
+		FD408184298749C900C83D11 /* MOTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTimerViewController.m; sourceTree = "<group>"; };
+		FD408185298749C900C83D11 /* MOProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOProxy.m; sourceTree = "<group>"; };
+		FD4081C729874A7D00C83D11 /* MOOCMockTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCMockTests.m; sourceTree = "<group>"; };
+		FD4081C829874A7D00C83D11 /* MOOCHamcreatTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCHamcreatTests.m; sourceTree = "<group>"; };
+		FD4081C929874A7D00C83D11 /* MOOCMockDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCMockDemoTests.m; sourceTree = "<group>"; };
+		FD4081CA29874A7D00C83D11 /* MOMarsRoverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOMarsRoverTests.m; sourceTree = "<group>"; };
+		FD4081CB29874A7D00C83D11 /* MODemoOCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MODemoOCTests.m; sourceTree = "<group>"; };
+		FD41FA722966513E00716136 /* MOAlgorithmStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOAlgorithmStrings.swift; sourceTree = "<group>"; };
+		FD41FA74296783C800716136 /* MODemoTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MODemoTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD47CB13296549E100F3AF0A /* MOAlgorithmLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAlgorithmLists.swift; sourceTree = "<group>"; };
+		FD47CB1629654D2700F3AF0A /* MOAligorithmTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOAligorithmTrees.swift; sourceTree = "<group>"; };
+		FD74073F29888C34001E4A5E /* MOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOBaseViewController.h; sourceTree = "<group>"; };
+		FD74074029888C34001E4A5E /* MOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBaseViewController.m; sourceTree = "<group>"; };
+		FD74074329888EF8001E4A5E /* MOAlorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAlorithm.h; sourceTree = "<group>"; };
+		FD74074429888EF8001E4A5E /* MOAlorithm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MOAlorithm.c; sourceTree = "<group>"; };
+		FD740746298AAAF6001E4A5E /* MOAlgorithmLists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAlgorithmLists.h; sourceTree = "<group>"; };
+		FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MOAlgorithmLists.c; sourceTree = "<group>"; };
+		FD741B15298B34B7001E4A5E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FD741B23298C7DFF001E4A5E /* MOAlgorithmList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAlgorithmList.h; sourceTree = "<group>"; };
+		FD741B24298C7DFF001E4A5E /* MOAlgorithmList.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MOAlgorithmList.mm; sourceTree = "<group>"; };
+		FDA55CCE26BCDED700F00633 /* MOExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOExtensions.swift; sourceTree = "<group>"; };
+		FDB19C1226B3FB22009C49ED /* MODemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB19C1526B3FB22009C49ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDB19C1726B3FB22009C49ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FDB19C1926B3FB22009C49ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDB19C1C26B3FB22009C49ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDB19C1E26B3FB23009C49ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDB19C2126B3FB23009C49ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDB19C2326B3FB23009C49ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB19C2826B3FB24009C49ED /* MODemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MODemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB19C2C26B3FB24009C49ED /* MODemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODemoTests.swift; sourceTree = "<group>"; };
+		FDB19C2E26B3FB24009C49ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB19C3326B3FB24009C49ED /* MODemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MODemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB19C3726B3FB24009C49ED /* MODemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODemoUITests.swift; sourceTree = "<group>"; };
+		FDB19C3926B3FB24009C49ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB19C4526B3FB65009C49ED /* MOWKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOWKWebViewController.swift; sourceTree = "<group>"; };
+		FDB19C4626B3FB65009C49ED /* MOTouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOTouchIDViewController.swift; sourceTree = "<group>"; };
+		FDB19C4826B3FB65009C49ED /* MOLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOLocationManager.swift; sourceTree = "<group>"; };
+		FDB19C4926B3FB65009C49ED /* MOOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOOneViewController.swift; sourceTree = "<group>"; };
+		FDB19C4A26B3FB65009C49ED /* MOMultiDelegateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOMultiDelegateViewController.swift; sourceTree = "<group>"; };
+		FDB19C4B26B3FB65009C49ED /* MOTableViewStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOTableViewStyleViewController.swift; sourceTree = "<group>"; };
+		FDB19C4D26B3FB65009C49ED /* MOReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOReminderViewController.swift; sourceTree = "<group>"; };
+		FDB19C4E26B3FB65009C49ED /* MOCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOCalendarViewController.swift; sourceTree = "<group>"; };
+		FDB19C4F26B3FB65009C49ED /* MOAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAlgorithm.swift; sourceTree = "<group>"; };
+		FDB19C5126B3FB65009C49ED /* MOAuthorizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAuthorizationManager.swift; sourceTree = "<group>"; };
+		FDB19C5226B3FB65009C49ED /* MOAuthorizationCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAuthorizationCamera.swift; sourceTree = "<group>"; };
+		FDB19C5326B3FB65009C49ED /* MOAuthorizationPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAuthorizationPhoto.swift; sourceTree = "<group>"; };
+		FDB19C5426B3FB65009C49ED /* MOQRScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOQRScanViewController.swift; sourceTree = "<group>"; };
+		FDB19C5526B3FB65009C49ED /* MOViewTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOViewTestViewController.swift; sourceTree = "<group>"; };
+		FDB19C5626B3FB65009C49ED /* MOPopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOPopViewController.swift; sourceTree = "<group>"; };
+		FDB19C5726B3FB65009C49ED /* MOShareDocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOShareDocumentViewController.swift; sourceTree = "<group>"; };
+		FDB19C5826B3FB65009C49ED /* MOFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOFileManager.swift; sourceTree = "<group>"; };
+		FDB19C5926B3FB65009C49ED /* MOApplePayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOApplePayViewController.swift; sourceTree = "<group>"; };
+		FDB19C5B26B3FB65009C49ED /* MOPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOPerson.swift; sourceTree = "<group>"; };
+		FDB19C5C26B3FB65009C49ED /* MOUITestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOUITestsViewController.swift; sourceTree = "<group>"; };
+		FDB19C5D26B3FB66009C49ED /* MOArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOArrayDataSource.swift; sourceTree = "<group>"; };
+		FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerUITests.swift; sourceTree = "<group>"; };
+		FDB19C7826B407BE009C49ED /* MOUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOUnitTests.swift; sourceTree = "<group>"; };
+		FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOScannerViewController.swift; sourceTree = "<group>"; };
+		FDDBEE8E2917906800AAA80D /* MOFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOFirstViewController.swift; sourceTree = "<group>"; };
+		FDDBEE902917907200AAA80D /* MOSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOSecondViewController.swift; sourceTree = "<group>"; };
+		FDF5B5A02932148700E9855E /* MOPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOPresentationController.swift; sourceTree = "<group>"; };
+		FDF5B5A429321F7C00E9855E /* MOPushOrPresentAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOPushOrPresentAnimator.swift; sourceTree = "<group>"; };
+		FDF5B5A82932206500E9855E /* MOPopOrDismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOPopOrDismissAnimator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDB19C0F26B3FB22009C49ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C662755A0DCC33C0DCE62C5 /* Pods_MODemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C2526B3FB24009C49ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11413983D7272D865AB695C3 /* Pods_MODemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C3026B3FB24009C49ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E39CACF1702F3B736938004 /* Pods_MODemo_MODemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13964AB22F51474D51A8AF88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB2739E5B15905186A88D3AD /* Pods-MODemo.debug.xcconfig */,
+				AD0FB419EB39483834A9B8BA /* Pods-MODemo.release.xcconfig */,
+				68BC262E5DDBB8973487FF0A /* Pods-MODemo-MODemoUITests.debug.xcconfig */,
+				F70E474EA380440DD78D3C87 /* Pods-MODemo-MODemoUITests.release.xcconfig */,
+				275316C6FE75A7839DC9B4A8 /* Pods-MODemoTests.debug.xcconfig */,
+				865FA8CC29A7C81E26B4ED01 /* Pods-MODemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC68EDB9B805A61ED5294318 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD741B15298B34B7001E4A5E /* libc++.tbd */,
+				A9794A26E5DAA8EA3E8204CF /* Pods_MODemo.framework */,
+				7E4ECFA3E751DBF7A7311F27 /* Pods_MODemo_MODemoUITests.framework */,
+				4D6064CDFF2F78E01F5AAC9F /* Pods_MODemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD4080EE298748DF00C83D11 /* MODemoOC */ = {
+			isa = PBXGroup;
+			children = (
+				FD405250299E0FE100BC73D2 /* MODemo-Bridging-Header.h */,
+				FD74074229888ED8001E4A5E /* MOAlorithm */,
+				FD4080F42987499100C83D11 /* MOOCViewController.h */,
+				FD4080F32987499100C83D11 /* MOOCViewController.m */,
+				FD4080F6298749A700C83D11 /* MOArrayDataSource.h */,
+				FD4080F7298749A700C83D11 /* MOArrayDataSource.m */,
+				FD74073F29888C34001E4A5E /* MOBaseViewController.h */,
+				FD74074029888C34001E4A5E /* MOBaseViewController.m */,
+				FD4080FF298749C900C83D11 /* MOBlock */,
+				FD408115298749C900C83D11 /* MOBottomDrawer */,
+				FD408171298749C900C83D11 /* MOControlCenter */,
+				FD4080F9298749C900C83D11 /* MOCricleLoading */,
+				FD408175298749C900C83D11 /* Models */,
+				FD40814D298749C900C83D11 /* MOImageButton */,
+				FD40816E298749C900C83D11 /* MOKVC */,
+				FD408168298749C900C83D11 /* MOLocks */,
+				FD408102298749C900C83D11 /* MOMenuButton */,
+				FD40811C298749C900C83D11 /* MOMultiThread */,
+				FD40810C298749C900C83D11 /* MONativeNetwork */,
+				FD40816B298749C900C83D11 /* MOPrivateAPI */,
+				FD40812C298749C900C83D11 /* MOResponder */,
+				FD408133298749C900C83D11 /* MORuntime */,
+				FD40817A298749C900C83D11 /* MOTableViewOptimize */,
+				FD40817D298749C900C83D11 /* MOTimer */,
+				FD408125298749C900C83D11 /* MOViewTest */,
+				FD40815B298749C900C83D11 /* MOWaterRipple */,
+				FD408150298749C900C83D11 /* MOWebViewJSBridge */,
+				FD408160298749C900C83D11 /* UnitTests */,
+			);
+			path = MODemoOC;
+			sourceTree = "<group>";
+		};
+		FD4080F9298749C900C83D11 /* MOCricleLoading */ = {
+			isa = PBXGroup;
+			children = (
+				FD4080FB298749C900C83D11 /* CircleLoadingView.swift */,
+				FD4080FE298749C900C83D11 /* MOCircleLoadingView.h */,
+				FD4080FC298749C900C83D11 /* MOCircleLoadingView.m */,
+				FD4080FA298749C900C83D11 /* MOCricleLoadingViewController.h */,
+				FD4080FD298749C900C83D11 /* MOCricleLoadingViewController.m */,
+			);
+			path = MOCricleLoading;
+			sourceTree = "<group>";
+		};
+		FD4080FF298749C900C83D11 /* MOBlock */ = {
+			isa = PBXGroup;
+			children = (
+				FD408100298749C900C83D11 /* MOBlockViewController.h */,
+				FD408101298749C900C83D11 /* MOBlockViewController.m */,
+			);
+			path = MOBlock;
+			sourceTree = "<group>";
+		};
+		FD408102298749C900C83D11 /* MOMenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				FD408104298749C900C83D11 /* KYFloatingActionButton */,
+				FD40810B298749C900C83D11 /* MOMenuButtonViewController.h */,
+				FD408103298749C900C83D11 /* MOMenuButtonViewController.m */,
+			);
+			path = MOMenuButton;
+			sourceTree = "<group>";
+		};
+		FD408104298749C900C83D11 /* KYFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				FD408105298749C900C83D11 /* UIColorExtension.swift */,
+				FD408106298749C900C83D11 /* OverLayView.swift */,
+				FD408107298749C900C83D11 /* KYButtonCells.swift */,
+				FD408108298749C900C83D11 /* ButtonLayer.swift */,
+				FD408109298749C900C83D11 /* KYButtonDelegate.swift */,
+				FD40810A298749C900C83D11 /* KYButton.swift */,
+			);
+			path = KYFloatingActionButton;
+			sourceTree = "<group>";
+		};
+		FD40810C298749C900C83D11 /* MONativeNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				FD408113298749C900C83D11 /* MMNetworkManager.h */,
+				FD40810E298749C900C83D11 /* MMNetworkManager.m */,
+				FD408114298749C900C83D11 /* MMNetworkModel.h */,
+				FD408110298749C900C83D11 /* MMNetworkModel.m */,
+				FD408112298749C900C83D11 /* MONativeNetworkViewController.h */,
+				FD40810F298749C900C83D11 /* MONativeNetworkViewController.m */,
+				FD40810D298749C900C83D11 /* NSObject+Extension.h */,
+				FD408111298749C900C83D11 /* NSObject+Extension.m */,
+			);
+			path = MONativeNetwork;
+			sourceTree = "<group>";
+		};
+		FD408115298749C900C83D11 /* MOBottomDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				FD408118298749C900C83D11 /* MOBottomDrawerView.h */,
+				FD40811B298749C900C83D11 /* MOBottomDrawerView.m */,
+				FD40811A298749C900C83D11 /* MODrawerViewController.h */,
+				FD408116298749C900C83D11 /* MODrawerViewController.m */,
+				FD408119298749C900C83D11 /* MOLeftDrawerView.h */,
+				FD408117298749C900C83D11 /* MOLeftDrawerView.m */,
+			);
+			path = MOBottomDrawer;
+			sourceTree = "<group>";
+		};
+		FD40811C298749C900C83D11 /* MOMultiThread */ = {
+			isa = PBXGroup;
+			children = (
+				FD408123298749C900C83D11 /* MOGCD.h */,
+				FD408120298749C900C83D11 /* MOGCD.m */,
+				FD40811F298749C900C83D11 /* MOMultiThreadViewController.h */,
+				FD408124298749C900C83D11 /* MOMultiThreadViewController.m */,
+				FD40811E298749C900C83D11 /* MONSThread.h */,
+				FD408122298749C900C83D11 /* MONSThread.m */,
+				FD40811D298749C900C83D11 /* MOOperationQueue.h */,
+				FD408121298749C900C83D11 /* MOOperationQueue.m */,
+			);
+			path = MOMultiThread;
+			sourceTree = "<group>";
+		};
+		FD408125298749C900C83D11 /* MOViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				FD408128298749C900C83D11 /* MOFollowLightView.h */,
+				FD40812B298749C900C83D11 /* MOFollowLightView.m */,
+				FD408127298749C900C83D11 /* MOTitleLineView.h */,
+				FD408129298749C900C83D11 /* MOTitleLineView.m */,
+				FD40812A298749C900C83D11 /* MOViewTestViewController.h */,
+				FD408126298749C900C83D11 /* MOViewTestViewController.m */,
+			);
+			path = MOViewTest;
+			sourceTree = "<group>";
+		};
+		FD40812C298749C900C83D11 /* MOResponder */ = {
+			isa = PBXGroup;
+			children = (
+				FD408131298749C900C83D11 /* MOResponderTestView.h */,
+				FD40812E298749C900C83D11 /* MOResponderTestView.m */,
+				FD40812D298749C900C83D11 /* MOResponderViewController.h */,
+				FD408130298749C900C83D11 /* MOResponderViewController.m */,
+				FD40812F298749C900C83D11 /* UIButton+Extension.h */,
+				FD408132298749C900C83D11 /* UIButton+Extension.m */,
+			);
+			path = MOResponder;
+			sourceTree = "<group>";
+		};
+		FD408133298749C900C83D11 /* MORuntime */ = {
+			isa = PBXGroup;
+			children = (
+				FD408134298749C900C83D11 /* MORuntimeViewController.h */,
+				FD408144298749C900C83D11 /* MORuntimeViewController.m */,
+				FD40813B298749C900C83D11 /* NSMutableArray+Swizzling.h */,
+				FD408149298749C900C83D11 /* NSMutableArray+Swizzling.m */,
+				FD408139298749C900C83D11 /* NSObject+arrayContain.h */,
+				FD40814B298749C900C83D11 /* NSObject+arrayContain.m */,
+				FD408138298749C900C83D11 /* NSObject+property.h */,
+				FD408146298749C900C83D11 /* NSObject+property.m */,
+				FD40813D298749C900C83D11 /* NSObject+Swizzling.h */,
+				FD40814C298749C900C83D11 /* NSObject+Swizzling.m */,
+				FD40813E298749C900C83D11 /* ScrollViewPlaceholder */,
+				FD408137298749C900C83D11 /* UIButton+Swizzling.h */,
+				FD408145298749C900C83D11 /* UIButton+Swizzling.m */,
+				FD40814A298749C900C83D11 /* UIImage+image.h */,
+				FD40813A298749C900C83D11 /* UIImage+image.m */,
+				FD408148298749C900C83D11 /* UILabel+Swizzling.h */,
+				FD40813C298749C900C83D11 /* UILabel+Swizzling.m */,
+				FD408135298749C900C83D11 /* UINavigationItem+Swizzling.h */,
+				FD408143298749C900C83D11 /* UINavigationItem+Swizzling.m */,
+				FD408147298749C900C83D11 /* UIViewController+Swizzling.h */,
+				FD408136298749C900C83D11 /* UIViewController+Swizzling.m */,
+			);
+			path = MORuntime;
+			sourceTree = "<group>";
+		};
+		FD40813E298749C900C83D11 /* ScrollViewPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				FD408140298749C900C83D11 /* MOPlaceholderView.h */,
+				FD408142298749C900C83D11 /* MOPlaceholderView.m */,
+				FD40813F298749C900C83D11 /* UITableView+Placeholder.h */,
+				FD408141298749C900C83D11 /* UITableView+Placeholder.m */,
+			);
+			path = ScrollViewPlaceholder;
+			sourceTree = "<group>";
+		};
+		FD40814D298749C900C83D11 /* MOImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				FD40814E298749C900C83D11 /* MOImageButtonViewController.h */,
+				FD40814F298749C900C83D11 /* MOImageButtonViewController.m */,
+			);
+			path = MOImageButton;
+			sourceTree = "<group>";
+		};
+		FD408150298749C900C83D11 /* MOWebViewJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				FD408158298749C900C83D11 /* index.html */,
+				FD408151298749C900C83D11 /* KBWebviewJSBridge(deprectediOS12later) */,
+				FD40815A298749C900C83D11 /* MOWebViewJSBridgeViewController.h */,
+				FD408159298749C900C83D11 /* MOWebViewJSBridgeViewController.m */,
+			);
+			path = MOWebViewJSBridge;
+			sourceTree = "<group>";
+		};
+		FD408151298749C900C83D11 /* KBWebviewJSBridge(deprectediOS12later) */ = {
+			isa = PBXGroup;
+			children = (
+				FD408152298749C900C83D11 /* GCWebviewJSBridge_JS.h */,
+				FD408155298749C900C83D11 /* GCWebviewJSBridge_JS.m */,
+				FD408157298749C900C83D11 /* GCWebviewJSBridge.h */,
+				FD408153298749C900C83D11 /* GCWebviewJSBridge.m */,
+				FD408154298749C900C83D11 /* GCWebviewJSBridgeBase.h */,
+				FD408156298749C900C83D11 /* GCWebviewJSBridgeBase.m */,
+			);
+			path = "KBWebviewJSBridge(deprectediOS12later)";
+			sourceTree = "<group>";
+		};
+		FD40815B298749C900C83D11 /* MOWaterRipple */ = {
+			isa = PBXGroup;
+			children = (
+				FD40815E298749C900C83D11 /* MOWaterRipperView.h */,
+				FD40815C298749C900C83D11 /* MOWaterRipperView.m */,
+				FD40815F298749C900C83D11 /* MOWaterRippleViewController.h */,
+				FD40815D298749C900C83D11 /* MOWaterRippleViewController.m */,
+			);
+			path = MOWaterRipple;
+			sourceTree = "<group>";
+		};
+		FD408160298749C900C83D11 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD408161298749C900C83D11 /* MOMarsRover.h */,
+				FD408165298749C900C83D11 /* MOMarsRover.m */,
+				FD408167298749C900C83D11 /* MOOCMockDemo.h */,
+				FD408162298749C900C83D11 /* MOOCMockDemo.m */,
+				FD408166298749C900C83D11 /* MOPerson+Tests.h */,
+				FD408163298749C900C83D11 /* MOPerson+Tests.m */,
+				FD408164298749C900C83D11 /* TDD练习：火星车问题 */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		FD408168298749C900C83D11 /* MOLocks */ = {
+			isa = PBXGroup;
+			children = (
+				FD40816A298749C900C83D11 /* MOLocksViewController.h */,
+				FD408169298749C900C83D11 /* MOLocksViewController.m */,
+			);
+			path = MOLocks;
+			sourceTree = "<group>";
+		};
+		FD40816B298749C900C83D11 /* MOPrivateAPI */ = {
+			isa = PBXGroup;
+			children = (
+				FD40816D298749C900C83D11 /* MOPrivateAPIViewController.h */,
+				FD40816C298749C900C83D11 /* MOPrivateAPIViewController.m */,
+			);
+			path = MOPrivateAPI;
+			sourceTree = "<group>";
+		};
+		FD40816E298749C900C83D11 /* MOKVC */ = {
+			isa = PBXGroup;
+			children = (
+				FD408170298749C900C83D11 /* MOKVCViewController.h */,
+				FD40816F298749C900C83D11 /* MOKVCViewController.m */,
+			);
+			path = MOKVC;
+			sourceTree = "<group>";
+		};
+		FD408171298749C900C83D11 /* MOControlCenter */ = {
+			isa = PBXGroup;
+			children = (
+				FD408174298749C900C83D11 /* MOControlCenterViewController.h */,
+				FD408172298749C900C83D11 /* MOControlCenterViewController.m */,
+				FD408173298749C900C83D11 /* news.mp3 */,
+			);
+			path = MOControlCenter;
+			sourceTree = "<group>";
+		};
+		FD408175298749C900C83D11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD408179298749C900C83D11 /* MOPerson.h */,
+				FD408176298749C900C83D11 /* MOPerson.m */,
+				FD408177298749C900C83D11 /* MOStudent.h */,
+				FD408178298749C900C83D11 /* MOStudent.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD40817A298749C900C83D11 /* MOTableViewOptimize */ = {
+			isa = PBXGroup;
+			children = (
+				FD40817C298749C900C83D11 /* MOTableViewOptimizeViewController.h */,
+				FD40817B298749C900C83D11 /* MOTableViewOptimizeViewController.m */,
+			);
+			path = MOTableViewOptimize;
+			sourceTree = "<group>";
+		};
+		FD40817D298749C900C83D11 /* MOTimer */ = {
+			isa = PBXGroup;
+			children = (
+				FD408181298749C900C83D11 /* MOProxy.h */,
+				FD408185298749C900C83D11 /* MOProxy.m */,
+				FD408180298749C900C83D11 /* MOTimerViewController.h */,
+				FD408184298749C900C83D11 /* MOTimerViewController.m */,
+				FD40817E298749C900C83D11 /* NSTimer+MOBlock.h */,
+				FD408183298749C900C83D11 /* NSTimer+MOBlock.m */,
+				FD408182298749C900C83D11 /* YYWeakProxy.h */,
+				FD40817F298749C900C83D11 /* YYWeakProxy.m */,
+			);
+			path = MOTimer;
+			sourceTree = "<group>";
+		};
+		FD47CB15296549E500F3AF0A /* MOAlorithm */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C4F26B3FB65009C49ED /* MOAlgorithm.swift */,
+				FD47CB13296549E100F3AF0A /* MOAlgorithmLists.swift */,
+				FD47CB1629654D2700F3AF0A /* MOAligorithmTrees.swift */,
+				FD41FA722966513E00716136 /* MOAlgorithmStrings.swift */,
+			);
+			path = MOAlorithm;
+			sourceTree = "<group>";
+		};
+		FD74074229888ED8001E4A5E /* MOAlorithm */ = {
+			isa = PBXGroup;
+			children = (
+				FD74074329888EF8001E4A5E /* MOAlorithm.h */,
+				FD74074429888EF8001E4A5E /* MOAlorithm.c */,
+				FD740746298AAAF6001E4A5E /* MOAlgorithmLists.h */,
+				FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */,
+				FD741B23298C7DFF001E4A5E /* MOAlgorithmList.h */,
+				FD741B24298C7DFF001E4A5E /* MOAlgorithmList.mm */,
+			);
+			path = MOAlorithm;
+			sourceTree = "<group>";
+		};
+		FDB19C0926B3FB22009C49ED = {
+			isa = PBXGroup;
+			children = (
+				FD4080EE298748DF00C83D11 /* MODemoOC */,
+				FDB19C1426B3FB22009C49ED /* MODemo */,
+				FDB19C2B26B3FB24009C49ED /* MODemoTests */,
+				FDB19C3626B3FB24009C49ED /* MODemoUITests */,
+				FDB19C1326B3FB22009C49ED /* Products */,
+				13964AB22F51474D51A8AF88 /* Pods */,
+				CC68EDB9B805A61ED5294318 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FDB19C1326B3FB22009C49ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C1226B3FB22009C49ED /* MODemo.app */,
+				FDB19C2826B3FB24009C49ED /* MODemoTests.xctest */,
+				FDB19C3326B3FB24009C49ED /* MODemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDB19C1426B3FB22009C49ED /* MODemo */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C1526B3FB22009C49ED /* AppDelegate.swift */,
+				FDB19C1726B3FB22009C49ED /* SceneDelegate.swift */,
+				FDB19C1926B3FB22009C49ED /* ViewController.swift */,
+				FDB19C5D26B3FB66009C49ED /* MOArrayDataSource.swift */,
+				FDB19C5826B3FB65009C49ED /* MOFileManager.swift */,
+				FDB19C5526B3FB65009C49ED /* MOViewTestViewController.swift */,
+				FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */,
+				FDB19C4B26B3FB65009C49ED /* MOTableViewStyleViewController.swift */,
+				FDB19C5726B3FB65009C49ED /* MOShareDocumentViewController.swift */,
+				FD47CB15296549E500F3AF0A /* MOAlorithm */,
+				FDB19C4726B3FB65009C49ED /* MOMultiDelegate */,
+				FDB19C7326B3FBE7009C49ED /* MOWebView */,
+				FDB19C4C26B3FB65009C49ED /* MOEventKit */,
+				FDB19C5026B3FB65009C49ED /* MOAuthorization */,
+				FDDBEE8D29178F2900AAA80D /* MOCustomTransitionAnimation */,
+				FDB19C5426B3FB65009C49ED /* MOQRScanViewController.swift */,
+				FDB19C5626B3FB65009C49ED /* MOPopViewController.swift */,
+				FDB19C5926B3FB65009C49ED /* MOApplePayViewController.swift */,
+				FDB19C4626B3FB65009C49ED /* MOTouchIDViewController.swift */,
+				FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */,
+				FDA55CCE26BCDED700F00633 /* MOExtensions.swift */,
+				FDB19C5A26B3FB65009C49ED /* MOTests */,
+				FDB19C1B26B3FB22009C49ED /* Main.storyboard */,
+				FDB19C1E26B3FB23009C49ED /* Assets.xcassets */,
+				FDB19C2026B3FB23009C49ED /* LaunchScreen.storyboard */,
+				FDB19C2326B3FB23009C49ED /* Info.plist */,
+			);
+			path = MODemo;
+			sourceTree = "<group>";
+		};
+		FDB19C2B26B3FB24009C49ED /* MODemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD4081C729874A7D00C83D11 /* MOOCMockTests.m */,
+				FD4081C829874A7D00C83D11 /* MOOCHamcreatTests.m */,
+				FD4081C929874A7D00C83D11 /* MOOCMockDemoTests.m */,
+				FD4081CA29874A7D00C83D11 /* MOMarsRoverTests.m */,
+				FD4081CB29874A7D00C83D11 /* MODemoOCTests.m */,
+				FDB19C2C26B3FB24009C49ED /* MODemoTests.swift */,
+				FDB19C7826B407BE009C49ED /* MOUnitTests.swift */,
+				FDB19C2E26B3FB24009C49ED /* Info.plist */,
+				FD41FA74296783C800716136 /* MODemoTests-Bridging-Header.h */,
+			);
+			path = MODemoTests;
+			sourceTree = "<group>";
+		};
+		FDB19C3626B3FB24009C49ED /* MODemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C3726B3FB24009C49ED /* MODemoUITests.swift */,
+				FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */,
+				FDB19C3926B3FB24009C49ED /* Info.plist */,
+			);
+			path = MODemoUITests;
+			sourceTree = "<group>";
+		};
+		FDB19C4726B3FB65009C49ED /* MOMultiDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C4826B3FB65009C49ED /* MOLocationManager.swift */,
+				FDB19C4926B3FB65009C49ED /* MOOneViewController.swift */,
+				FDB19C4A26B3FB65009C49ED /* MOMultiDelegateViewController.swift */,
+			);
+			path = MOMultiDelegate;
+			sourceTree = "<group>";
+		};
+		FDB19C4C26B3FB65009C49ED /* MOEventKit */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C4D26B3FB65009C49ED /* MOReminderViewController.swift */,
+				FDB19C4E26B3FB65009C49ED /* MOCalendarViewController.swift */,
+			);
+			path = MOEventKit;
+			sourceTree = "<group>";
+		};
+		FDB19C5026B3FB65009C49ED /* MOAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C5126B3FB65009C49ED /* MOAuthorizationManager.swift */,
+				FDB19C5226B3FB65009C49ED /* MOAuthorizationCamera.swift */,
+				FDB19C5326B3FB65009C49ED /* MOAuthorizationPhoto.swift */,
+			);
+			path = MOAuthorization;
+			sourceTree = "<group>";
+		};
+		FDB19C5A26B3FB65009C49ED /* MOTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C5B26B3FB65009C49ED /* MOPerson.swift */,
+				FDB19C5C26B3FB65009C49ED /* MOUITestsViewController.swift */,
+			);
+			path = MOTests;
+			sourceTree = "<group>";
+		};
+		FDB19C7326B3FBE7009C49ED /* MOWebView */ = {
+			isa = PBXGroup;
+			children = (
+				FDB19C4526B3FB65009C49ED /* MOWKWebViewController.swift */,
+			);
+			path = MOWebView;
+			sourceTree = "<group>";
+		};
+		FDDBEE8D29178F2900AAA80D /* MOCustomTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				FDDBEE8E2917906800AAA80D /* MOFirstViewController.swift */,
+				FDDBEE902917907200AAA80D /* MOSecondViewController.swift */,
+				FDF5B5A429321F7C00E9855E /* MOPushOrPresentAnimator.swift */,
+				FDF5B5A82932206500E9855E /* MOPopOrDismissAnimator.swift */,
+				FDF5B5A02932148700E9855E /* MOPresentationController.swift */,
+			);
+			path = MOCustomTransitionAnimation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDB19C1126B3FB22009C49ED /* MODemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB19C3C26B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemo" */;
+			buildPhases = (
+				D686BEB8F7DF67C7869D2E6F /* [CP] Check Pods Manifest.lock */,
+				FDB19C0E26B3FB22009C49ED /* Sources */,
+				FDB19C0F26B3FB22009C49ED /* Frameworks */,
+				FDB19C1026B3FB22009C49ED /* Resources */,
+				2D3CE1CE3B8139C16551B472 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MODemo;
+			productName = MODemo;
+			productReference = FDB19C1226B3FB22009C49ED /* MODemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDB19C2726B3FB24009C49ED /* MODemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB19C3F26B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemoTests" */;
+			buildPhases = (
+				93ADACF06099B8AF0CF1D889 /* [CP] Check Pods Manifest.lock */,
+				FDB19C2426B3FB24009C49ED /* Sources */,
+				FDB19C2526B3FB24009C49ED /* Frameworks */,
+				FDB19C2626B3FB24009C49ED /* Resources */,
+				54D18F14AC602839FEA77D1D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB19C2A26B3FB24009C49ED /* PBXTargetDependency */,
+			);
+			name = MODemoTests;
+			productName = MODemoTests;
+			productReference = FDB19C2826B3FB24009C49ED /* MODemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDB19C3226B3FB24009C49ED /* MODemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB19C4226B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemoUITests" */;
+			buildPhases = (
+				C75BB608FE2498363B653CB2 /* [CP] Check Pods Manifest.lock */,
+				FDB19C2F26B3FB24009C49ED /* Sources */,
+				FDB19C3026B3FB24009C49ED /* Frameworks */,
+				FDB19C3126B3FB24009C49ED /* Resources */,
+				27F9F48DF85003D431FA92BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB19C3526B3FB24009C49ED /* PBXTargetDependency */,
+			);
+			name = MODemoUITests;
+			productName = MODemoUITests;
+			productReference = FDB19C3326B3FB24009C49ED /* MODemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDB19C0A26B3FB22009C49ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MO;
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = moxiaoyan;
+				TargetAttributes = {
+					FDB19C1126B3FB22009C49ED = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1410;
+					};
+					FDB19C2726B3FB24009C49ED = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1400;
+						TestTargetID = FDB19C1126B3FB22009C49ED;
+					};
+					FDB19C3226B3FB24009C49ED = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FDB19C1126B3FB22009C49ED;
+					};
+				};
+			};
+			buildConfigurationList = FDB19C0D26B3FB22009C49ED /* Build configuration list for PBXProject "MODemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDB19C0926B3FB22009C49ED;
+			productRefGroup = FDB19C1326B3FB22009C49ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDB19C1126B3FB22009C49ED /* MODemo */,
+				FDB19C2726B3FB24009C49ED /* MODemoTests */,
+				FDB19C3226B3FB24009C49ED /* MODemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDB19C1026B3FB22009C49ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB19C2226B3FB23009C49ED /* LaunchScreen.storyboard in Resources */,
+				FD4081B2298749CA00C83D11 /* index.html in Resources */,
+				FDB19C1F26B3FB23009C49ED /* Assets.xcassets in Resources */,
+				FD4081B8298749CA00C83D11 /* TDD练习：火星车问题 in Resources */,
+				FD4081BE298749CA00C83D11 /* news.mp3 in Resources */,
+				FDB19C1D26B3FB22009C49ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C2626B3FB24009C49ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C3126B3FB24009C49ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27F9F48DF85003D431FA92BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MODemo-MODemoUITests/Pods-MODemo-MODemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MODemo-MODemoUITests/Pods-MODemo-MODemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MODemo-MODemoUITests/Pods-MODemo-MODemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D3CE1CE3B8139C16551B472 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MODemo/Pods-MODemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MODemo/Pods-MODemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MODemo/Pods-MODemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54D18F14AC602839FEA77D1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MODemoTests/Pods-MODemoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MODemoTests/Pods-MODemoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MODemoTests/Pods-MODemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93ADACF06099B8AF0CF1D889 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MODemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C75BB608FE2498363B653CB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MODemo-MODemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D686BEB8F7DF67C7869D2E6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MODemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDB19C0E26B3FB22009C49ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4081B3298749CA00C83D11 /* MOWebViewJSBridgeViewController.m in Sources */,
+				FD408187298749C900C83D11 /* MOCircleLoadingView.m in Sources */,
+				FD408197298749CA00C83D11 /* MOBottomDrawerView.m in Sources */,
+				FD408195298749CA00C83D11 /* MODrawerViewController.m in Sources */,
+				FD4081A0298749CA00C83D11 /* MOResponderViewController.m in Sources */,
+				FDDBEE8F2917906800AAA80D /* MOFirstViewController.swift in Sources */,
+				FD4081B5298749CA00C83D11 /* MOWaterRippleViewController.m in Sources */,
+				FD4081BC298749CA00C83D11 /* MOKVCViewController.m in Sources */,
+				FD408199298749CA00C83D11 /* MOOperationQueue.m in Sources */,
+				FD408198298749CA00C83D11 /* MOGCD.m in Sources */,
+				FD47CB1729654D2700F3AF0A /* MOAligorithmTrees.swift in Sources */,
+				FD408193298749CA00C83D11 /* MMNetworkModel.m in Sources */,
+				FD4081C5298749CA00C83D11 /* MOProxy.m in Sources */,
+				FDB19C7226B3FB66009C49ED /* MOArrayDataSource.swift in Sources */,
+				FD2E57CB28FA54CA005F4C8E /* MOResponderChainViewController.swift in Sources */,
+				FD408189298749C900C83D11 /* MOBlockViewController.m in Sources */,
+				FD741B25298C7DFF001E4A5E /* MOAlgorithmList.mm in Sources */,
+				FD4081A6298749CA00C83D11 /* MOPlaceholderView.m in Sources */,
+				FD408188298749C900C83D11 /* MOCricleLoadingViewController.m in Sources */,
+				FD41FA732966513E00716136 /* MOAlgorithmStrings.swift in Sources */,
+				FD408192298749CA00C83D11 /* MONativeNetworkViewController.m in Sources */,
+				FDB19C6F26B3FB66009C49ED /* MOApplePayViewController.swift in Sources */,
+				FD408191298749CA00C83D11 /* MMNetworkManager.m in Sources */,
+				FD4081AA298749CA00C83D11 /* NSObject+property.m in Sources */,
+				FDF5B5A92932206500E9855E /* MOPopOrDismissAnimator.swift in Sources */,
+				FD4081B7298749CA00C83D11 /* MOPerson+Tests.m in Sources */,
+				FDB19C6826B3FB66009C49ED /* MOAuthorizationCamera.swift in Sources */,
+				FD40819A298749CA00C83D11 /* MONSThread.m in Sources */,
+				FD4081AE298749CA00C83D11 /* MOImageButtonViewController.m in Sources */,
+				FD4081B1298749CA00C83D11 /* GCWebviewJSBridgeBase.m in Sources */,
+				FDB19C6B26B3FB66009C49ED /* MOViewTestViewController.swift in Sources */,
+				FD4081B9298749CA00C83D11 /* MOMarsRover.m in Sources */,
+				FDB19C6426B3FB66009C49ED /* MOReminderViewController.swift in Sources */,
+				FD4081AC298749CA00C83D11 /* NSObject+arrayContain.m in Sources */,
+				FD4081B0298749CA00C83D11 /* GCWebviewJSBridge_JS.m in Sources */,
+				FD40818D298749CA00C83D11 /* KYButtonCells.swift in Sources */,
+				FD4081C2298749CA00C83D11 /* YYWeakProxy.m in Sources */,
+				FDF5B5A529321F7C00E9855E /* MOPushOrPresentAnimator.swift in Sources */,
+				FDB19C5F26B3FB66009C49ED /* MOTouchIDViewController.swift in Sources */,
+				FD4080F52987499100C83D11 /* MOOCViewController.m in Sources */,
+				FD4081A7298749CA00C83D11 /* UINavigationItem+Swizzling.m in Sources */,
+				FD4081B6298749CA00C83D11 /* MOOCMockDemo.m in Sources */,
+				FD4081AB298749CA00C83D11 /* NSMutableArray+Swizzling.m in Sources */,
+				FDB19C1A26B3FB22009C49ED /* ViewController.swift in Sources */,
+				FD408196298749CA00C83D11 /* MOLeftDrawerView.m in Sources */,
+				FDB19C6326B3FB66009C49ED /* MOTableViewStyleViewController.swift in Sources */,
+				FDB19C6026B3FB66009C49ED /* MOLocationManager.swift in Sources */,
+				FD40818B298749C900C83D11 /* UIColorExtension.swift in Sources */,
+				FD40818E298749CA00C83D11 /* ButtonLayer.swift in Sources */,
+				FD4081A5298749CA00C83D11 /* UITableView+Placeholder.m in Sources */,
+				FD4081AD298749CA00C83D11 /* NSObject+Swizzling.m in Sources */,
+				FD4081B4298749CA00C83D11 /* MOWaterRipperView.m in Sources */,
+				FDDBEE912917907200AAA80D /* MOSecondViewController.swift in Sources */,
+				FD4081BA298749CA00C83D11 /* MOLocksViewController.m in Sources */,
+				FD40819F298749CA00C83D11 /* MOResponderTestView.m in Sources */,
+				FDB19C5E26B3FB66009C49ED /* MOWKWebViewController.swift in Sources */,
+				FD408194298749CA00C83D11 /* NSObject+Extension.m in Sources */,
+				FD4081A4298749CA00C83D11 /* UILabel+Swizzling.m in Sources */,
+				FD4081AF298749CA00C83D11 /* GCWebviewJSBridge.m in Sources */,
+				FDB19C6926B3FB66009C49ED /* MOAuthorizationPhoto.swift in Sources */,
+				FD40819D298749CA00C83D11 /* MOTitleLineView.m in Sources */,
+				FDB19C1626B3FB22009C49ED /* AppDelegate.swift in Sources */,
+				FD4081A8298749CA00C83D11 /* MORuntimeViewController.m in Sources */,
+				FDB19C6C26B3FB66009C49ED /* MOPopViewController.swift in Sources */,
+				FD4080F8298749A700C83D11 /* MOArrayDataSource.m in Sources */,
+				FDB19C6D26B3FB66009C49ED /* MOShareDocumentViewController.swift in Sources */,
+				FD4081C3298749CA00C83D11 /* NSTimer+MOBlock.m in Sources */,
+				FD40819C298749CA00C83D11 /* MOViewTestViewController.m in Sources */,
+				FD4081C0298749CA00C83D11 /* MOStudent.m in Sources */,
+				FDB19C6726B3FB66009C49ED /* MOAuthorizationManager.swift in Sources */,
+				FDB19CCC26B8E25C009C49ED /* MOScannerViewController.swift in Sources */,
+				FDB19C6A26B3FB66009C49ED /* MOQRScanViewController.swift in Sources */,
+				FD74074129888C34001E4A5E /* MOBaseViewController.m in Sources */,
+				FDB19C6126B3FB66009C49ED /* MOOneViewController.swift in Sources */,
+				FD40819B298749CA00C83D11 /* MOMultiThreadViewController.m in Sources */,
+				FDB19C6526B3FB66009C49ED /* MOCalendarViewController.swift in Sources */,
+				FDB19C1826B3FB22009C49ED /* SceneDelegate.swift in Sources */,
+				FD4081A1298749CA00C83D11 /* UIButton+Extension.m in Sources */,
+				FD4081C4298749CA00C83D11 /* MOTimerViewController.m in Sources */,
+				FDB19C6E26B3FB66009C49ED /* MOFileManager.swift in Sources */,
+				FD40818A298749C900C83D11 /* MOMenuButtonViewController.m in Sources */,
+				FD40819E298749CA00C83D11 /* MOFollowLightView.m in Sources */,
+				FDB19C6226B3FB66009C49ED /* MOMultiDelegateViewController.swift in Sources */,
+				FD40818F298749CA00C83D11 /* KYButtonDelegate.swift in Sources */,
+				FD740748298AAAF6001E4A5E /* MOAlgorithmLists.c in Sources */,
+				FDB19C7126B3FB66009C49ED /* MOUITestsViewController.swift in Sources */,
+				FDB19C7026B3FB66009C49ED /* MOPerson.swift in Sources */,
+				FD74074529888EF8001E4A5E /* MOAlorithm.c in Sources */,
+				FD408190298749CA00C83D11 /* KYButton.swift in Sources */,
+				FD4081BF298749CA00C83D11 /* MOPerson.m in Sources */,
+				FDB19C6626B3FB66009C49ED /* MOAlgorithm.swift in Sources */,
+				FD47CB14296549E100F3AF0A /* MOAlgorithmLists.swift in Sources */,
+				FD408186298749C900C83D11 /* CircleLoadingView.swift in Sources */,
+				FD4081A2298749CA00C83D11 /* UIViewController+Swizzling.m in Sources */,
+				FD40818C298749C900C83D11 /* OverLayView.swift in Sources */,
+				FD4081C1298749CA00C83D11 /* MOTableViewOptimizeViewController.m in Sources */,
+				FD4081A3298749CA00C83D11 /* UIImage+image.m in Sources */,
+				FDA55CCF26BCDED700F00633 /* MOExtensions.swift in Sources */,
+				FD4081BB298749CA00C83D11 /* MOPrivateAPIViewController.m in Sources */,
+				FD4081A9298749CA00C83D11 /* UIButton+Swizzling.m in Sources */,
+				FD4081BD298749CA00C83D11 /* MOControlCenterViewController.m in Sources */,
+				FDF5B5A12932148700E9855E /* MOPresentationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C2426B3FB24009C49ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4081D729874C3300C83D11 /* MODemoOCTests.m in Sources */,
+				FD4081D429874C3300C83D11 /* MOOCHamcreatTests.m in Sources */,
+				FD4081D629874C3300C83D11 /* MOOCMockTests.m in Sources */,
+				FD4081D529874C3300C83D11 /* MOOCMockDemoTests.m in Sources */,
+				FD4081D329874C3300C83D11 /* MOMarsRoverTests.m in Sources */,
+				FDB19C2D26B3FB24009C49ED /* MODemoTests.swift in Sources */,
+				FDB19C7926B407BE009C49ED /* MOUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB19C2F26B3FB24009C49ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB19C7726B4079F009C49ED /* MOTestsViewControllerUITests.swift in Sources */,
+				FDB19C3826B3FB24009C49ED /* MODemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDB19C2A26B3FB24009C49ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB19C1126B3FB22009C49ED /* MODemo */;
+			targetProxy = FDB19C2926B3FB24009C49ED /* PBXContainerItemProxy */;
+		};
+		FDB19C3526B3FB24009C49ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB19C1126B3FB22009C49ED /* MODemo */;
+			targetProxy = FDB19C3426B3FB24009C49ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDB19C1B26B3FB22009C49ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB19C1C26B3FB22009C49ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDB19C2026B3FB23009C49ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB19C2126B3FB23009C49ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDB19C3A26B3FB24009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDB19C3B26B3FB24009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDB19C3D26B3FB24009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB2739E5B15905186A88D3AD /* Pods-MODemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MODemoOC/MODemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDB19C3E26B3FB24009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0FB419EB39483834A9B8BA /* Pods-MODemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MODemoOC/MODemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDB19C4026B3FB24009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 275316C6FE75A7839DC9B4A8 /* Pods-MODemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MODemoTests/MODemoTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MODemo.app/MODemo";
+			};
+			name = Debug;
+		};
+		FDB19C4126B3FB24009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 865FA8CC29A7C81E26B4ED01 /* Pods-MODemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MODemoTests/MODemoTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MODemo.app/MODemo";
+			};
+			name = Release;
+		};
+		FDB19C4326B3FB24009C49ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68BC262E5DDBB8973487FF0A /* Pods-MODemo-MODemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MODemo;
+			};
+			name = Debug;
+		};
+		FDB19C4426B3FB24009C49ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70E474EA380440DD78D3C87 /* Pods-MODemo-MODemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U955R2H5Y2;
+				INFOPLIST_FILE = MODemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MikiMo.MODemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MODemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDB19C0D26B3FB22009C49ED /* Build configuration list for PBXProject "MODemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19C3A26B3FB24009C49ED /* Debug */,
+				FDB19C3B26B3FB24009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB19C3C26B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19C3D26B3FB24009C49ED /* Debug */,
+				FDB19C3E26B3FB24009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB19C3F26B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19C4026B3FB24009C49ED /* Debug */,
+				FDB19C4126B3FB24009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB19C4226B3FB24009C49ED /* Build configuration list for PBXNativeTarget "MODemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB19C4326B3FB24009C49ED /* Debug */,
+				FDB19C4426B3FB24009C49ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDB19C0A26B3FB22009C49ED /* Project object */;
+}
