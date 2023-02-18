@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-//        test() // 算法
+//        testAlgorithm() // 算法
         
-        self.navigationController?.pushViewController(MOOCViewController(), animated: true);
+//        self.navigationController?.pushViewController(MOOCViewController(), animated: true);
     }
     
     private func setupView() {
