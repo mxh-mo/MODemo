@@ -44,7 +44,7 @@ fileprivate func creatTree(_ nums: [Int]) -> TreeNode? {
 //fileprivate func printTree(_ list: TreeNode?) {
 //}
 
-func treeTest() {
+func testTrees() {
     
 }
 

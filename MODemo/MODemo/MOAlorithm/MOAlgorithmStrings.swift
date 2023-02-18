@@ -30,4 +30,6 @@ func lengthOfLongestSubstring(_ string: String) -> Int {
 
 // MARK: - 最长回文子串
 
+func testStrings() {
 
+}

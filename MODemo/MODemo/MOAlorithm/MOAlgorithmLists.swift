@@ -50,7 +50,7 @@ fileprivate func printList(_ list: ListNode?) {
 
 // MARK: - Public Methods
 
-func test() {
+func testLists() {
 
 }
 

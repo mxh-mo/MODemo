@@ -8,23 +8,41 @@
 
 import Foundation
 
-// MARK: - 最少硬币数
+// MARK: - Public Methods
 
-var coinArray: [Int] = []
-func leastCoin(_ n: Int) -> Int {
-    if n <= 0 {
-        return 0
-    }
-    coinArray = [Int](repeating: 0, count: n)
-    return lestCoinFor(n)
+func testAlgorithm() {
+    print("test algorithm")
+    
+
+    // 最少硬币数
+//    let minCount = minCountOfCoins(20)
+//    print("minCount: \(minCount)")
+//    for (index, value) in minCounts.enumerated() {
+//        print("index: \(index) = \(value)")
+//    }
 }
 
-func lestCoinFor(_ n: Int) -> Int {
+// MARK: - 最少硬币数
+/// 有3种硬币，面值为1、7、9，数量无限
+/// 选用硬币，使其金额和为n
+/// 求出最少数量的硬币组合
+// 方法1：递归，会造成大量的重复计算
+// 方法2：动态规划，可存储已经计算过的结果，避免大量重复运算
+var minCounts: [Int] = [] // 记录idx最少数量
+func minCountOfCoins(_ n: Int) -> Int {
     if n <= 0 {
         return 0
     }
-    if coinArray[n - 1] > 0 {
-        return coinArray[n - 1]
+    minCounts = [Int](repeating: 0, count: n + 1)
+    return minCountFor(n)
+}
+
+func minCountFor(_ n: Int) -> Int {
+    if n <= 0 {
+        return Int.max
+    }
+    if minCounts[n] > 0 {
+        return minCounts[n]
     }
     if n <= 9 {
         var result = 0
@@ -35,13 +53,14 @@ func lestCoinFor(_ n: Int) -> Int {
         } else { // n < 7
             result = n
         }
-        coinArray[n - 1] = result
+        minCounts[n] = result
+//        print("n: \(n) result:\(result)")
         return result
     }
-    var result = Swift.min(lestCoinFor(n - 9), lestCoinFor(n - 7), lestCoinFor(n - 1))
+    var result = Swift.min(minCountFor(n - 9), minCountFor(n - 7), minCountFor(n - 1))
     result = result + 1
-    print("n: \(n) result:\(result)")
-    coinArray[n - 1] = result
+//    print("n: \(n) result:\(result)")
+    minCounts[n] = result
     return result
 }
 
