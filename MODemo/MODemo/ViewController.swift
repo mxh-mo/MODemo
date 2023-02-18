@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupView()
 //        testAlgorithm() // 算法
+//        testLists() // 链表
         
 //        self.navigationController?.pushViewController(MOOCViewController(), animated: true);
     }

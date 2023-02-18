@@ -84,7 +84,7 @@
 		FD4081D729874C3300C83D11 /* MODemoOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4081CB29874A7D00C83D11 /* MODemoOCTests.m */; };
 		FD41FA732966513E00716136 /* MOAlgorithmStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD41FA722966513E00716136 /* MOAlgorithmStrings.swift */; };
 		FD47CB14296549E100F3AF0A /* MOAlgorithmLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB13296549E100F3AF0A /* MOAlgorithmLists.swift */; };
-		FD47CB1729654D2700F3AF0A /* MOAligorithmTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB1629654D2700F3AF0A /* MOAligorithmTrees.swift */; };
+		FD47CB1729654D2700F3AF0A /* MOAlgorithmTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB1629654D2700F3AF0A /* MOAlgorithmTrees.swift */; };
 		FD74074129888C34001E4A5E /* MOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD74074029888C34001E4A5E /* MOBaseViewController.m */; };
 		FD74074529888EF8001E4A5E /* MOAlorithm.c in Sources */ = {isa = PBXBuildFile; fileRef = FD74074429888EF8001E4A5E /* MOAlorithm.c */; };
 		FD740748298AAAF6001E4A5E /* MOAlgorithmLists.c in Sources */ = {isa = PBXBuildFile; fileRef = FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */; };
@@ -288,7 +288,7 @@
 		FD41FA722966513E00716136 /* MOAlgorithmStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOAlgorithmStrings.swift; sourceTree = "<group>"; };
 		FD41FA74296783C800716136 /* MODemoTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MODemoTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		FD47CB13296549E100F3AF0A /* MOAlgorithmLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAlgorithmLists.swift; sourceTree = "<group>"; };
-		FD47CB1629654D2700F3AF0A /* MOAligorithmTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOAligorithmTrees.swift; sourceTree = "<group>"; };
+		FD47CB1629654D2700F3AF0A /* MOAlgorithmTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOAlgorithmTrees.swift; sourceTree = "<group>"; };
 		FD74073F29888C34001E4A5E /* MOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOBaseViewController.h; sourceTree = "<group>"; };
 		FD74074029888C34001E4A5E /* MOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBaseViewController.m; sourceTree = "<group>"; };
 		FD74074329888EF8001E4A5E /* MOAlorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAlorithm.h; sourceTree = "<group>"; };
@@ -718,7 +718,7 @@
 			children = (
 				FDB19C4F26B3FB65009C49ED /* MOAlgorithm.swift */,
 				FD47CB13296549E100F3AF0A /* MOAlgorithmLists.swift */,
-				FD47CB1629654D2700F3AF0A /* MOAligorithmTrees.swift */,
+				FD47CB1629654D2700F3AF0A /* MOAlgorithmTrees.swift */,
 				FD41FA722966513E00716136 /* MOAlgorithmStrings.swift */,
 			);
 			path = MOAlorithm;
@@ -1150,7 +1150,7 @@
 				FD4081BC298749CA00C83D11 /* MOKVCViewController.m in Sources */,
 				FD408199298749CA00C83D11 /* MOOperationQueue.m in Sources */,
 				FD408198298749CA00C83D11 /* MOGCD.m in Sources */,
-				FD47CB1729654D2700F3AF0A /* MOAligorithmTrees.swift in Sources */,
+				FD47CB1729654D2700F3AF0A /* MOAlgorithmTrees.swift in Sources */,
 				FD408193298749CA00C83D11 /* MMNetworkModel.m in Sources */,
 				FD4081C5298749CA00C83D11 /* MOProxy.m in Sources */,
 				FDB19C7226B3FB66009C49ED /* MOArrayDataSource.swift in Sources */,

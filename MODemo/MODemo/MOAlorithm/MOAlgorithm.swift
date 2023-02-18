@@ -54,18 +54,16 @@ func minCountFor(_ n: Int) -> Int {
             result = n
         }
         minCounts[n] = result
-//        print("n: \(n) result:\(result)")
         return result
     }
     var result = Swift.min(minCountFor(n - 9), minCountFor(n - 7), minCountFor(n - 1))
     result = result + 1
-//    print("n: \(n) result:\(result)")
     minCounts[n] = result
     return result
 }
 
 // MARK: - m*n矩阵路径总数
-
+/// 动态规划
 func totalRoad(_ n: Int, _ m: Int) -> Int {
     if n <= 0 || m <= 0 {
         return 0
@@ -77,7 +75,7 @@ func totalRoad(_ n: Int, _ m: Int) -> Int {
 }
 
 // MARK: - 盛水最多的容器
-
+/// https://leetcode.cn/problems/container-with-most-water/
 func maxArea(_ height: [Int]) -> Int {
     if height.count <= 1 {
         return 0
@@ -102,7 +100,7 @@ func maxArea(_ height: [Int]) -> Int {
 }
 
 // MARK: - 买卖股票最佳时机
-
+/// https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/
 func maxProfit(_ prices: [Int]) -> Int {
     if prices.isEmpty {
         return 0

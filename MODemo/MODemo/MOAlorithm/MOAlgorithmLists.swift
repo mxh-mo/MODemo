@@ -52,12 +52,20 @@ fileprivate func printList(_ list: ListNode?) {
 
 func testLists() {
 
+    // 合并两个有序链表
+//    let list1 = creatList([1, 2, 5])
+//    let list2 = creatList([1, 3, 4])
+//    let result = mergeTwoLists(list1, list2)
+//    printList(result)
+    
+    // 判断是否为回文链表
+//    let list = creatList([1, 2, 3, 2, 1])
+//    let isPalindrome = isPalindrome(list)
+//    print("isPalindrome: \(isPalindrome)")
 }
 
 // MARK: - 合并两个有序链表
-//let list1 = creatList([1, 2, 5])
-//let list2 = creatList([1, 3, 4])
-//let result = mergeTwoLists(list1, list2)
+/// https://leetcode.cn/problems/merge-two-sorted-lists/
 func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
     var cur1: ListNode? = list1
     var cur2: ListNode? = list2
@@ -80,8 +88,11 @@ func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
     return result.next
 }
 
-// MARK: - 回文串
-
+// MARK: - 回文链表
+// 方法1：遍历链表存入数组，再收尾双指针比较
+/// https://leetcode.cn/problems/palindrome-linked-list/solution/bao-li-fa-pan-duan-hui-wen-lian-biao-by-goepi/
+// 方法2：快慢指针找到中间结点，正序链表跟反转链表比较
+/// https://leetcode.cn/problems/palindrome-linked-list/
 func isPalindrome(_ head: ListNode?) -> Bool {
     if head == nil {
         return true
