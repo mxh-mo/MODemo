@@ -9,6 +9,22 @@
 
 import Foundation
 
+// MARK: - Public Methods
+
+func testLists() {
+
+    // 合并两个有序链表
+//    let list1 = creatList([1, 2, 5])
+//    let list2 = creatList([1, 3, 4])
+//    let result = mergeTwoLists(list1, list2)
+//    printList(result)
+    
+    // 判断是否为回文链表
+//    let list = creatList([1, 2, 3, 2, 1])
+//    let isPalindrome = isPalindrome(list)
+//    print("isPalindrome: \(isPalindrome)")
+}
+
 // MARK: - 链表
 
 public class ListNode {
@@ -46,22 +62,6 @@ fileprivate func printList(_ list: ListNode?) {
         print("\(String(describing: cur?.val))")
         cur = cur?.next
     }
-}
-
-// MARK: - Public Methods
-
-func testLists() {
-
-    // 合并两个有序链表
-//    let list1 = creatList([1, 2, 5])
-//    let list2 = creatList([1, 3, 4])
-//    let result = mergeTwoLists(list1, list2)
-//    printList(result)
-    
-    // 判断是否为回文链表
-//    let list = creatList([1, 2, 3, 2, 1])
-//    let isPalindrome = isPalindrome(list)
-//    print("isPalindrome: \(isPalindrome)")
 }
 
 // MARK: - 合并两个有序链表
