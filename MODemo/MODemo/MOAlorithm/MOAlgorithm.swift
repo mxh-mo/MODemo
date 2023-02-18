@@ -5,6 +5,8 @@
 //  Created by MikiMo on 2020/9/24.
 //  Copyright © 2020 moxiaoyan. All rights reserved.
 //
+//  剑指 Offer（第 2 版）
+// https://leetcode.cn/problem-list/xb9nqhhg/?sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkZST05URU5EX0lEIn1d
 
 import Foundation
 
@@ -13,13 +15,68 @@ import Foundation
 func testAlgorithm() {
     print("test algorithm")
     
-
+    // 二维数组中的查找
+//    let array1 = [
+//        [1,   4,  7, 11, 15],
+//        [2,   5,  8, 12, 19],
+//        [3,   6,  9, 16, 22],
+//        [10, 13, 14, 17, 24],
+//        [18, 21, 23, 26, 30]
+//      ]
+//    let array2 = [[1, 2]]
+//    let didFind = findNumberIn2DArray(array1, 100)
+//    print("find: \(didFind)")
+    
+    // 数组中重复的数字
+//    let result = findRepeatNumber([1, 2, 3, 4, 3])
+//    print("repeat num: \(result)")
     // 最少硬币数
 //    let minCount = minCountOfCoins(20)
 //    print("minCount: \(minCount)")
 //    for (index, value) in minCounts.enumerated() {
 //        print("index: \(index) = \(value)")
 //    }
+}
+
+// MARK: - 二维数组中的查找 ⚠️
+/// https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/?favorite=xb9nqhhg
+/// 从右上角开始找，优先动列
+func findNumberIn2DArray(_ matrix: [[Int]], _ target: Int) -> Bool {
+    if matrix.isEmpty {
+        return false
+    }
+    let maxLine = matrix.count
+    let maxColume = matrix[0].count
+    
+    var curLine = 0, curColume = maxColume - 1
+    
+    while curLine < maxLine && curColume >= 0 {
+        let cur = matrix[curLine][curColume]
+        if cur == target {
+            return true
+        }
+        if cur > target {
+            curColume -= 1
+        } else {
+            curLine += 1
+        }
+    }
+    return false
+}
+
+// MARK: - 数组中重复的数字
+/// https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
+func findRepeatNumber(_ nums: [Int]) -> Int {
+    var dict: [Int: Int] = [:]
+    for num in nums {
+        if let count = dict[num] {
+            dict[num] = count + 1
+            return num
+        } else {
+            dict[num] = 1
+        }
+    }
+    return 0
 }
 
 // MARK: - 最少硬币数

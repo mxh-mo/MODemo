@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-//        testAlgorithm() // 算法
+        testAlgorithm() // 算法
 //        testLists()     // 链表
 //        testTrees()     // 树
 //        testStrings()   // 字符串
