@@ -13,34 +13,87 @@ import Foundation
 // MARK: - Public Methods
 
 func testAlgorithm() {
-    print("test algorithm")
-    
-    // 二维数组中的查找
-//    let array1 = [
-//        [1,   4,  7, 11, 15],
-//        [2,   5,  8, 12, 19],
-//        [3,   6,  9, 16, 22],
-//        [10, 13, 14, 17, 24],
-//        [18, 21, 23, 26, 30]
-//      ]
-//    let array2 = [[1, 2]]
-//    let didFind = findNumberIn2DArray(array1, 100)
-//    print("find: \(didFind)")
-    
-    // 数组中重复的数字
-//    let result = findRepeatNumber([1, 2, 3, 4, 3])
-//    print("repeat num: \(result)")
-    // 最少硬币数
-//    let minCount = minCountOfCoins(20)
-//    print("minCount: \(minCount)")
-//    for (index, value) in minCounts.enumerated() {
-//        print("index: \(index) = \(value)")
-//    }
+
+    print(findMin([11,13,15,17]))
+}
+
+// MARK: - Private Methods
+
+// MARK: - 矩阵中的路径
+/// https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/solution/mian-shi-ti-12-ju-zhen-zhong-de-lu-jing-shen-du-yo/
+//func exist(_ board: [[Character]], _ word: String) -> Bool {
+//}
+
+// MARK: - 寻找旋转排序数组中的最小值
+/// https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/
+/// 根据曲线图 + 二分查找
+func findMin(_ nums: [Int]) -> Int {
+    var left: Int = 0
+    var right: Int = nums.count - 1
+    while left < right {
+        let centerIdx: Int = left + (right - left) / 2
+        if nums[centerIdx] < nums[right] {
+            right = centerIdx
+        } else {
+            left = centerIdx + 1
+        }
+    }
+    return nums[left]
+}
+
+// MARK: - 斐波那契数列
+/// https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/?favorite=xb9nqhhg
+/// F(0) = 0,   F(1) = 1
+/// F(N) = F(N - 1) + F(N - 2), 其中 N > 1
+var fibDict: [Int: Int] = [:]
+func fib(_ n: Int) -> Int {
+    if n == 0 {
+        return 0
+    } else if n == 1 {
+        return 1
+    }
+    if let res = fibDict[n] {
+        return res
+    }
+    var res = fib(n - 1) + fib(n - 2)
+    res = res % 1000000007
+    fibDict[n] = res
+    return res
+}
+
+// 替换空格
+/*
+ let r = replaceSpace("We are happy.")
+ print(r)
+ */
+// https://leetcode.cn/problems/ti-huan-kong-ge-lcof/
+func replaceSpace(_ s: String) -> String {
+    var result = ""
+    for char in s {
+        if char == " " {
+            result.append("%20")
+        } else {
+            result.append(char)
+        }
+    }
+    return result
 }
 
 // MARK: - 二维数组中的查找 ⚠️
 /// https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/?favorite=xb9nqhhg
 /// 从右上角开始找，优先动列
+/*
+ let array1 = [
+     [1,   4,  7, 11, 15],
+     [2,   5,  8, 12, 19],
+     [3,   6,  9, 16, 22],
+     [10, 13, 14, 17, 24],
+     [18, 21, 23, 26, 30]
+   ]
+ let array2 = [[1, 2]]
+ let didFind = findNumberIn2DArray(array1, 100)
+ print("find: \(didFind)")
+ */
 func findNumberIn2DArray(_ matrix: [[Int]], _ target: Int) -> Bool {
     if matrix.isEmpty {
         return false
@@ -64,8 +117,12 @@ func findNumberIn2DArray(_ matrix: [[Int]], _ target: Int) -> Bool {
     return false
 }
 
-// MARK: - 数组中重复的数字
+// 数组中重复的数字
 /// https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
+/*
+ let result = findRepeatNumber([1, 2, 3, 4, 3])
+ print("repeat num: \(result)")
+ */
 func findRepeatNumber(_ nums: [Int]) -> Int {
     var dict: [Int: Int] = [:]
     for num in nums {
@@ -85,6 +142,13 @@ func findRepeatNumber(_ nums: [Int]) -> Int {
 /// 求出最少数量的硬币组合
 // 方法1：递归，会造成大量的重复计算
 // 方法2：动态规划，可存储已经计算过的结果，避免大量重复运算
+/*
+ let minCount = minCountOfCoins(20)
+ print("minCount: \(minCount)")
+ for (index, value) in minCounts.enumerated() {
+     print("index: \(index) = \(value)")
+ }
+ */
 var minCounts: [Int] = [] // 记录idx最少数量
 func minCountOfCoins(_ n: Int) -> Int {
     if n <= 0 {

@@ -10,15 +10,15 @@
 import Foundation
 
 func testStrings() {
-
-    // 无重复字符的最长子串
-//    let length = lengthOfLongestSubstring("1234567812")
-//    print("length: \(length)")
     
 }
 
 // MARK: - 无重复字符的最长子串
 /// https://leetcode.cn/problems/longest-substring-without-repeating-characters/
+/*
+ let length = lengthOfLongestSubstring("1234567812")
+ print("length: \(length)")
+ */
 func lengthOfLongestSubstring(_ string: String) -> Int {
     if string.isEmpty {
         return 0
