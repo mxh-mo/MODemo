@@ -2,23 +2,27 @@ PODS:
   - Masonry (1.1.0)
   - OCHamcrest (8.0.0)
   - OCMock (3.8.1)
+  - SnapKit (5.6.0)
 
 DEPENDENCIES:
   - Masonry
   - OCHamcrest (~> 8.0)
   - OCMock (~> 3.8.1)
+  - SnapKit (~> 5.6.0)
 
 SPEC REPOS:
   trunk:
     - Masonry
     - OCHamcrest
     - OCMock
+    - SnapKit
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OCHamcrest: a613690381f1dac7637c18962c10dbe8feca4bb5
   OCMock: 29f6e52085b4e7d9b075cbf03ed7c3112f82f934
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 68fd8e6f89330eeeef3daee11ad335a7bf3d2101
+PODFILE CHECKSUM: 90b9f562f62d64b6fc78604a348bca98221730c6
 
 COCOAPODS: 1.11.2

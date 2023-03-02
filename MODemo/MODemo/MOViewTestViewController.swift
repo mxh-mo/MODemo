@@ -6,15 +6,88 @@
 //
 
 import UIKit
+import SnapKit
+
+typealias MOSwipeUpCallback = () -> ()
+
+struct MOAssociatedKeys {
+    static var touchPointKey: String = "touchPoint"
+    static var swipeUpCallbackKey: String = "swipeUpCallback"
+}
+
+extension UIView {
+    public var touchPoint: CGPoint? {
+        get {
+            return objc_getAssociatedObject(self, &MOAssociatedKeys.touchPointKey) as? CGPoint
+        }
+        set {
+            objc_setAssociatedObject(self, &MOAssociatedKeys.touchPointKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    var didReceiveSwipeUp: MOSwipeUpCallback? {
+        get {
+            return objc_getAssociatedObject(self, &MOAssociatedKeys.swipeUpCallbackKey) as? MOSwipeUpCallback
+        }
+        set {
+            objc_setAssociatedObject(self, &MOAssociatedKeys.swipeUpCallbackKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+    open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
+        guard let touch = touches.first else { return }
+        
+        let point = touch.location(in: self)
+        
+        if let touchPoint = self.touchPoint {
+            if (touchPoint.y > point.y) {
+                print("swipe up")
+                guard let callback = self.didReceiveSwipeUp else { return }
+                callback();
+            }
+        } else {
+            self.touchPoint = point
+        }
+    }
+}
 
 class MOViewTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        imageViewTransform() // UIImageView 翻转
-        stackView() // UIStackView
-        gradientLayer() // UIView 颜色渐变
+        swipeGestureTest(); // 解决：上滑手势 跟 按钮 cancel 手势 冲突
+//        imageViewTransform() // UIImageView 翻转
+//        stackView() // UIStackView
+//        gradientLayer() // UIView 颜色渐变
+    }
+    
+    // MARK: - 解决：上滑手势 跟 按钮 cancel 手势 冲突
+    func swipeGestureTest() {
+
+        let view = UIView(frame: self.view.bounds)
+        view.backgroundColor = UIColor(white: 1, alpha: 0.5)
+        view.isUserInteractionEnabled = true
+        view.didReceiveSwipeUp = {
+            print("did reveive swipe up")
+        }
+        self.view.addSubview(view)
+        
+        let btn = UIView(frame: .zero)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didClickBtn))
+        btn.addGestureRecognizer(tap)
+        btn.backgroundColor = .red
+        btn.didReceiveSwipeUp = {
+            print("did reveive swipe up btn")
+        }
+        self.view.addSubview(btn)
+        btn.snp.makeConstraints { make in
+            make.top.left.equalTo(self.view).offset(200)
+            make.height.width.equalTo(44.0)
+        }
+    }
+    
+    @objc func didClickBtn() {
+        print("did clic button")
     }
     
     // MARK: - UIView 颜色渐变
