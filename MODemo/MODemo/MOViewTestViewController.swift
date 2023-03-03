@@ -16,6 +16,7 @@ struct MOAssociatedKeys {
 }
 
 extension UIView {
+    // 上一次触摸点
     public var touchPoint: CGPoint? {
         get {
             return objc_getAssociatedObject(self, &MOAssociatedKeys.touchPointKey) as? CGPoint
@@ -24,6 +25,7 @@ extension UIView {
             objc_setAssociatedObject(self, &MOAssociatedKeys.touchPointKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
+    // 上滑回调
     var didReceiveSwipeUp: MOSwipeUpCallback? {
         get {
             return objc_getAssociatedObject(self, &MOAssociatedKeys.swipeUpCallbackKey) as? MOSwipeUpCallback
@@ -35,17 +37,18 @@ extension UIView {
     
     open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesMoved(touches, with: event)
-        guard let touch = touches.first else { return }
         
+        guard let touch = touches.first else { return }
         let point = touch.location(in: self)
         
-        if let touchPoint = self.touchPoint {
-            if (touchPoint.y > point.y) {
+        if let touchPoint = self.touchPoint { // 不是第一次
+            if (touchPoint.y > point.y) { // 当前点在上一个点的上方
                 print("swipe up")
                 guard let callback = self.didReceiveSwipeUp else { return }
                 callback();
+                self.touchPoint = point
             }
-        } else {
+        } else { // 是第一次
             self.touchPoint = point
         }
     }
@@ -85,7 +88,7 @@ class MOViewTestViewController: UIViewController {
             make.height.width.equalTo(44.0)
         }
     }
-    
+
     @objc func didClickBtn() {
         print("did clic button")
     }
