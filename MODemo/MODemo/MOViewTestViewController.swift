@@ -15,6 +15,7 @@ struct MOAssociatedKeys {
     static var swipeUpCallbackKey: String = "swipeUpCallback"
 }
 
+/* 会全局修改view的手势，先注释避免影响
 extension UIView {
     // 上一次触摸点
     public var touchPoint: CGPoint? {
@@ -53,6 +54,7 @@ extension UIView {
         }
     }
 }
+ */
 
 class MOViewTestViewController: UIViewController {
     
@@ -70,18 +72,18 @@ class MOViewTestViewController: UIViewController {
         let view = UIView(frame: self.view.bounds)
         view.backgroundColor = UIColor(white: 1, alpha: 0.5)
         view.isUserInteractionEnabled = true
-        view.didReceiveSwipeUp = {
-            print("did reveive swipe up")
-        }
+//        view.didReceiveSwipeUp = {
+//            print("did reveive swipe up")
+//        }
         self.view.addSubview(view)
         
         let btn = UIView(frame: .zero)
         let tap = UITapGestureRecognizer(target: self, action: #selector(didClickBtn))
         btn.addGestureRecognizer(tap)
         btn.backgroundColor = .red
-        btn.didReceiveSwipeUp = {
-            print("did reveive swipe up btn")
-        }
+//        btn.didReceiveSwipeUp = {
+//            print("did reveive swipe up btn")
+//        }
         self.view.addSubview(btn)
         btn.snp.makeConstraints { make in
             make.top.left.equalTo(self.view).offset(200)

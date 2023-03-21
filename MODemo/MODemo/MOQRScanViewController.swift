@@ -24,7 +24,13 @@ class MOQRScanViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "扫描二维码"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "相册", style: .done, target: self, action: #selector(clickPhoto))
+       
+        let photoButton = UIButton(type: .custom)
+        photoButton.setTitle("相册", for: .normal)
+        photoButton.addTarget(self, action: #selector(clickPhoto), for: .touchUpInside)
+        photoButton.frame = CGRect(x: 0.0, y: 0.0, width: 60.0, height: 44.0)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: photoButton)
+
         // scanView
         view.addSubview(scanView)
         scanView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
@@ -45,8 +51,8 @@ class MOQRScanViewController: UIViewController {
         if MOAuthorizationManager().authorizeFactory(type: .camera).status() != .authorized {
             MOAuthorizationManager().requestAuthoriza(type: .camera) { (status) in
                 if status == .authorized {
-                    DispatchQueue.main.async {
-                        self.loadScanView()
+                    self.loadScanView()
+                    DispatchQueue.global(qos: .userInitiated).async {
                         self.captureSession.startRunning()
                     }
                 } else { // 没有权限
@@ -55,7 +61,9 @@ class MOQRScanViewController: UIViewController {
             }
         } else {
             self.loadScanView()
-            self.captureSession.startRunning()
+            DispatchQueue.global(qos: .userInitiated).async {
+                self.captureSession.startRunning()
+            }
         }
     }
     
