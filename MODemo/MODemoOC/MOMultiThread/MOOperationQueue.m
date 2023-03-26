@@ -63,8 +63,8 @@
     [operation isCancelled];  // 是否已取消
     [operation isAsynchronous]; // 是否异步执行
     [operation isConcurrent]; // 已废弃，用`isAsynchronous`
-    NSOperationQueuePriority priority = [operation queuePriority]; // 优先级
-    NSArray<NSOperation *> *dependencies = [operation dependencies]; // 依赖的任务数组
+//    NSOperationQueuePriority priority = [operation queuePriority]; // 优先级
+//    NSArray<NSOperation *> *dependencies = [operation dependencies]; // 依赖的任务数组
     
     
     // 2.NSBlockOperation

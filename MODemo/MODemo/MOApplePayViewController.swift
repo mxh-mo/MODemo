@@ -18,10 +18,10 @@ class MOApplePayViewController: UIViewController, PKPaymentAuthorizationViewCont
     }
     
     func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, handler completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
-        payment.token // 支付凭证 (发给服务器验证支付是否真实有效)
-        payment.billingContact  // 账单信息
-        payment.shippingContact // 送货信息
-        payment.shippingMethod  // 送货方式
+//        payment.token // 支付凭证 (发给服务器验证支付是否真实有效)
+//        payment.billingContact  // 账单信息
+//        payment.shippingContact // 送货信息
+//        payment.shippingMethod  // 送货方式
         // TODD 发给服务器验证支付是否真实有效
         // show something
     }

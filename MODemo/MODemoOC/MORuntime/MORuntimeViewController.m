@@ -92,7 +92,7 @@
     // --------   4、动态添加方法   --------
     // 应用场景：如果一个类方法非常多，加载类到内存的时候也比较耗费资源，需要给每个方法生成映射表，可以使用动态给某个类，添加方法解决
     // 需求：runtime 动态添加方法处理调用一个未实现的方法 和 去除报错
-    [stu performSelector:@selector(run:) withObject:@10];
+//    [stu performSelector:@selector(run:) withObject:@10];
     
     stu.nickName = @"aaa";
     NSLog(@"nickName %@", stu.nickName);
@@ -108,7 +108,7 @@
         NSString *name = [NSString stringWithUTF8String:varName];
         
         // 属性名 -> 成员变量
-        Ivar ivar = class_getClassVariable([self.xiaoMing class], varName);
+//        Ivar ivar = class_getClassVariable([self.xiaoMing class], varName);
         
         if ([name isEqualToString:@"_name"]) {
             // 也可对私有变量赋值
@@ -136,7 +136,7 @@
     }
     Class MOStudentClass = object_getClass([stu class]);
     // 成员变量列表
-    Ivar *allIvar = class_copyIvarList(MOStudentClass, &count);
+//    Ivar *allIvar = class_copyIvarList(MOStudentClass, &count);
     
     // 方法列表
     Method *methodList = class_copyMethodList([self.xiaoMing class], &count);
@@ -145,7 +145,7 @@
         NSLog(@"method : %@", NSStringFromSelector(method_getName(method)));
     }
     // 类方法
-    Method *allMethod = class_copyMethodList(MOStudentClass, &count); // 类的所有方法
+//    Method *allMethod = class_copyMethodList(MOStudentClass, &count); // 类的所有方法
     SEL oriSEL = @selector(arrayContainModelClass);
     Method oriMethod = class_getClassMethod(MOStudentClass, oriSEL);
     NSLog(@"class method : %@", NSStringFromSelector(method_getName(oriMethod)));

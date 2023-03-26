@@ -17,7 +17,7 @@ class MOUITestsViewController: UIViewController {
         btn.backgroundColor = .gray
         btn.setTitle("订阅", for: .normal)
         btn.setTitle("已订阅", for: .selected)
-        btn.addTarget(self, action: #selector(clickSubscribeButton), for: .touchUpInside)
+        btn.addTarget(MOUITestsViewController.self, action: #selector(clickSubscribeButton), for: .touchUpInside)
         btn.accessibilityIdentifier = gSubscribeButtonAccessibilityIdentifier
         return btn
     }()

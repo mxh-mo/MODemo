@@ -68,6 +68,7 @@
 
 #pragma mark - OSSpinLock 自旋锁
 
+/*
 - (void)osspinLock {
     // OSSpinLock iOS10+ 已废弃
     // 不再安全的OSSpinLock：https://blog.ibireme.com/2016/01/16/spinlock_is_unsafe_in_ios/
@@ -83,7 +84,7 @@
             OSSpinLockUnlock(&osslock); // 解锁
         });
     }
-}
+}*/
 
 #pragma mark - os_unfair_lock 互斥锁 iOS10+ (锁的是代码片段)
 
@@ -92,7 +93,7 @@
     NSArray *items = @[@"1", @"2", @"3"];
     self.items = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i < items.count; i++) {
+    for (NSUInteger i = 0; i < items.count; i++) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             os_unfair_lock_t unfairLock = &(OS_UNFAIR_LOCK_INIT); // 必须在线程里初始化
             os_unfair_lock_lock(unfairLock); // 加锁
@@ -111,7 +112,7 @@
     NSArray *items = @[@"1", @"2", @"3"];
     self.items = [[NSMutableArray alloc] init];
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
-    for (int i = 0; i < items.count; i++) {
+    for (NSUInteger i = 0; i < items.count; i++) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER); // 加锁
             sleep(items.count - i);
@@ -130,13 +131,13 @@
     
     NSArray *items = @[@"1", @"2", @"3"];
     self.items = [[NSMutableArray alloc] init];
-    for (int i = 0; i < items.count; i++) {
+    for (NSUInteger i = 0; i < items.count; i++) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            pthread_mutex_lock(&_pthread); // 加锁
+            pthread_mutex_lock(&self->_pthread); // 加锁
             sleep(items.count - i);
             [self.items addObject:items[i]];
             NSLog(@"%@", self.items);
-            pthread_mutex_unlock(&_pthread); // 解锁
+            pthread_mutex_unlock(&self->_pthread); // 解锁
         });
     }
     sleep(2);
@@ -339,7 +340,7 @@
 - (void)synchronized {
     NSArray *items = @[@"1", @"2", @"3"];
     self.items = [[NSMutableArray alloc] init];
-    for (int i = 0; i < items.count; i++) {
+    for (NSUInteger i = 0; i < items.count; i++) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             @synchronized (self.items) { // 加锁
                 sleep(items.count - i);
@@ -384,23 +385,23 @@
 }
 - (void)waitOnConditionFunction {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        pthread_mutex_lock(&mutex); // Lock the mutex.
-        while(ready_to_go == false) {
+        pthread_mutex_lock(&self->mutex); // Lock the mutex.
+        while(self->ready_to_go == false) {
             NSLog(@"wait...");
-            pthread_cond_wait(&condition, &mutex); // 休眠
+            pthread_cond_wait(&self->condition, &self->mutex); // 休眠
         }
         NSLog(@"done");
-        ready_to_go = false;
-        pthread_mutex_unlock(&mutex);
+        self->ready_to_go = false;
+        pthread_mutex_unlock(&self->mutex);
     });
 }
 - (void)signalThreadUsingCondition {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        pthread_mutex_lock(&mutex); // Lock the mutex.
-        ready_to_go = true;
+        pthread_mutex_lock(&self->mutex); // Lock the mutex.
+        self->ready_to_go = true;
         NSLog(@"true");
-        pthread_cond_signal(&condition); // Signal the other thread to begin work.
-        pthread_mutex_unlock(&mutex);
+        pthread_cond_signal(&self->condition); // Signal the other thread to begin work.
+        pthread_mutex_unlock(&self->mutex);
     });
 }
 

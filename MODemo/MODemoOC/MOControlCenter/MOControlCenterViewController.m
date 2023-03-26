@@ -52,12 +52,16 @@
     [_avPlayer play];
 }
 
+- (void)currentAudioPlayFinished {
+    
+}
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([keyPath isEqualToString:@"status"]) {
         switch (_avPlayer.status) {
             case AVPlayerStatusFailed: {
                 NSLog(@"ticpodDebug: play failed");
-                //        [self currentAudioPlayFinished];
+                [self currentAudioPlayFinished];
             } break;
             default: break;
         }

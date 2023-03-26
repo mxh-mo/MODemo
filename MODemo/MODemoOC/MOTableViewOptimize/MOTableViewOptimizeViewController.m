@@ -103,9 +103,9 @@
     if (tableView.dragging == NO && tableView.decelerating == NO) {
         // 开始异步加载图片
         NSArray *visiblePaths = [tableView indexPathsForVisibleRows];
-        for (NSIndexPath *indexPath in visiblePaths) {
+//        for (NSIndexPath *indexPath in visiblePaths) {
             // 获取dataSource里的对象, 并且判断加载完成是不需要再次异步加载
-        }
+//        }
     }
     return cell;
 }

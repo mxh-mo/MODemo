@@ -129,9 +129,9 @@ class MOViewTestViewController: UIViewController {
         let gradientLayer = CAGradientLayer()  //新建一个渐变层
         gradientLayer.frame = gradientView.frame
         
-        let fromColor = UIColor.yellow.cgColor
-        let midColor = UIColor.red.cgColor
-        let toColor = UIColor.purple.cgColor
+//        let fromColor = UIColor.yellow.cgColor
+//        let midColor = UIColor.red.cgColor
+//        let toColor = UIColor.purple.cgColor
         gradientLayer.colors = [UIColor.red.cgColor, UIColor.blue.cgColor]
         //[fromColor,midColor,toColor]//将渐变层的颜色属性设置为由三个颜色所构建的数组
         

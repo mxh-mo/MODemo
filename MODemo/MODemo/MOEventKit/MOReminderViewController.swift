@@ -59,7 +59,7 @@ class MOReminderViewController: UIViewController {
                 // 与日历事件不同的是，该方法为异步回调，不需要另外开线程
                 // 如果想要停止获取的操作，return cancelFetchRequest
                 print("reminder: \(reminder)")
-                print("alarm: \(reminder.alarms?.first)")
+                print("alarm: \(String(describing: reminder.alarms?.first))")
                 // TODO 公司需求: 获取下一次提醒时间
                 //        moPrint(self, #line, "下一次提醒时间： \(MOTool().nextAlertTime(reminder: reminder))")
                 

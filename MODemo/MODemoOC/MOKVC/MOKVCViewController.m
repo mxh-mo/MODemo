@@ -69,9 +69,9 @@ typedef struct {
     MOPerson *child2 = [MOPerson personWithName:@"child2"];
     
     MOPerson *p1 = [MOPerson personWithName:@"momo"];
-    p1.childens = @[child1, child2];
+    p1.childens = [@[child1, child2] mutableCopy];
     MOPerson *p2 = [MOPerson personWithName:@"lili"];
-    p2.childens = @[child2];
+    p2.childens = [@[child2] mutableCopy];
     self.persons = [@[p1, p2] mutableCopy];
     
     // 访问
@@ -129,7 +129,7 @@ typedef struct {
 - (void)wrapUnwrap {
     // Wrapping and Unwrapping Structures: NSPoint、NSRange、NSRect、NSSize、NSValue
     // getter
-    NSValue *threeFloat = [self valueForKey:@"threeFloats"];
+//    NSValue *threeFloat = [self valueForKey:@"threeFloats"];
     // setter
     ThreeFloats floats = {1., 2., 3.};
     NSValue *value = [NSValue valueWithBytes:&floats objCType:@encode(ThreeFloats)];
@@ -146,7 +146,7 @@ typedef struct {
     // 3) 无效, 但是创建一个新的可以有效作为替换的参数, 方法返回 YES, 同时保持错误对象不变。在返回之前，该方法修改值引用以指向新值对象。当它进行修改值时，该方法总是创建一个新对象，而不是修改旧对象，即使值对象是可变的。
     MOPerson *person = [MOPerson personWithName:@"momo"];
     NSError *error = nil;
-    NSString *name = @"J";
+//    NSString *name = @"J";
     // validateValue: forKey:
     // validateValue: forKeyPath:
     // 返回一个bool, 表示 给定的参数(value)针对于属性(key)是否有效
@@ -159,7 +159,7 @@ typedef struct {
     if (error != nil) {
         NSLog(@"forKey: error %@", error);
     }
-    NSLog(@"age: %@", person.age);
+    NSLog(@"age: %zd", person.age);
     
     //  error = nil;
     //  NSLog(@"forKeyPath: father.name %i", [person validateValue:&name forKeyPath:@"father.name" error:&error]);

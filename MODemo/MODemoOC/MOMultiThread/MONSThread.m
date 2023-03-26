@@ -101,7 +101,7 @@
     //  NSQualityOfServiceBackground = 0x09, // 后台优先级，用于处理一些用户不会感知的任务
     //  NSQualityOfServiceDefault = -1 // 默认优先级，当没有设置优先级的时候，线程默认优先级
     thread.stackSize = 8192; // 更改堆栈的大小: 必须 是4KB(1024)的倍数 && 启动线程之前设置 (创建线程是会有开销的)
-    NSUInteger size = thread.stackSize / 1024; // 所占内存大小
+//    NSUInteger size = thread.stackSize / 1024; // 所占内存大小
     [thread cancel]; // 不会马上退出，做了需要退出的标记
     [thread isMainThread];  // 是否是主线程
     [thread isFinished];  // 是否已经完成

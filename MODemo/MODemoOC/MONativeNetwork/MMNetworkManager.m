@@ -49,7 +49,7 @@
 
 #pragma mark -  图片下载
 
-- (void)downloadImageWithUrl:(NSString *)urlStr {
++ (void)downloadImageWithUrl:(NSString *)urlStr {
     NSURLSession *session = [NSURLSession sharedSession];
     NSURL *url = [NSURL URLWithString:urlStr];
     // location:文件下载缓存路径
