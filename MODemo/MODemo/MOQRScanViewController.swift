@@ -92,18 +92,28 @@ class MOQRScanViewController: UIViewController {
             moPrint(self, #line, "session can't add input")
             return
         }
-        if captureSession.canAddOutput(output) {
-            captureSession.addOutput(output) // addOutput 必须放在设置output之前
-            guard output.availableMetadataObjectTypes.contains(.qr) else {
-                print("session can't contains qr")
-                return
-            }
-            output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main) // AVCaptureMetadataOutputObjectsDelegate
-            output.metadataObjectTypes = [.qr]
-        } else {
-            print("session can't add output")
+        if !captureSession.canAddOutput(output) {
             return
         }
+        captureSession.addOutput(output) // addOutput 必须放在设置output之前
+        
+        // 设置元数据识别类型 qr: 二维码；其他: 条形码
+        var types: [AVMetadataObject.ObjectType] = []
+        if output.availableMetadataObjectTypes.contains(.qr) {
+            types.append(.qr)
+        }
+        if output.availableMetadataObjectTypes.contains(.ean13) {
+            types.append(.ean13)
+        }
+        if output.availableMetadataObjectTypes.contains(.ean8) {
+            types.append(.ean8)
+        }
+        if output.availableMetadataObjectTypes.contains(.upce) {
+            types.append(.upce)
+        }
+        output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main) // AVCaptureMetadataOutputObjectsDelegate
+        output.metadataObjectTypes = types
+        moPrint(self, #line, "support types: \(types)")
         
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.frame = scanView.layer.bounds
