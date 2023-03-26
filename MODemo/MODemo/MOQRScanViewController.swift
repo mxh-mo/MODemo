@@ -70,11 +70,11 @@ class MOQRScanViewController: UIViewController {
     func loadScanView() {
         if isLoadScanView { return }
         guard let device = AVCaptureDevice.default(for: .video) else {
-            print("device error")
+            moPrint(self, #line, "device error")
             return
         }
         guard let input = try? AVCaptureDeviceInput(device: device) else {
-            print("input error")
+            moPrint(self, #line, "input error")
             return
         }
         // 或者这样写
@@ -82,14 +82,14 @@ class MOQRScanViewController: UIViewController {
         //    do {
         //      input = try AVCaptureDeviceInput(device: device)
         //    } catch {
-        //      print("input error")
+        //      moPrint(self, #line, "input error")
         //      return
         //    }
         let output = AVCaptureMetadataOutput()
         if captureSession.canAddInput(input) {
             captureSession.addInput(input)
         } else {
-            print("session can't add input")
+            moPrint(self, #line, "session can't add input")
             return
         }
         if captureSession.canAddOutput(output) {
@@ -154,15 +154,15 @@ extension MOQRScanViewController: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else {
-                print("as? AVMetadataMachineReadableCodeObject faliue")
+                moPrint(self, #line, "as? AVMetadataMachineReadableCodeObject faliue")
                 return
             }
             guard let stringValue = readableObject.stringValue else {
-                print("stringValue faliue")
+                moPrint(self, #line, "stringValue faliue")
                 return
             }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-            print(stringValue)
+            moPrint(self, #line, stringValue)
         }
         captureSession.stopRunning()
     }
@@ -173,7 +173,7 @@ extension MOQRScanViewController: UIImagePickerControllerDelegate, UINavigationC
         dismiss(animated: true)
         guard let image = info[.editedImage] as? UIImage,
               let cgImage = image.cgImage else {
-            print("提取图片失败")
+            moPrint(self, #line, "提取图片失败")
             return
         }
         let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy: CIDetectorAccuracyHigh])
@@ -181,9 +181,9 @@ extension MOQRScanViewController: UIImagePickerControllerDelegate, UINavigationC
               features.count > 0,
               let qrcodeFeature = features[0] as? CIQRCodeFeature,
               let messageString = qrcodeFeature.messageString else {
-            print("无法识别图片中的二维码")
+            moPrint(self, #line, "无法识别图片中的二维码")
             return
         }
-        print(messageString)
+        moPrint(self, #line, messageString)
     }
 }

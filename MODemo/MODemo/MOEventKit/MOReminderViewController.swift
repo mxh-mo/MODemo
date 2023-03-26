@@ -24,10 +24,10 @@ class MOReminderViewController: UIViewController {
         // 1.检查授权
         store.requestAccess(to: .reminder) { (granted, error) in
             if granted { // 已授权
-                print("已授权")
+                moPrint(self, #line, "已授权")
                 self.inquireReminder()
             } else { // 未授权：需要request
-                print("未授权, 若需使用此功能，需要提醒用户去系统设置页面开启提醒权限")
+                moPrint(self, #line, "未授权, 若需使用此功能，需要提醒用户去系统设置页面开启提醒权限")
                 // TODO Alert
             }
         }
@@ -61,7 +61,7 @@ class MOReminderViewController: UIViewController {
                 print("reminder: \(reminder)")
                 print("alarm: \(reminder.alarms?.first)")
                 // TODO 公司需求: 获取下一次提醒时间
-                //        print("下一次提醒时间： \(MOTool().nextAlertTime(reminder: reminder))")
+                //        moPrint(self, #line, "下一次提醒时间： \(MOTool().nextAlertTime(reminder: reminder))")
                 
             }
         }
@@ -79,7 +79,7 @@ class MOReminderViewController: UIViewController {
         do {
             try store.save(reminder, commit: true)
         } catch {
-            print("save reminder error: \(error)")
+            moPrint(self, #line, "save reminder error: \(error)")
         }
         DispatchQueue.main.async {
             self.inquireReminder() // 重新查询，并刷新列表
@@ -125,7 +125,7 @@ extension MOReminderViewController: UITableViewDataSource, UITableViewDelegate {
         do {
             try store.save(reminder, commit: true)
         } catch {
-            print("remove error: \(error)")
+            moPrint(self, #line, "remove error: \(error)")
         }
         DispatchQueue.main.async {
             self.inquireReminder() // 重新查询，并刷新列表
@@ -143,7 +143,7 @@ extension MOReminderViewController: UITableViewDataSource, UITableViewDelegate {
         do {
             try store.remove(reminder, commit: true)
         } catch {
-            print("remove error: \(error)")
+            moPrint(self, #line, "remove error: \(error)")
         }
         DispatchQueue.main.async {
             self.inquireReminder() // 重新查询，并刷新列表

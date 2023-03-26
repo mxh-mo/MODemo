@@ -64,7 +64,7 @@ func fib(_ n: Int) -> Int {
 // 替换空格
 /*
  let r = replaceSpace("We are happy.")
- print(r)
+ moPrint(r)
  */
 // https://leetcode.cn/problems/ti-huan-kong-ge-lcof/
 func replaceSpace(_ s: String) -> String {
@@ -92,7 +92,7 @@ func replaceSpace(_ s: String) -> String {
    ]
  let array2 = [[1, 2]]
  let didFind = findNumberIn2DArray(array1, 100)
- print("find: \(didFind)")
+ moPrint(self, #line, "find: \(didFind)")
  */
 func findNumberIn2DArray(_ matrix: [[Int]], _ target: Int) -> Bool {
     if matrix.isEmpty {
@@ -121,7 +121,7 @@ func findNumberIn2DArray(_ matrix: [[Int]], _ target: Int) -> Bool {
 /// https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
 /*
  let result = findRepeatNumber([1, 2, 3, 4, 3])
- print("repeat num: \(result)")
+ moPrint(self, #line, "repeat num: \(result)")
  */
 func findRepeatNumber(_ nums: [Int]) -> Int {
     var dict: [Int: Int] = [:]
@@ -144,9 +144,9 @@ func findRepeatNumber(_ nums: [Int]) -> Int {
 // 方法2：动态规划，可存储已经计算过的结果，避免大量重复运算
 /*
  let minCount = minCountOfCoins(20)
- print("minCount: \(minCount)")
+ moPrint(self, #line, "minCount: \(minCount)")
  for (index, value) in minCounts.enumerated() {
-     print("index: \(index) = \(value)")
+     moPrint(self, #line, "index: \(index) = \(value)")
  }
  */
 var minCounts: [Int] = [] // 记录idx最少数量

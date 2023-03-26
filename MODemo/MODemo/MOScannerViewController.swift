@@ -49,39 +49,39 @@ class MOScannerViewController: UIViewController {
 
         var intNum: Int = 0
         scanner.scanInt(&intNum) // 还可以扫描 int32 int64 的数字
-        print(intNum) // 11
+        moPrint(self, #line, intNum) // 11
 
         var float1: Float = 0.0
         scanner.scanFloat(&float1) // 还可以扫描 Double 的数字
-        print(float1) // 2.2
+        moPrint(self, #line, float1) // 2.2
 
         let decimal: Decimal? = scanner.scanDecimal()   // 扫描小数
-        print(decimal ?? " ") // 3.3
+        moPrint(self, #line, decimal ?? " ") // 3.3
 
         let str1: String? = scanner.scanString("name") // 扫描指定字符串
-        print(str1 ?? "") // name
+        moPrint(self, #line, str1 ?? "") // name
 
         // 扫描指定字符集
         let str2: String? = scanner.scanCharacters(from: CharacterSet(charactersIn: "moxiaoyan"))
-        print(str2 ?? "") // moyan
+        moPrint(self, #line, str2 ?? "") // moyan
 
         // 扫描一个字符
         let chart: Character? = scanner.scanCharacter()
-        print(chart ?? "") // T
+        moPrint(self, #line, chart ?? "") // T
 
         // 扫描到指定字符串时停下，result是指定字符串前面的字符串
         let str3: String? = scanner.scanUpToString("yy")
-        print(str3 ?? "") // qq
+        moPrint(self, #line, str3 ?? "") // qq
 
         // 扫描到指定字符集合时停下，result是指定字符前面的字符串
         let str4: String? = scanner.scanUpToCharacters(from: CharacterSet(charactersIn: "eag"))
-        print(str4 ?? "") // yycxctt
+        moPrint(self, #line, str4 ?? "") // yycxctt
     }
     
     func scannURL() {
         let scanner: Scanner = Scanner(string: "http://www.baidu.com?name=momo&age=18")
         let domain = scanner.scanUpToString("?")
-        print(domain) // http://www.baidu.com
+        moPrint(self, #line, domain) // http://www.baidu.com
 
         scanner.scanCharacter()
 
@@ -95,13 +95,13 @@ class MOScannerViewController: UIViewController {
             }
             param[type] = value
         }
-        print(param) //["name": "momo", "&age": "18"]
+        moPrint(self, #line, param) //["name": "momo", "&age": "18"]
 
     }
     
     func scanColor() {
         let color: UIColor? = color(hex: "#5468FF")
-        print(color ?? " ")
+        moPrint(self, #line, color ?? " ")
 
         let moView = UIView(frame: CGRect(x: 100, y: 200, width: 100, height: 100))
         moView.backgroundColor = color

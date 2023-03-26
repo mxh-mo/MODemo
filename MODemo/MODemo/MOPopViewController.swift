@@ -54,14 +54,14 @@ class MOPopViewController: UIViewController, UIPopoverPresentationControllerDele
     
     //MARK: - UIPopoverPresentationControllerDelegate
     func prepareForPopoverPresentation(_ popoverPresentationController: UIPopoverPresentationController) {
-        print("prepare pop")
+        moPrint(self, #line, "prepare pop")
     }
     // 点击蒙板消失, 默认: true
     func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
         return true
     }
     func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
-        print("pop dismissed")
+        moPrint(self, #line, "pop dismissed")
     }
     // 弹出窗将要复位到指定视图区域时触发的方法
     func popoverPresentationController(_ popoverPresentationController: UIPopoverPresentationController, willRepositionPopoverTo rect: UnsafeMutablePointer<CGRect>, in view: AutoreleasingUnsafeMutablePointer<UIView>) {

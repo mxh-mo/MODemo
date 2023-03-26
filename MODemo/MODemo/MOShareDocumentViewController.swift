@@ -27,9 +27,9 @@ class MOShareDocumentViewController: UIViewController {
                                                                  includingPropertiesForKeys: nil,
                                                                  options: .skipsHiddenFiles)
             self.url = contentsOfPath.first // 保存，为了展示分享
-            print("contentsOfPath:\n\(contentsOfPath)")
+            moPrint(self, #line, "contentsOfPath:\n\(contentsOfPath)")
         } catch {
-            print("error:\(error)")
+            moPrint(self, #line, "error:\(error)")
         }
         
         let btn = UIButton(type: .custom)

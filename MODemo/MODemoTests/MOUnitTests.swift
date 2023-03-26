@@ -25,33 +25,33 @@ class MOUnitTests: XCTestCase {
     let delegate: UITableViewDataSource? = nil
     
     override class func setUp() {
-        print("mo: class setUp")
+        moPrint(self, #line, "mo: class setUp")
     }
     
     override class func tearDown() {
-        print("mo: class tearDown")
+        moPrint(self, #line, "mo: class tearDown")
     }
     
     override func setUp() {
-        print("mo: setUp")
+        moPrint(self, #line, "mo: setUp")
     }
     
     override func setUpWithError() throws {
-        print("mo: setUpWithError")
+        moPrint(self, #line, "mo: setUpWithError")
         self.vc.subscribeButton = self.subscribeButton
         
     }
     
     override func tearDownWithError() throws {
-        print("mo: tearDownWithError")
+        moPrint(self, #line, "mo: tearDownWithError")
     }
     
     override func tearDown() {
-        print("mo: tearDown")
+        moPrint(self, #line, "mo: tearDown")
     }
     
     func testBoolAssertions() throws {
-        print("mo: testFuncation1")
+        moPrint(self, #line, "mo: testFuncation1")
         // 断言为 false
         XCTAssertFalse(self.vc.subscribeButton.isSelected)
         self.vc.clickSubscribeButton(sender: self.vc.subscribeButton)
@@ -62,7 +62,7 @@ class MOUnitTests: XCTestCase {
     }
     
     func testNilAssertions() {
-        print("mo: testFuncation2")
+        moPrint(self, #line, "mo: testFuncation2")
         XCTAssertNil(self.delegate)
         XCTAssertNotNil(self.subscribeButton)
     }

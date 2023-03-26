@@ -44,7 +44,7 @@ extension UIView {
         
         if let touchPoint = self.touchPoint { // 不是第一次
             if (touchPoint.y > point.y) { // 当前点在上一个点的上方
-                print("swipe up")
+                moPrint(self, #line, "swipe up")
                 guard let callback = self.didReceiveSwipeUp else { return }
                 callback();
                 self.touchPoint = point
@@ -58,12 +58,38 @@ extension UIView {
 
 class MOViewTestViewController: UIViewController {
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        moPrint(self, #line, "init")
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func loadView() {
+        super.loadView()
+        moPrint(self, #line, "loadView")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        swipeGestureTest(); // 解决：上滑手势 跟 按钮 cancel 手势 冲突
+        moPrint(self, #line, "viewDidLoad")
+
+//        swipeGestureTest(); // 解决：上滑手势 跟 按钮 cancel 手势 冲突
 //        imageViewTransform() // UIImageView 翻转
 //        stackView() // UIStackView
 //        gradientLayer() // UIView 颜色渐变
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        moPrint(self, #line, "viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        moPrint(self, #line, "viewDidAppear")
     }
     
     // MARK: - 解决：上滑手势 跟 按钮 cancel 手势 冲突
@@ -73,7 +99,7 @@ class MOViewTestViewController: UIViewController {
         view.backgroundColor = UIColor(white: 1, alpha: 0.5)
         view.isUserInteractionEnabled = true
 //        view.didReceiveSwipeUp = {
-//            print("did reveive swipe up")
+//            moPrint(self, #line, "did reveive swipe up")
 //        }
         self.view.addSubview(view)
         
@@ -82,7 +108,7 @@ class MOViewTestViewController: UIViewController {
         btn.addGestureRecognizer(tap)
         btn.backgroundColor = .red
 //        btn.didReceiveSwipeUp = {
-//            print("did reveive swipe up btn")
+//            moPrint(self, #line, "did reveive swipe up btn")
 //        }
         self.view.addSubview(btn)
         btn.snp.makeConstraints { make in
@@ -92,7 +118,7 @@ class MOViewTestViewController: UIViewController {
     }
 
     @objc func didClickBtn() {
-        print("did clic button")
+        moPrint(self, #line, "did clic button")
     }
     
     // MARK: - UIView 颜色渐变
@@ -165,5 +191,4 @@ class MOViewTestViewController: UIViewController {
         // 结论: 不管是旋转前设置image 还是 旋转后设置image  都是一样的
         // (图片是按照当前`View的正方向`为`正方向`的)
     }
-    
 }

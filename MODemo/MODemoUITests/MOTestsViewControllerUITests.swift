@@ -165,11 +165,11 @@ class MOUITestsViewControllerUITests: XCTestCase {
             let snapshot: XCUIElementSnapshot = try element.snapshot()
             let childerns: [XCUIElementSnapshot] = snapshot.children
             for childern: XCUIElementSnapshot in childerns {
-                print("snapshot: \(childern.dictionaryRepresentation)")
+                moPrint(self, #line, "snapshot: \(childern.dictionaryRepresentation)")
             }
-            print("snapshot success: \(snapshot)")
+            moPrint(self, #line, "snapshot success: \(snapshot)")
         } catch {
-            print("snapshot error: \(error)")
+            moPrint(self, #line, "snapshot error: \(error)")
         }
         
         // 返回与指定类型匹配的元素的所有子代的查询

@@ -27,9 +27,9 @@ class MOTouchIDViewController: UIViewController {
             // 4. 开始进入识别状态
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "请用指纹解锁") { (success, error) in
                 if success {
-                    print("识别成功");
+                    moPrint(self, #line, "识别成功");
                 } else {
-                    print("识别失败");
+                    moPrint(self, #line, "识别失败");
                     if let error = error as NSError? {
                         let message = self.errorMessageForLAErrorCode(errorCode: error.code)
                         print(message);

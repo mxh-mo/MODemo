@@ -64,6 +64,6 @@ class MOMultiDelegateViewController: UIViewController {
 
 extension MOMultiDelegateViewController: MOLocationManagerDelegate {
     func locationUpdate(_ locs: [String]) {
-        print("ViewController: \(locs)")
+        moPrint(self, #line, "ViewController: \(locs)")
     }
 }

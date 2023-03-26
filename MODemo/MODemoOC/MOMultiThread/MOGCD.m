@@ -81,9 +81,26 @@ static dispatch_queue_t current_file_queue() {
 
         // 将函数添加到队列中：
 //        [self asyncF];
-        [self qosTest];
+//        [self qosTest];
+        
+        // performSelecter:afterDelay:
+//        [self performDelayTest];
+        
+        
     }
     return self;
+}
+
+- (void)performDelayTest {
+    dispatch_sync(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"1");
+        [self performSelector:@selector(completion) withObject:nil afterDelay:0];
+        NSLog(@"2");
+    });
+}
+
+- (void)completion {
+    NSLog(@"3 %@", [NSThread currentThread]);
 }
 
 - (void)qosTest {

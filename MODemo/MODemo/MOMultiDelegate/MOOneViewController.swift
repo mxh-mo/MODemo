@@ -17,6 +17,6 @@ class MOOneViewController: UIViewController {
 
 extension MOOneViewController: MOLocationManagerDelegate {
     func locationUpdate(_ locs: [String]) {
-        print("MOOneViewController: \(locs)")
+        moPrint(self, #line, "MOOneViewController: \(locs)")
     }
 }

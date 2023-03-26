@@ -66,6 +66,16 @@ class ViewController: UIViewController {
         tableView.reloadData()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        moPrint(self, #line, "viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        moPrint(self, #line, "viewDidDisappear")
+    }
+    
     override func viewSafeAreaInsetsDidChange() {
         let insets: UIEdgeInsets = view.safeAreaInsets
         let frame: CGRect = CGRect(x: insets.left, y: insets.top, width: UIScreen.main.bounds.width - insets.left - insets.right, height: UIScreen.main.bounds.height - insets.top - insets.bottom)
@@ -91,12 +101,12 @@ extension ViewController: UITableViewDelegate {
         
         if indexPath.section == 0 {
             guard let vcName = item.vcName else {
-                print("vcName 为空")
+                moPrint(self, #line, "vcName 为空")
                 return
             }
             
             guard let vc = self.dataSource?.classFromString(vcName) else {
-                print("获取控制器失败")
+                moPrint(self, #line, "获取控制器失败")
                 return
             }
             navigationController?.pushViewController(vc, animated: true)

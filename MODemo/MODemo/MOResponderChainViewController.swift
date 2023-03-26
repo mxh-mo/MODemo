@@ -20,7 +20,7 @@ class MOResponderTestView: UIView {
     }
     
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        print("hitTest: \(self)")
+        moPrint(self, #line, "hitTest: \(self)")
         /// 1. 判断当前view是否可响应
         guard isUserInteractionEnabled else {
             /// 不允许用户交互

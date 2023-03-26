@@ -27,7 +27,7 @@ class MOApplePayViewController: UIViewController, PKPaymentAuthorizationViewCont
     }
     
     func paymentAuthorizationControllerDidFinish(_ controller: PKPaymentAuthorizationController) {
-        print("支付完成回调")
+        moPrint(self, #line, "支付完成回调")
     }
     
     let supportedNetworks = [
@@ -77,16 +77,16 @@ class MOApplePayViewController: UIViewController, PKPaymentAuthorizationViewCont
         if #available(iOS 8.0, *) { // iOS8.0以上
             // 检查当前设备是否可以支付 (iPhone6以上设备才支持)
             if !PKPaymentAuthorizationViewController.canMakePayments() {
-                print("设备不支持ApplePay")
+                moPrint(self, #line, "设备不支持ApplePay")
             }
             
             //      if !PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: supportedNetworks) {
-            //        print("没有绑定银联卡")
+            //        moPrint(self, #line, "没有绑定银联卡")
             //      }
             if PKPaymentAuthorizationViewController.canMakePayments() {
                 requestPay()
             } else {
-                print("没有绑定字符卡")
+                moPrint(self, #line, "没有绑定字符卡")
             }
         }
         
@@ -97,7 +97,7 @@ class MOApplePayViewController: UIViewController, PKPaymentAuthorizationViewCont
          let canPay:Bool = PKPaymentAuthorizationViewController.canMakePayments()//usingNetworks: netWork
          
          if canPay {
-         print("支持Apple Pay")
+         moPrint(self, #line, "支持Apple Pay")
          // PKPaymentRequest
          let paymentRequest = PKPaymentRequest()
          paymentRequest.currencyCode = "CNY"
@@ -127,7 +127,7 @@ class MOApplePayViewController: UIViewController, PKPaymentAuthorizationViewCont
          self.present(payAuth!, animated:true, completion:nil)
          
          } else {
-         print("不支持Apple Pay")
+         moPrint(self, #line, "不支持Apple Pay")
          let setupButton = PKPaymentButton(paymentButtonType: PKPaymentButtonType.setUp, paymentButtonStyle: PKPaymentButtonStyle.black)
          setupButton.addTarget(self, action:Selector(("applePaySetupButtonPressed:")), for:UIControlEvents.touchUpInside)
          self.view.addSubview(setupButton)

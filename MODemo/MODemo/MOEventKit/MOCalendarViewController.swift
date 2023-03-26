@@ -23,10 +23,10 @@ class MOCalendarViewController: UIViewController {
         // 1.检查授权
         store.requestAccess(to: .event) { (granted, error) in
             if granted { // 已授权
-                print("已授权")
+                moPrint(self, #line, "已授权")
                 self.inquireCalender()
             } else { // 未授权：需要request
-                print("未授权, 若需使用此功能，需要提醒用户去系统设置页面开启日历权限")
+                moPrint(self, #line, "未授权, 若需使用此功能，需要提醒用户去系统设置页面开启日历权限")
                 // TODO Alert
             }
         }
@@ -40,12 +40,12 @@ class MOCalendarViewController: UIViewController {
         var startComponents = DateComponents()
         startComponents.day = 0
         let startDate:Date = calendar.date(byAdding: startComponents, to: Date()) ?? Date()
-        print("onDateAgo: \(startDate)")
+        moPrint(self, #line, "onDateAgo: \(startDate)")
         // 结束时间
         var endComponents = DateComponents()
         endComponents.month = 3
         let endDate:Date = calendar.date(byAdding: endComponents, to: Date()) ?? Date()
-        print("onDateAgo: \(endDate)")
+        moPrint(self, #line, "onDateAgo: \(endDate)")
         
         // 参数calendars是一个calendar的集合，如果为nil，表示所有用户的calendars
         let predicate = store.predicateForEvents(withStart: startDate, end: endDate, calendars: nil)
@@ -58,7 +58,7 @@ class MOCalendarViewController: UIViewController {
         //    stortedEvents = events.sorted { (event1, event2) -> Bool in
         //      return event1.startDate.compare(event2.startDate) == .orderedAscending
         //    }
-        print("events: \(events)")
+        moPrint(self, #line, "events: \(events)")
         self.events = events
         DispatchQueue.main.async {
             self.tableView.reloadData()
@@ -84,7 +84,7 @@ class MOCalendarViewController: UIViewController {
         do {
             try store.save(event, span: .futureEvents, commit: true)
         } catch {
-            print("save calendar error:\(error)")
+            moPrint(self, #line, "save calendar error:\(error)")
         }
         DispatchQueue.main.async { [weak self] in
             self?.inquireCalender() // 重新查询，并刷新列表
@@ -130,7 +130,7 @@ extension MOCalendarViewController: UITableViewDataSource, UITableViewDelegate {
         do {
             try store.save(event, span: .futureEvents, commit: true)
         } catch {
-            print("remove error: \(error)")
+            moPrint(self, #line, "remove error: \(error)")
         }
         DispatchQueue.main.async { [weak self] in
             self?.inquireCalender() // 重新查询，并刷新列表
@@ -149,7 +149,7 @@ extension MOCalendarViewController: UITableViewDataSource, UITableViewDelegate {
         do {
             try store.remove(event, span: .futureEvents, commit: true)
         } catch {
-            print("remove error: \(error)")
+            moPrint(self, #line, "remove error: \(error)")
         }
         DispatchQueue.main.async { [weak self] in
             self?.inquireCalender() // 重新查询，并刷新列表

@@ -66,7 +66,7 @@ class MOArrayDataSource: NSObject, UITableViewDataSource {
         }
         // 项目名称不能包含: 数字 - or 其他一些特殊符号, 否则转换不了
         guard let appName = Bundle.main.infoDictionary!["CFBundleName"] as? String else {
-            print("未获取到命名空间")
+            moPrint(self, #line, "未获取到命名空间")
             return nil
         }
         
@@ -74,11 +74,11 @@ class MOArrayDataSource: NSObject, UITableViewDataSource {
         print(str)
         
         guard let vcClass = NSClassFromString(str) else {
-            print("未获取到对应类")
+            moPrint(self, #line, "未获取到对应类")
             return nil
         }
         guard let vcType = vcClass as? UIViewController.Type else {
-            print("未转换成控制器类")
+            moPrint(self, #line, "未转换成控制器类")
             return nil
         }
         let vc = vcType.init()
