@@ -35,8 +35,8 @@ struct MOAuthorizationManager {
     // MARK: - 工厂方法 (获取不同权限model，model实现协议方法)
     func authorizeFactory(type: MOAuthorizeType) -> MOAuthrizationProtocol {
         switch type {
-            case .camera: return MOAuthorizationCamera()
-            case .photo: return MOAuthorizationPhoto()
+        case .camera: return MOAuthorizationCamera()
+        case .photo: return MOAuthorizationPhoto()
         }
     }
 }

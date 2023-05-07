@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     private func setupView() {
         let section0 = [
             MOCellModel("OC Demo", "MOOCViewController"),
+            MOCellModel("High-order Function", "MOHigherOrderFucViewController"),
             MOCellModel("View Test", "MOViewTestViewController"),
             MOCellModel("UITests", "MOUITestsViewController"),
             MOCellModel("Custom Transition Animation", "MOFirstViewController"),

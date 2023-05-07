@@ -37,21 +37,11 @@ struct MOAuthorizationPhoto: MOAuthrizationProtocol {
     func status() -> MOAuthorizeStatus {
         let status = PHPhotoLibrary.authorizationStatus()
         switch status {
-            case .notDetermined: return .notDetermined
-            case .restricted: return .restricted
-            case .denied: return .denied
-            case .authorized: return .authorized
-            default: return .denied
+        case .notDetermined: return .notDetermined
+        case .restricted: return .restricted
+        case .denied: return .denied
+        case .authorized: return .authorized
+        default: return .denied
         }
-    }
-    
-    func getTopVC() -> UIViewController? {
-        if var topController = UIApplication.shared.keyWindow?.rootViewController {
-            while let presentedViewController = topController.presentedViewController {
-                topController = presentedViewController
-            }
-            return topController
-        }
-        return nil
     }
 }

@@ -11,6 +11,7 @@
 		4C662755A0DCC33C0DCE62C5 /* Pods_MODemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9794A26E5DAA8EA3E8204CF /* Pods_MODemo.framework */; };
 		7E39CACF1702F3B736938004 /* Pods_MODemo_MODemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4ECFA3E751DBF7A7311F27 /* Pods_MODemo_MODemoUITests.framework */; };
 		FD2E57CB28FA54CA005F4C8E /* MOResponderChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */; };
+		FD3ABF4E2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */; };
 		FD4080F52987499100C83D11 /* MOOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080F32987499100C83D11 /* MOOCViewController.m */; };
 		FD4080F8298749A700C83D11 /* MOArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080F7298749A700C83D11 /* MOArrayDataSource.m */; };
 		FD408186298749C900C83D11 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FB298749C900C83D11 /* CircleLoadingView.swift */; };
@@ -157,6 +158,7 @@
 		AD0FB419EB39483834A9B8BA /* Pods-MODemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo.release.xcconfig"; path = "Target Support Files/Pods-MODemo/Pods-MODemo.release.xcconfig"; sourceTree = "<group>"; };
 		F70E474EA380440DD78D3C87 /* Pods-MODemo-MODemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo-MODemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MODemo-MODemoUITests/Pods-MODemo-MODemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOResponderChainViewController.swift; sourceTree = "<group>"; };
+		FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOHigherOrderFucViewController.swift; sourceTree = "<group>"; };
 		FD405250299E0FE100BC73D2 /* MODemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MODemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		FD4080F32987499100C83D11 /* MOOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCViewController.m; sourceTree = "<group>"; };
 		FD4080F42987499100C83D11 /* MOOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCViewController.h; sourceTree = "<group>"; };
@@ -783,6 +785,7 @@
 				FDB19C5926B3FB65009C49ED /* MOApplePayViewController.swift */,
 				FDB19C4626B3FB65009C49ED /* MOTouchIDViewController.swift */,
 				FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */,
+				FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */,
 				FDA55CCE26BCDED700F00633 /* MOExtensions.swift */,
 				FDB19C5A26B3FB65009C49ED /* MOTests */,
 				FDB19C1B26B3FB22009C49ED /* Main.storyboard */,
@@ -1164,6 +1167,7 @@
 				FDB19C6F26B3FB66009C49ED /* MOApplePayViewController.swift in Sources */,
 				FD408191298749CA00C83D11 /* MMNetworkManager.m in Sources */,
 				FD4081AA298749CA00C83D11 /* NSObject+property.m in Sources */,
+				FD3ABF4E2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift in Sources */,
 				FDF5B5A92932206500E9855E /* MOPopOrDismissAnimator.swift in Sources */,
 				FD4081B7298749CA00C83D11 /* MOPerson+Tests.m in Sources */,
 				FDB19C6826B3FB66009C49ED /* MOAuthorizationCamera.swift in Sources */,

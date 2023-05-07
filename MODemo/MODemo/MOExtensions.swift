@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 func moPrint(_ target: NSObject, _ line: Int, _ params: Any) {
     print("\(Date()): <\(type(of: target)), \(String(format: "%p", target))> \(line): \(params)")
@@ -50,4 +51,21 @@ extension String {
         print(alphabet[5...10]) // FGHIJK
         print(alphabet[11...])  // LMNOPQRSTUVWXYZ
     }
+}
+
+func getTopVC() -> UIViewController? {
+    guard let keyWindow = UIApplication.shared.connectedScenes
+        .filter({$0.activationState == .foregroundActive})
+        .compactMap({$0 as? UIWindowScene})
+        .first?.windows
+        .filter({$0.isKeyWindow}).first else {
+        return nil
+    }
+    if var topController = keyWindow.rootViewController {
+        while let presentedViewController = topController.presentedViewController {
+            topController = presentedViewController
+        }
+        return topController
+    }
+    return nil
 }
