@@ -6,16 +6,19 @@
 //
 
 #import "MOOCViewController.h"
-#import "MOArrayDataSource.h"
+#import "MOTableSourceDelegate.h"
 #import "MOPerson.h"
 #include "MOAlorithm.h"
 #include "MOAlgorithmLists.h"
 #import "MOAlgorithmList.h"
 
-@interface MOOCViewController () <UITableViewDelegate>
+@interface MOOCViewController ()
 
-@property (nonatomic, strong) MOArrayDataSource *dataSource;
-@property (nonatomic, strong) UITableView *tableView;
+/// test table view
+@property (nonatomic, strong) UITableView *testTableView;
+
+/// test table view data source
+@property (nonatomic, strong) MOTableSourceDelegate *testTableSourceDelegate;
 
 @end
 
@@ -24,70 +27,86 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
+    [self setupDataSource];
     
     //    [MOAlgorithmList run];
     //    runAlorithm();
     //    runAlorithmLists();
 }
 
-- (void)setupView { //
-    NSArray *section1 = @[
-        [MOCellModel modelWithTitle:@"UIView Test" vcName:@"MOViewTestViewController"],
-        [MOCellModel modelWithTitle:@"Water Ripple" vcName:@"MOWaterRippleViewController"],
-        [MOCellModel modelWithTitle:@"CricleLoading" vcName:@"MOCricleLoadingViewController"],
-        [MOCellModel modelWithTitle:@"Control Center" vcName:@"MOControlCenterViewController"],
-        [MOCellModel modelWithTitle:@"UITableView Optimize" vcName:@"MOTableViewOptimizeViewController"],
-        [MOCellModel modelWithTitle:@"Private API" vcName:@"MOPrivateAPIViewController"],
-        [MOCellModel modelWithTitle:@"Locks" vcName:@"MOLocksViewController"],
-        [MOCellModel modelWithTitle:@"MultiThread" vcName:@"MOMultiThreadViewController"],
-        [MOCellModel modelWithTitle:@"KVC" vcName:@"MOKVCViewController"],
-        [MOCellModel modelWithTitle:@"Runtime" vcName:@"MORuntimeViewController"],
-        [MOCellModel modelWithTitle:@"Block" vcName:@"MOBlockViewController"],
-        [MOCellModel modelWithTitle:@"Timer" vcName:@"MOTimerViewController"],
-        [MOCellModel modelWithTitle:@"Responder响应者" vcName:@"MOResponderViewController"],
-        [MOCellModel modelWithTitle:@"ImageButton" vcName:@"MOImageButtonViewController"],
-        [MOCellModel modelWithTitle:@"NativeNetwork" vcName:@"MONativeNetworkViewController"],
-        [MOCellModel modelWithTitle:@"MenuButton" vcName:@"MOMenuButtonViewController"],
-        [MOCellModel modelWithTitle:@"DrawerView" vcName:@"MODrawerViewController"],
-        [MOCellModel modelWithTitle:@"UIWebViewJSBridge" vcName:@"MOWebViewJSBridgeViewController"]
-    ];
-    self.dataSource = [[MOArrayDataSource alloc] initSections:@[section1] cellIndentifier:@"UITableViewCell" configureCell:^(UITableViewCell * _Nonnull cell, id  _Nonnull model) {
-        MOCellModel *m = (MOCellModel *)model;
-        cell.textLabel.text = m.title;
-    }];
-    self.tableView.dataSource = self.dataSource;
-    [self.view addSubview:self.tableView];
-    [self.tableView reloadData];
-}
-
-#pragma mark - UITableViewDelegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        MOCellModel *model = [self.dataSource modelAtIndexPath:indexPath];
-        UIViewController *vc = [[NSClassFromString(model.vcName) alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    } else {
-        
-    }
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-
 - (void)viewSafeAreaInsetsDidChange {
     [super viewSafeAreaInsetsDidChange];
     UIEdgeInsets insets = self.view.safeAreaInsets;
     CGRect bounds = [UIScreen mainScreen].bounds;
-    self.tableView.frame = CGRectMake(insets.left, insets.top, bounds.size.width - insets.left - insets.right, bounds.size.height - insets.top - insets.bottom);
-    [self.tableView reloadData];
+    self.testTableView.frame = CGRectMake(insets.left,
+                                          insets.top,
+                                          bounds.size.width - insets.left - insets.right,
+                                          bounds.size.height - insets.top - insets.bottom);
+    [self.testTableView reloadData];
 }
 
-- (UITableView *)tableView {
-    if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+#pragma mark - Private Methods
+
+- (void)setupView {
+    self.testTableView.dataSource = self.testTableSourceDelegate;
+    self.testTableView.delegate = self.testTableSourceDelegate;
+    [self.view addSubview:self.testTableView];
+    self.testTableView.frame = self.view.bounds;
+}
+
+- (void)setupDataSource {
+    NSArray *firstSection = @[[MOCellModel modelWithTitle:@"UIView Test" jumpVCName:@"MOViewTestViewController"],
+                              [MOCellModel modelWithTitle:@"Screen Rotation" jumpVCName:@"MOScreenRotationViewController"],
+                              [MOCellModel modelWithTitle:@"Water Ripple" jumpVCName:@"MOWaterRippleViewController"],
+                              [MOCellModel modelWithTitle:@"CricleLoading" jumpVCName:@"MOCricleLoadingViewController"],
+                              [MOCellModel modelWithTitle:@"Control Center" jumpVCName:@"MOControlCenterViewController"],
+                              [MOCellModel modelWithTitle:@"UITableView Optimize" jumpVCName:@"MOTableViewOptimizeViewController"],
+                              [MOCellModel modelWithTitle:@"Private API" jumpVCName:@"MOPrivateAPIViewController"],
+                              [MOCellModel modelWithTitle:@"Locks" jumpVCName:@"MOLocksViewController"],
+                              [MOCellModel modelWithTitle:@"MultiThread" jumpVCName:@"MOMultiThreadViewController"],
+                              [MOCellModel modelWithTitle:@"KVC" jumpVCName:@"MOKVCViewController"],
+                              [MOCellModel modelWithTitle:@"Runtime" jumpVCName:@"MOScreenRotationViewController"],
+                              [MOCellModel modelWithTitle:@"Block" jumpVCName:@"MORuntimeViewController"],
+                              [MOCellModel modelWithTitle:@"Timer" jumpVCName:@"MOTimerViewController"],
+                              [MOCellModel modelWithTitle:@"Responder响应者" jumpVCName:@"MOResponderViewController"],
+                              [MOCellModel modelWithTitle:@"ImageButton" jumpVCName:@"MOImageButtonViewController"],
+                              [MOCellModel modelWithTitle:@"NativeNetwork" jumpVCName:@"MONativeNetworkViewController"],
+                              [MOCellModel modelWithTitle:@"MenuButton" jumpVCName:@"MOMenuButtonViewController"],
+                              [MOCellModel modelWithTitle:@"DrawerView" jumpVCName:@"MODrawerViewController"],
+                              [MOCellModel modelWithTitle:@"UIWebViewJSBridge" jumpVCName:@"MOWebViewJSBridgeViewController"]];
+    self.testTableSourceDelegate.dataSource = @[firstSection];
+    [self.testTableView reloadData];
+}
+
+- (void)handleClickedCellModel:(MOCellModel *)model {
+    if (model.clickedHandler) {
+        model.clickedHandler(model);
     }
-    _tableView.delegate = self;
-    return _tableView;
+    UIViewController *vc = [[NSClassFromString(model.jumpVCName) alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark - Getter Methods
+
+- (UITableView *)testTableView {
+    if (!_testTableView) {
+        UITableView *view = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        [view registerClass:[UITableViewCell class] forCellReuseIdentifier:MOTestCellIdentifier];
+        _testTableView = view;
+    }
+    return _testTableView;
+}
+
+- (MOTableSourceDelegate *)testTableSourceDelegate {
+    if (!_testTableSourceDelegate) {
+        MOTableSourceDelegate *delegate = [[MOTableSourceDelegate alloc] init];
+        __weak typeof(self) weakSelf = self;
+        delegate.clickedCellHandler = ^(MOCellModel * _Nonnull cellModel) {
+            [weakSelf handleClickedCellModel:cellModel];
+        };
+        _testTableSourceDelegate = delegate;
+    }
+    return _testTableSourceDelegate;
 }
 
 @end

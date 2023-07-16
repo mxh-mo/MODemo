@@ -22,7 +22,7 @@
 - (void)createUI {
     self.backgroundColor = [UIColor colorWithRed:231/255.0 green:231/255.0 blue:231/255.0 alpha:1];
     [self addSubview:self.reloadButton];
-    self.state = MOPlaceholderNoNetworkState;
+    self.state = MOPlaceholderNormalState;
 }
 
 - (void)setState:(MOPlaceholderState)state {

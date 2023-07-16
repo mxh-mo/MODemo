@@ -10,10 +10,11 @@
 		11413983D7272D865AB695C3 /* Pods_MODemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6064CDFF2F78E01F5AAC9F /* Pods_MODemoTests.framework */; };
 		4C662755A0DCC33C0DCE62C5 /* Pods_MODemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9794A26E5DAA8EA3E8204CF /* Pods_MODemo.framework */; };
 		7E39CACF1702F3B736938004 /* Pods_MODemo_MODemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4ECFA3E751DBF7A7311F27 /* Pods_MODemo_MODemoUITests.framework */; };
+		FD1883A02A63E6C7003245BB /* MOScreenRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD18839F2A63E6C7003245BB /* MOScreenRotationViewController.m */; };
+		FD1883A72A63E9AE003245BB /* MOTableSourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1883A62A63E9AE003245BB /* MOTableSourceDelegate.m */; };
 		FD2E57CB28FA54CA005F4C8E /* MOResponderChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */; };
 		FD3ABF4E2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */; };
 		FD4080F52987499100C83D11 /* MOOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080F32987499100C83D11 /* MOOCViewController.m */; };
-		FD4080F8298749A700C83D11 /* MOArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080F7298749A700C83D11 /* MOArrayDataSource.m */; };
 		FD408186298749C900C83D11 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FB298749C900C83D11 /* CircleLoadingView.swift */; };
 		FD408187298749C900C83D11 /* MOCircleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FC298749C900C83D11 /* MOCircleLoadingView.m */; };
 		FD408188298749C900C83D11 /* MOCricleLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FD298749C900C83D11 /* MOCricleLoadingViewController.m */; };
@@ -157,13 +158,16 @@
 		AB2739E5B15905186A88D3AD /* Pods-MODemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo.debug.xcconfig"; path = "Target Support Files/Pods-MODemo/Pods-MODemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AD0FB419EB39483834A9B8BA /* Pods-MODemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo.release.xcconfig"; path = "Target Support Files/Pods-MODemo/Pods-MODemo.release.xcconfig"; sourceTree = "<group>"; };
 		F70E474EA380440DD78D3C87 /* Pods-MODemo-MODemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo-MODemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MODemo-MODemoUITests/Pods-MODemo-MODemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD18839E2A63E6C7003245BB /* MOScreenRotationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOScreenRotationViewController.h; sourceTree = "<group>"; };
+		FD18839F2A63E6C7003245BB /* MOScreenRotationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOScreenRotationViewController.m; sourceTree = "<group>"; };
+		FD1883A42A63E925003245BB /* MOConveniences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOConveniences.h; sourceTree = "<group>"; };
+		FD1883A52A63E9AE003245BB /* MOTableSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTableSourceDelegate.h; sourceTree = "<group>"; };
+		FD1883A62A63E9AE003245BB /* MOTableSourceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTableSourceDelegate.m; sourceTree = "<group>"; };
 		FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOResponderChainViewController.swift; sourceTree = "<group>"; };
 		FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOHigherOrderFucViewController.swift; sourceTree = "<group>"; };
 		FD405250299E0FE100BC73D2 /* MODemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MODemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		FD4080F32987499100C83D11 /* MOOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCViewController.m; sourceTree = "<group>"; };
 		FD4080F42987499100C83D11 /* MOOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCViewController.h; sourceTree = "<group>"; };
-		FD4080F6298749A700C83D11 /* MOArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOArrayDataSource.h; sourceTree = "<group>"; };
-		FD4080F7298749A700C83D11 /* MOArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOArrayDataSource.m; sourceTree = "<group>"; };
 		FD4080FA298749C900C83D11 /* MOCricleLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCricleLoadingViewController.h; sourceTree = "<group>"; };
 		FD4080FB298749C900C83D11 /* CircleLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
 		FD4080FC298749C900C83D11 /* MOCircleLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOCircleLoadingView.m; sourceTree = "<group>"; };
@@ -402,13 +406,16 @@
 			isa = PBXGroup;
 			children = (
 				FD405250299E0FE100BC73D2 /* MODemo-Bridging-Header.h */,
+				FD1883A42A63E925003245BB /* MOConveniences.h */,
 				FD74074229888ED8001E4A5E /* MOAlorithm */,
 				FD4080F42987499100C83D11 /* MOOCViewController.h */,
 				FD4080F32987499100C83D11 /* MOOCViewController.m */,
-				FD4080F6298749A700C83D11 /* MOArrayDataSource.h */,
-				FD4080F7298749A700C83D11 /* MOArrayDataSource.m */,
+				FD1883A52A63E9AE003245BB /* MOTableSourceDelegate.h */,
+				FD1883A62A63E9AE003245BB /* MOTableSourceDelegate.m */,
 				FD74073F29888C34001E4A5E /* MOBaseViewController.h */,
 				FD74074029888C34001E4A5E /* MOBaseViewController.m */,
+				FD18839E2A63E6C7003245BB /* MOScreenRotationViewController.h */,
+				FD18839F2A63E6C7003245BB /* MOScreenRotationViewController.m */,
 				FD4080FF298749C900C83D11 /* MOBlock */,
 				FD408115298749C900C83D11 /* MOBottomDrawer */,
 				FD408171298749C900C83D11 /* MOControlCenter */,
@@ -1208,7 +1215,6 @@
 				FDB19C1626B3FB22009C49ED /* AppDelegate.swift in Sources */,
 				FD4081A8298749CA00C83D11 /* MORuntimeViewController.m in Sources */,
 				FDB19C6C26B3FB66009C49ED /* MOPopViewController.swift in Sources */,
-				FD4080F8298749A700C83D11 /* MOArrayDataSource.m in Sources */,
 				FDB19C6D26B3FB66009C49ED /* MOShareDocumentViewController.swift in Sources */,
 				FD4081C3298749CA00C83D11 /* NSTimer+MOBlock.m in Sources */,
 				FD40819C298749CA00C83D11 /* MOViewTestViewController.m in Sources */,
@@ -1238,11 +1244,13 @@
 				FD47CB14296549E100F3AF0A /* MOAlgorithmLists.swift in Sources */,
 				FD408186298749C900C83D11 /* CircleLoadingView.swift in Sources */,
 				FD4081A2298749CA00C83D11 /* UIViewController+Swizzling.m in Sources */,
+				FD1883A72A63E9AE003245BB /* MOTableSourceDelegate.m in Sources */,
 				FD40818C298749C900C83D11 /* OverLayView.swift in Sources */,
 				FD4081C1298749CA00C83D11 /* MOTableViewOptimizeViewController.m in Sources */,
 				FD4081A3298749CA00C83D11 /* UIImage+image.m in Sources */,
 				FDA55CCF26BCDED700F00633 /* MOExtensions.swift in Sources */,
 				FD4081BB298749CA00C83D11 /* MOPrivateAPIViewController.m in Sources */,
+				FD1883A02A63E6C7003245BB /* MOScreenRotationViewController.m in Sources */,
 				FD4081A9298749CA00C83D11 /* UIButton+Swizzling.m in Sources */,
 				FD4081BD298749CA00C83D11 /* MOControlCenterViewController.m in Sources */,
 				FDF5B5A12932148700E9855E /* MOPresentationController.swift in Sources */,
