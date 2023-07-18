@@ -76,6 +76,9 @@ class MOViewTestViewController: UIViewController {
         super.viewDidLoad()
         moPrint(self, #line, "viewDidLoad")
 
+        view.backgroundColor = .white
+        
+        shadowTest()    // UIView 阴影
 //        swipeGestureTest(); // 解决：上滑手势 跟 按钮 cancel 手势 冲突
 //        imageViewTransform() // UIImageView 翻转
 //        stackView() // UIStackView
@@ -90,6 +93,18 @@ class MOViewTestViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         moPrint(self, #line, "viewDidAppear")
+    }
+    
+    func shadowTest() {
+        let view = UIView(frame: CGRect(x: 50.0, y: 100.0, width: 200.0, height: 200.0))
+        view.backgroundColor = .white // 必要
+        view.layer.shadowColor = UIColor.red.cgColor
+        view.layer.shadowOffset = .zero
+        view.layer.shadowOpacity = 0.25 // 必要
+        let rect = CGRect(x: -10.0, y: -10.0, width: 220.0, height: 220.0)
+        let bezierPath = UIBezierPath(roundedRect: rect, cornerRadius: 10.0)
+        view.layer.shadowPath = bezierPath.cgPath
+        self.view.addSubview(view)
     }
     
     // MARK: - 解决：上滑手势 跟 按钮 cancel 手势 冲突

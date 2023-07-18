@@ -17,7 +17,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupView()
 //        testAlgorithms()
+        
+        /// 跳转 OC VC，测试 OC 代码
 //        self.navigationController?.pushViewController(MOOCViewController(), animated: true);
+        self.navigationController?.pushViewController(MOViewTestViewController(), animated: true);
     }
     
     func testAlgorithms() {
@@ -28,7 +31,7 @@ class ViewController: UIViewController {
     }
     
     private func setupView() {
-        let section0 = [
+        let section0 = [ //
             MOCellModel("OC Demo", "MOOCViewController"),
             MOCellModel("High-order Function", "MOHigherOrderFucViewController"),
             MOCellModel("View Test", "MOViewTestViewController"),

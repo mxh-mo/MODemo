@@ -24,6 +24,8 @@
 
 @implementation MOOCViewController
 
+#pragma mark - Override Methods
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
@@ -31,7 +33,7 @@
     
     //    [MOAlgorithmList run];
     //    runAlorithm();
-    //    runAlorithmLists();
+    //    runAlorithmLists();    
 }
 
 - (void)viewSafeAreaInsetsDidChange {
