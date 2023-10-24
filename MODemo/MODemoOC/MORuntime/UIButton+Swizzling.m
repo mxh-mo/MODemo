@@ -17,7 +17,7 @@
 + (void)load {
     //  static dispatch_once_t onceToken;
     //  dispatch_once(&onceToken, ^{
-    //    [self methodSwizzlingWithOriginalSelector:@selector(sendAction:to:forEvent:) bySwizzledSelector:@selector(mo_SendAction:to:forEvent:)];
+    //    [self swapOriginSelector:@selector(sendAction:to:forEvent:) bySwizzledSelector:@selector(mo_SendAction:to:forEvent:)];
     //  });
 }
 

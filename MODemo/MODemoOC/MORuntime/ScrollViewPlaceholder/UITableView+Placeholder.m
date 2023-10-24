@@ -16,8 +16,8 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self methodSwizzlingWithOriginalSelector:@selector(reloadData)
-                               bySwizzledSelector:@selector(mo_reloadData)];
+        [self swapOriginSelector:@selector(reloadData)
+                               byTargetSelector:@selector(mo_reloadData)];
     });
 }
 

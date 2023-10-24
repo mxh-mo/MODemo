@@ -12,7 +12,8 @@
 
 @implementation NSObject (Swizzling)
 
-+ (void)methodSwizzlingWithOriginalSelector:(SEL)originalSelector bySwizzledSelector:(SEL)swizzledSelector {
++ (void)swapOriginSelector:(SEL)originalSelector 
+          byTargetSelector:(SEL)swizzledSelector {
     Class class = [self class];
     // 原有方法
     Method originalMethod = class_getInstanceMethod(class, originalSelector);

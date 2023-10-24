@@ -18,8 +18,8 @@ static char *kCustomBackButtonKey;
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self methodSwizzlingWithOriginalSelector:@selector(backBarButtonItem)
-                               bySwizzledSelector:@selector(sure_backBarButtonItem)];
+        [self swapOriginSelector:@selector(backBarButtonItem)
+                               byTargetSelector:@selector(sure_backBarButtonItem)];
     });
 }
 

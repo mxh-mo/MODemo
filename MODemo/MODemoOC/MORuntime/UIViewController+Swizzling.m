@@ -14,7 +14,7 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self methodSwizzlingWithOriginalSelector:@selector(viewWillDisappear:) bySwizzledSelector:@selector(mo_viewWillDisappear:)];
+        [self swapOriginSelector:@selector(viewWillDisappear:) byTargetSelector:@selector(mo_viewWillDisappear:)];
     });
 }
 

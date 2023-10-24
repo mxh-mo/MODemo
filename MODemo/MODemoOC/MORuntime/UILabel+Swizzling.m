@@ -14,9 +14,9 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self methodSwizzlingWithOriginalSelector:@selector(init) bySwizzledSelector:@selector(mo_Init)];
-        [self methodSwizzlingWithOriginalSelector:@selector(initWithFrame:) bySwizzledSelector:@selector(mo_InitWithFrame:)];
-        [self methodSwizzlingWithOriginalSelector:@selector(awakeFromNib) bySwizzledSelector:@selector(mo_AwakeFromNib)];
+        [self swapOriginSelector:@selector(init) byTargetSelector:@selector(mo_Init)];
+        [self swapOriginSelector:@selector(initWithFrame:) byTargetSelector:@selector(mo_InitWithFrame:)];
+        [self swapOriginSelector:@selector(awakeFromNib) byTargetSelector:@selector(mo_AwakeFromNib)];
     });
 }
 

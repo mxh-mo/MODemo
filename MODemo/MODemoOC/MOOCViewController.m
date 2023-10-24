@@ -31,6 +31,21 @@
     [self setupView];
     [self setupDataSource];
     
+//    NSArray *arr = [NSArray array];
+//    [arr objectAtIndex:1];
+    
+//    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"keyt1", @1, nil];
+//    [dic objectForKey:nil]; // 不会 crash
+    
+//    NSMutableArray *mArr = [NSMutableArray array];
+//    [mArr addObject:nil];
+//    [mArr objectAtIndex:1];
+    
+
+    NSMutableDictionary *mDic = [NSMutableDictionary dictionary];
+//    [mDic setObject:nil forKey:nil];
+    [mDic removeObjectForKey:@"xxx"];
+//    [mDic removeObjectsForKeys:nil];
     //    [MOAlgorithmList run];
     //    runAlorithm();
     //    runAlorithmLists();    

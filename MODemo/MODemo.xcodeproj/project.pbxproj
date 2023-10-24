@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -91,6 +91,9 @@
 		FD74074529888EF8001E4A5E /* MOAlorithm.c in Sources */ = {isa = PBXBuildFile; fileRef = FD74074429888EF8001E4A5E /* MOAlorithm.c */; };
 		FD740748298AAAF6001E4A5E /* MOAlgorithmLists.c in Sources */ = {isa = PBXBuildFile; fileRef = FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */; };
 		FD741B25298C7DFF001E4A5E /* MOAlgorithmList.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD741B24298C7DFF001E4A5E /* MOAlgorithmList.mm */; };
+		FD7554CF2AE7B8400062677E /* NSMutableDictionary+MOOSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7554CE2AE7B8400062677E /* NSMutableDictionary+MOOSafe.m */; };
+		FD7554D32AE7BA9C0062677E /* NSArray+MOOSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7554D22AE7BA9C0062677E /* NSArray+MOOSafe.m */; };
+		FD7554D92AE7BC470062677E /* NSMutableArray+MOOSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7554D82AE7BC470062677E /* NSMutableArray+MOOSafe.m */; };
 		FDA55CCF26BCDED700F00633 /* MOExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA55CCE26BCDED700F00633 /* MOExtensions.swift */; };
 		FDB19C1626B3FB22009C49ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1526B3FB22009C49ED /* AppDelegate.swift */; };
 		FDB19C1826B3FB22009C49ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1726B3FB22009C49ED /* SceneDelegate.swift */; };
@@ -304,6 +307,12 @@
 		FD741B15298B34B7001E4A5E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		FD741B23298C7DFF001E4A5E /* MOAlgorithmList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAlgorithmList.h; sourceTree = "<group>"; };
 		FD741B24298C7DFF001E4A5E /* MOAlgorithmList.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MOAlgorithmList.mm; sourceTree = "<group>"; };
+		FD7554CD2AE7B8400062677E /* NSMutableDictionary+MOOSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MOOSafe.h"; sourceTree = "<group>"; };
+		FD7554CE2AE7B8400062677E /* NSMutableDictionary+MOOSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MOOSafe.m"; sourceTree = "<group>"; };
+		FD7554D12AE7BA9C0062677E /* NSArray+MOOSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MOOSafe.h"; sourceTree = "<group>"; };
+		FD7554D22AE7BA9C0062677E /* NSArray+MOOSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MOOSafe.m"; sourceTree = "<group>"; };
+		FD7554D72AE7BC470062677E /* NSMutableArray+MOOSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MOOSafe.h"; sourceTree = "<group>"; };
+		FD7554D82AE7BC470062677E /* NSMutableArray+MOOSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MOOSafe.m"; sourceTree = "<group>"; };
 		FDA55CCE26BCDED700F00633 /* MOExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOExtensions.swift; sourceTree = "<group>"; };
 		FDB19C1226B3FB22009C49ED /* MODemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB19C1526B3FB22009C49ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -556,6 +565,7 @@
 		FD408133298749C900C83D11 /* MORuntime */ = {
 			isa = PBXGroup;
 			children = (
+				FD7554D02AE7BA860062677E /* Safe */,
 				FD408134298749C900C83D11 /* MORuntimeViewController.h */,
 				FD408144298749C900C83D11 /* MORuntimeViewController.m */,
 				FD40813B298749C900C83D11 /* NSMutableArray+Swizzling.h */,
@@ -564,8 +574,6 @@
 				FD40814B298749C900C83D11 /* NSObject+arrayContain.m */,
 				FD408138298749C900C83D11 /* NSObject+property.h */,
 				FD408146298749C900C83D11 /* NSObject+property.m */,
-				FD40813D298749C900C83D11 /* NSObject+Swizzling.h */,
-				FD40814C298749C900C83D11 /* NSObject+Swizzling.m */,
 				FD40813E298749C900C83D11 /* ScrollViewPlaceholder */,
 				FD408137298749C900C83D11 /* UIButton+Swizzling.h */,
 				FD408145298749C900C83D11 /* UIButton+Swizzling.m */,
@@ -744,6 +752,21 @@
 				FD741B24298C7DFF001E4A5E /* MOAlgorithmList.mm */,
 			);
 			path = MOAlorithm;
+			sourceTree = "<group>";
+		};
+		FD7554D02AE7BA860062677E /* Safe */ = {
+			isa = PBXGroup;
+			children = (
+				FD40813D298749C900C83D11 /* NSObject+Swizzling.h */,
+				FD40814C298749C900C83D11 /* NSObject+Swizzling.m */,
+				FD7554D12AE7BA9C0062677E /* NSArray+MOOSafe.h */,
+				FD7554D22AE7BA9C0062677E /* NSArray+MOOSafe.m */,
+				FD7554D72AE7BC470062677E /* NSMutableArray+MOOSafe.h */,
+				FD7554D82AE7BC470062677E /* NSMutableArray+MOOSafe.m */,
+				FD7554CD2AE7B8400062677E /* NSMutableDictionary+MOOSafe.h */,
+				FD7554CE2AE7B8400062677E /* NSMutableDictionary+MOOSafe.m */,
+			);
+			path = Safe;
 			sourceTree = "<group>";
 		};
 		FDB19C0926B3FB22009C49ED = {
@@ -1156,6 +1179,7 @@
 				FD408195298749CA00C83D11 /* MODrawerViewController.m in Sources */,
 				FD4081A0298749CA00C83D11 /* MOResponderViewController.m in Sources */,
 				FDDBEE8F2917906800AAA80D /* MOFirstViewController.swift in Sources */,
+				FD7554CF2AE7B8400062677E /* NSMutableDictionary+MOOSafe.m in Sources */,
 				FD4081B5298749CA00C83D11 /* MOWaterRippleViewController.m in Sources */,
 				FD4081BC298749CA00C83D11 /* MOKVCViewController.m in Sources */,
 				FD408199298749CA00C83D11 /* MOOperationQueue.m in Sources */,
@@ -1214,6 +1238,7 @@
 				FD40819D298749CA00C83D11 /* MOTitleLineView.m in Sources */,
 				FDB19C1626B3FB22009C49ED /* AppDelegate.swift in Sources */,
 				FD4081A8298749CA00C83D11 /* MORuntimeViewController.m in Sources */,
+				FD7554D92AE7BC470062677E /* NSMutableArray+MOOSafe.m in Sources */,
 				FDB19C6C26B3FB66009C49ED /* MOPopViewController.swift in Sources */,
 				FDB19C6D26B3FB66009C49ED /* MOShareDocumentViewController.swift in Sources */,
 				FD4081C3298749CA00C83D11 /* NSTimer+MOBlock.m in Sources */,
@@ -1238,6 +1263,7 @@
 				FDB19C7126B3FB66009C49ED /* MOUITestsViewController.swift in Sources */,
 				FDB19C7026B3FB66009C49ED /* MOPerson.swift in Sources */,
 				FD74074529888EF8001E4A5E /* MOAlorithm.c in Sources */,
+				FD7554D32AE7BA9C0062677E /* NSArray+MOOSafe.m in Sources */,
 				FD408190298749CA00C83D11 /* KYButton.swift in Sources */,
 				FD4081BF298749CA00C83D11 /* MOPerson.m in Sources */,
 				FDB19C6626B3FB66009C49ED /* MOAlgorithm.swift in Sources */,
