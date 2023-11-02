@@ -10,6 +10,7 @@
 #import "MOViewTestViewController.h"
 #import "MOTitleLineView.h"
 #import "MOFollowLightView.h"
+#import "MOGradientRollLabelView.h"
 
 @interface MOViewTestViewController () <MOTitleLineViewDelegate>
 
@@ -29,6 +30,13 @@
     [self titleAndLineView];
     // 追光动效
     [self followLightView];
+    // 渐变滚动label
+//    [self gradientRollLabelView];
+}
+
+- (void)gradientRollLabelView {
+    MOGradientRollLabelView *view = [[MOGradientRollLabelView alloc] initWithFrame:CGRectMake(50, 150, 300, 48)];
+    [self.view addSubview:view];
 }
 
 #pragma mark - 追光动效

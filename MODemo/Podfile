@@ -8,6 +8,7 @@ target 'MODemo' do
   # Pods for MODemo
   pod 'Masonry'
   pod 'SnapKit', '~> 5.6.0'
+  pod 'YYCategories'
 
   target 'MODemoTests' do
     inherit! :search_paths

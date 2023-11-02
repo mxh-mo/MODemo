@@ -13,6 +13,7 @@
 		FD1883A02A63E6C7003245BB /* MOScreenRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD18839F2A63E6C7003245BB /* MOScreenRotationViewController.m */; };
 		FD1883A72A63E9AE003245BB /* MOTableSourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1883A62A63E9AE003245BB /* MOTableSourceDelegate.m */; };
 		FD2E57CB28FA54CA005F4C8E /* MOResponderChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */; };
+		FD30E2842AF39256002BA77A /* MOGradientRollLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD30E2832AF39256002BA77A /* MOGradientRollLabelView.m */; };
 		FD3ABF4E2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */; };
 		FD4080F52987499100C83D11 /* MOOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080F32987499100C83D11 /* MOOCViewController.m */; };
 		FD408186298749C900C83D11 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FB298749C900C83D11 /* CircleLoadingView.swift */; };
@@ -52,7 +53,6 @@
 		FD4081A8298749CA00C83D11 /* MORuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408144298749C900C83D11 /* MORuntimeViewController.m */; };
 		FD4081A9298749CA00C83D11 /* UIButton+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408145298749C900C83D11 /* UIButton+Swizzling.m */; };
 		FD4081AA298749CA00C83D11 /* NSObject+property.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408146298749C900C83D11 /* NSObject+property.m */; };
-		FD4081AB298749CA00C83D11 /* NSMutableArray+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FD408149298749C900C83D11 /* NSMutableArray+Swizzling.m */; };
 		FD4081AC298749CA00C83D11 /* NSObject+arrayContain.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40814B298749C900C83D11 /* NSObject+arrayContain.m */; };
 		FD4081AD298749CA00C83D11 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40814C298749C900C83D11 /* NSObject+Swizzling.m */; };
 		FD4081AE298749CA00C83D11 /* MOImageButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40814F298749C900C83D11 /* MOImageButtonViewController.m */; };
@@ -167,6 +167,8 @@
 		FD1883A52A63E9AE003245BB /* MOTableSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTableSourceDelegate.h; sourceTree = "<group>"; };
 		FD1883A62A63E9AE003245BB /* MOTableSourceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTableSourceDelegate.m; sourceTree = "<group>"; };
 		FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOResponderChainViewController.swift; sourceTree = "<group>"; };
+		FD30E2822AF39256002BA77A /* MOGradientRollLabelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOGradientRollLabelView.h; sourceTree = "<group>"; };
+		FD30E2832AF39256002BA77A /* MOGradientRollLabelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOGradientRollLabelView.m; sourceTree = "<group>"; };
 		FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOHigherOrderFucViewController.swift; sourceTree = "<group>"; };
 		FD405250299E0FE100BC73D2 /* MODemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MODemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		FD4080F32987499100C83D11 /* MOOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCViewController.m; sourceTree = "<group>"; };
@@ -227,7 +229,6 @@
 		FD408138298749C900C83D11 /* NSObject+property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+property.h"; sourceTree = "<group>"; };
 		FD408139298749C900C83D11 /* NSObject+arrayContain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+arrayContain.h"; sourceTree = "<group>"; };
 		FD40813A298749C900C83D11 /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
-		FD40813B298749C900C83D11 /* NSMutableArray+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Swizzling.h"; sourceTree = "<group>"; };
 		FD40813C298749C900C83D11 /* UILabel+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Swizzling.m"; sourceTree = "<group>"; };
 		FD40813D298749C900C83D11 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
 		FD40813F298749C900C83D11 /* UITableView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Placeholder.h"; sourceTree = "<group>"; };
@@ -240,7 +241,6 @@
 		FD408146298749C900C83D11 /* NSObject+property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+property.m"; sourceTree = "<group>"; };
 		FD408147298749C900C83D11 /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
 		FD408148298749C900C83D11 /* UILabel+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Swizzling.h"; sourceTree = "<group>"; };
-		FD408149298749C900C83D11 /* NSMutableArray+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Swizzling.m"; sourceTree = "<group>"; };
 		FD40814A298749C900C83D11 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
 		FD40814B298749C900C83D11 /* NSObject+arrayContain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+arrayContain.m"; sourceTree = "<group>"; };
 		FD40814C298749C900C83D11 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
@@ -545,6 +545,8 @@
 				FD408129298749C900C83D11 /* MOTitleLineView.m */,
 				FD40812A298749C900C83D11 /* MOViewTestViewController.h */,
 				FD408126298749C900C83D11 /* MOViewTestViewController.m */,
+				FD30E2822AF39256002BA77A /* MOGradientRollLabelView.h */,
+				FD30E2832AF39256002BA77A /* MOGradientRollLabelView.m */,
 			);
 			path = MOViewTest;
 			sourceTree = "<group>";
@@ -568,8 +570,6 @@
 				FD7554D02AE7BA860062677E /* Safe */,
 				FD408134298749C900C83D11 /* MORuntimeViewController.h */,
 				FD408144298749C900C83D11 /* MORuntimeViewController.m */,
-				FD40813B298749C900C83D11 /* NSMutableArray+Swizzling.h */,
-				FD408149298749C900C83D11 /* NSMutableArray+Swizzling.m */,
 				FD408139298749C900C83D11 /* NSObject+arrayContain.h */,
 				FD40814B298749C900C83D11 /* NSObject+arrayContain.m */,
 				FD408138298749C900C83D11 /* NSObject+property.h */,
@@ -1217,8 +1217,8 @@
 				FD4080F52987499100C83D11 /* MOOCViewController.m in Sources */,
 				FD4081A7298749CA00C83D11 /* UINavigationItem+Swizzling.m in Sources */,
 				FD4081B6298749CA00C83D11 /* MOOCMockDemo.m in Sources */,
-				FD4081AB298749CA00C83D11 /* NSMutableArray+Swizzling.m in Sources */,
 				FDB19C1A26B3FB22009C49ED /* ViewController.swift in Sources */,
+				FD30E2842AF39256002BA77A /* MOGradientRollLabelView.m in Sources */,
 				FD408196298749CA00C83D11 /* MOLeftDrawerView.m in Sources */,
 				FDB19C6326B3FB66009C49ED /* MOTableViewStyleViewController.swift in Sources */,
 				FDB19C6026B3FB66009C49ED /* MOLocationManager.swift in Sources */,
