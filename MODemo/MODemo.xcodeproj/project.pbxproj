@@ -978,10 +978,10 @@
 		FDB19C0A26B3FB22009C49ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = MO;
+				CLASSPREFIX = MOO;
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
-				ORGANIZATIONNAME = moxiaoyan;
+				ORGANIZATIONNAME = "Mobi Technology";
 				TargetAttributes = {
 					FDB19C1126B3FB22009C49ED = {
 						CreatedOnToolsVersion = 12.5;

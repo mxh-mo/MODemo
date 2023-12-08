@@ -51,7 +51,9 @@ class MOQRScanViewController: UIViewController {
         if MOAuthorizationManager().authorizeFactory(type: .camera).status() != .authorized {
             MOAuthorizationManager().requestAuthoriza(type: .camera) { (status) in
                 if status == .authorized {
-                    self.loadScanView()
+                    DispatchQueue.main.async {
+                        self.loadScanView()
+                    }
                     DispatchQueue.global(qos: .userInitiated).async {
                         self.captureSession.startRunning()
                     }
@@ -60,7 +62,9 @@ class MOQRScanViewController: UIViewController {
                 }
             }
         } else {
-            self.loadScanView()
+            DispatchQueue.main.async {
+                self.loadScanView()
+            }
             DispatchQueue.global(qos: .userInitiated).async {
                 self.captureSession.startRunning()
             }
