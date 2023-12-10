@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 //        testAlgorithms()
         
         /// 跳转 OC VC，测试 OC 代码
-        self.navigationController?.pushViewController(MOOCViewController(), animated: true);
+//        self.navigationController?.pushViewController(MOOCViewController(), animated: true);
 //        self.navigationController?.pushViewController(MOViewTestViewController(), animated: true);
     }
     

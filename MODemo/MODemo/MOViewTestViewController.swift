@@ -78,7 +78,8 @@ class MOViewTestViewController: UIViewController {
 
         view.backgroundColor = .white
         
-        shadowTest()    // UIView 阴影
+        view.addSubview(self.screenshotImageView) // 捕获view部分区域绘制成image
+//        shadowTest()    // UIView 阴影
 //        swipeGestureTest(); // 解决：上滑手势 跟 按钮 cancel 手势 冲突
 //        imageViewTransform() // UIImageView 翻转
 //        stackView() // UIStackView
@@ -93,6 +94,21 @@ class MOViewTestViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         moPrint(self, #line, "viewDidAppear")
+        captureViewToImage()
+    }
+    
+    lazy var screenshotImageView = {
+        let view = UIImageView(frame: CGRect(x: 50.0, y: 100.0, width: 230.0, height: 230.0))
+        view.image = UIImage(named: "ticpod_water_ripple_back")
+        return view
+    }()
+    func captureViewToImage() {
+        let rect = CGRect(x: 0.0, y: 0.0, width: 230.0, height: 100.0)
+        let image = screenshotImageView.mooScreenshotForFrame(rect)
+        let imageView = UIImageView(frame: CGRect(x: 50.0, y: 360.0, width: 230.0, height: 230.0))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        self.view.addSubview(imageView)
     }
     
     func shadowTest() {
