@@ -74,18 +74,31 @@ func getTopVC() -> UIViewController? {
 extension UIView {
     /// 截图整个view
     /// - Returns: image
-    func mooScreenshot() -> UIImage? {
+    func mooSnapshot() -> UIImage? {
+        if self.window == nil {
+            return nil
+        }
+        let scale = UIScreen.main.scale
+        var image: UIImage? = nil
         // 1. 创建绘图渲染格式
-        let format = UIGraphicsImageRendererFormat()
-        format.scale = UIScreen.main.scale // 几倍的屏幕
-        format.opaque = false // 背景是否不透明
-        // 2. 创建绘图渲染器
-        let renderer = UIGraphicsImageRenderer(size: self.bounds.size,
-                                               format: format)
-        // 3. 绘制图
-        let image = renderer.image { context in
+        if #available(iOS 10.0, *) {
+            let format = UIGraphicsImageRendererFormat()
+            format.scale = scale
+            format.opaque = self.isOpaque
+            // 2. 创建绘图渲染器
+            let renderer = UIGraphicsImageRenderer(size: self.bounds.size,
+                                                   format: format)
+            // 3. 绘制图
+            image = renderer.image { context in
+                let success = self.drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+                print("draw success: \(success)")
+            }
+        } else {
+            UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, scale);
             let success = self.drawHierarchy(in: self.bounds, afterScreenUpdates: true)
             print("draw success: \(success)")
+            image = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
         }
         return image
     }
@@ -93,8 +106,8 @@ extension UIView {
     /// 截取view的部分区域
     /// - Parameter frame: 需要截取的区域
     /// - Returns: image
-    func mooScreenshotForFrame(_ frame: CGRect) -> UIImage? {
-        guard let image = self.mooScreenshot() else { return nil }
+    func mooSnapshotForFrame(_ frame: CGRect) -> UIImage? {
+        guard let image = self.mooSnapshot() else { return nil }
         guard let cgImage = image.cgImage else { return nil }
         let scale = UIScreen.main.scale
         // 根据屏幕倍率将 frame 进行缩放

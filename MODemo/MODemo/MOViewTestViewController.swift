@@ -104,7 +104,7 @@ class MOViewTestViewController: UIViewController {
     }()
     func captureViewToImage() {
         let rect = CGRect(x: 0.0, y: 0.0, width: 230.0, height: 100.0)
-        let image = screenshotImageView.mooScreenshotForFrame(rect)
+        let image = screenshotImageView.mooSnapshotForFrame(rect)
         let imageView = UIImageView(frame: CGRect(x: 50.0, y: 360.0, width: 230.0, height: 230.0))
         imageView.contentMode = .scaleAspectFit
         imageView.image = image
