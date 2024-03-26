@@ -13,7 +13,6 @@
 		FD1883A02A63E6C7003245BB /* MOScreenRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD18839F2A63E6C7003245BB /* MOScreenRotationViewController.m */; };
 		FD1883A72A63E9AE003245BB /* MOTableSourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1883A62A63E9AE003245BB /* MOTableSourceDelegate.m */; };
 		FD2E57CB28FA54CA005F4C8E /* MOResponderChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */; };
-		FD30E2842AF39256002BA77A /* MOGradientRollLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD30E2832AF39256002BA77A /* MOGradientRollLabelView.m */; };
 		FD3ABF4E2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */; };
 		FD4080F52987499100C83D11 /* MOOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080F32987499100C83D11 /* MOOCViewController.m */; };
 		FD408186298749C900C83D11 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FB298749C900C83D11 /* CircleLoadingView.swift */; };
@@ -167,8 +166,6 @@
 		FD1883A52A63E9AE003245BB /* MOTableSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOTableSourceDelegate.h; sourceTree = "<group>"; };
 		FD1883A62A63E9AE003245BB /* MOTableSourceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTableSourceDelegate.m; sourceTree = "<group>"; };
 		FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOResponderChainViewController.swift; sourceTree = "<group>"; };
-		FD30E2822AF39256002BA77A /* MOGradientRollLabelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOGradientRollLabelView.h; sourceTree = "<group>"; };
-		FD30E2832AF39256002BA77A /* MOGradientRollLabelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOGradientRollLabelView.m; sourceTree = "<group>"; };
 		FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOHigherOrderFucViewController.swift; sourceTree = "<group>"; };
 		FD405250299E0FE100BC73D2 /* MODemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MODemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		FD4080F32987499100C83D11 /* MOOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCViewController.m; sourceTree = "<group>"; };
@@ -545,8 +542,6 @@
 				FD408129298749C900C83D11 /* MOTitleLineView.m */,
 				FD40812A298749C900C83D11 /* MOViewTestViewController.h */,
 				FD408126298749C900C83D11 /* MOViewTestViewController.m */,
-				FD30E2822AF39256002BA77A /* MOGradientRollLabelView.h */,
-				FD30E2832AF39256002BA77A /* MOGradientRollLabelView.m */,
 			);
 			path = MOViewTest;
 			sourceTree = "<group>";
@@ -1218,7 +1213,6 @@
 				FD4081A7298749CA00C83D11 /* UINavigationItem+Swizzling.m in Sources */,
 				FD4081B6298749CA00C83D11 /* MOOCMockDemo.m in Sources */,
 				FDB19C1A26B3FB22009C49ED /* ViewController.swift in Sources */,
-				FD30E2842AF39256002BA77A /* MOGradientRollLabelView.m in Sources */,
 				FD408196298749CA00C83D11 /* MOLeftDrawerView.m in Sources */,
 				FDB19C6326B3FB66009C49ED /* MOTableViewStyleViewController.swift in Sources */,
 				FDB19C6026B3FB66009C49ED /* MOLocationManager.swift in Sources */,

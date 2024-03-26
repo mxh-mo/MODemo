@@ -3,16 +3,12 @@ PODS:
   - OCHamcrest (8.0.0)
   - OCMock (3.8.1)
   - SnapKit (5.6.0)
-  - YYCategories (1.0.4):
-    - YYCategories/no-arc (= 1.0.4)
-  - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
   - Masonry
   - OCHamcrest (~> 8.0)
   - OCMock (~> 3.8.1)
   - SnapKit (~> 5.6.0)
-  - YYCategories
 
 SPEC REPOS:
   trunk:
@@ -20,14 +16,12 @@ SPEC REPOS:
     - OCHamcrest
     - OCMock
     - SnapKit
-    - YYCategories
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OCHamcrest: a613690381f1dac7637c18962c10dbe8feca4bb5
   OCMock: 29f6e52085b4e7d9b075cbf03ed7c3112f82f934
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
 PODFILE CHECKSUM: bc1709a02deeeea8fa7c05e2a7845eaaebf36df2
 
