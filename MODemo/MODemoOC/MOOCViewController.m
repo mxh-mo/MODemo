@@ -11,6 +11,7 @@
 #include "MOAlorithm.h"
 #include "MOAlgorithmLists.h"
 #import "MOAlgorithmList.h"
+#import "MOViewTestViewController.h"
 
 @interface MOOCViewController ()
 
@@ -33,7 +34,8 @@
     
     //    [MOAlgorithmList run];
     //    runAlorithm();
-    //    runAlorithmLists();    
+    //    runAlorithmLists();
+//    [self.navigationController pushViewController:[MOViewTestViewController new] animated:YES];
 }
 
 - (void)viewSafeAreaInsetsDidChange {

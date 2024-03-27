@@ -10,8 +10,11 @@
 #import "MOViewTestViewController.h"
 #import "MOTitleLineView.h"
 #import "MOFollowLightView.h"
+#import "MOGradientView.h"
 
 @interface MOViewTestViewController () <MOTitleLineViewDelegate>
+
+@property (nonatomic, strong) MOGradientView *gradientView;
 
 @end
 
@@ -19,18 +22,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupView];
-}
-
-- (void)setupView {
     // UILabel 耐压缩 测试
-    [self labelCompressionResistance];
+//    [self labelCompressionResistance];
     // segment view
-    [self titleAndLineView];
+//    [self titleAndLineView];
     // 追光动效
-    [self followLightView];
+//    [self followLightView];
+    // view颜色渐变
+    [self gradientViewTest];
 }
 
+- (void)gradientViewTest {
+    [self.view addSubview:self.gradientView];
+    self.gradientView.gradientLayer.startPoint = CGPointMake(0.0, 0.0);
+    self.gradientView.gradientLayer.endPoint = CGPointMake(1.0, 0.0);
+    self.gradientView.gradientLayer.locations = @[@(0.0), @(0.5), @(1.0)];
+    self.gradientView.gradientLayer.colors = @[(__bridge id)[UIColor redColor].CGColor,
+                                               (__bridge id)[UIColor blueColor].CGColor,
+                                               (__bridge id)[UIColor cyanColor].CGColor];
+}
+
+- (MOGradientView *)gradientView {
+    if (!_gradientView) {
+        _gradientView = [[MOGradientView alloc] initWithFrame:CGRectMake(100.0, 100.0, 200.0, 200.0)];
+    }
+    return _gradientView;
+}
 
 #pragma mark - 追光动效
 
