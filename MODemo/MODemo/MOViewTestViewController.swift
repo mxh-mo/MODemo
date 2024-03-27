@@ -78,7 +78,8 @@ class MOViewTestViewController: UIViewController {
 
         view.backgroundColor = .white
         
-        view.addSubview(self.screenshotImageView) // 捕获view部分区域绘制成image
+        convertTest() // 坐标和布局转换+判断
+//        view.addSubview(self.screenshotImageView) // 捕获view部分区域绘制成image
 //        shadowTest()    // UIView 阴影
 //        swipeGestureTest(); // 解决：上滑手势 跟 按钮 cancel 手势 冲突
 //        imageViewTransform() // UIImageView 翻转
@@ -95,6 +96,40 @@ class MOViewTestViewController: UIViewController {
         super.viewDidAppear(animated)
         moPrint(self, #line, "viewDidAppear")
         captureViewToImage()
+    }
+    
+    // MARK: - 点、范围 测试
+    func convertTest() {
+        let view1 = UIView(frame: CGRect(x: 100.0, y: 100.0, width: 300.0, height: 300.0))
+        view1.backgroundColor = UIColor.cyan
+        self.view.addSubview(view1)
+
+        let view2 = UIView(frame: CGRect(x: 50.0, y: 50.0, width: 100.0, height: 100.0))
+        view2.backgroundColor = .red
+        view1.addSubview(view2)
+
+        let view3 = UIView(frame: CGRect(x: 100.0, y: 100.0, width: 100.0, height: 100.0))
+        view3.backgroundColor = .blue
+        view1.addSubview(view3)
+        
+        print("view2.center: \(view2.center)")
+        // from: 从哪个坐标系 to: 到哪个坐标系
+        /// view1 上的 view2 在 self.view 上的位置
+        print("view2.center on self.view: \(view1.convert(view2.center, to: self.view))")
+        /// 同上
+        print("view2.center on self.view: \(self.view.convert(view2.center, from: view1))")
+        
+        /// view1 上的 view2 在 self.view 上的位置
+        print("view2 on self.view: \(view1.convert(view2.frame, to: self.view))")
+        /// 同上
+        print("view2 on self.view: \(self.view.convert(view2.frame, from: view1))")
+        
+        /// view1 是否包含 view2.center
+        print("view1 contains view2.center: \(CGRectContainsPoint(view1.frame, view2.center))")
+        /// view1 是否包含 view2
+        print("view1 contains view2: \(CGRectContainsRect(view1.frame, view2.frame))")
+        /// view2 和 view3 是否相交
+        print("view2 intersect view3: \(CGRectIntersectsRect(view2.frame, view3.frame))")
     }
     
     lazy var screenshotImageView = {
