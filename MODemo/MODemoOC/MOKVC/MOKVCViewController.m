@@ -35,12 +35,24 @@ typedef struct {
     // setValue:forUnderfinedKey:
     // setNilValueForKey: 对非类对象属性设置nil时调用，默认抛出异常。
     
+    // 初始化数据
+    MOPerson *child1 = [MOPerson personWithName:@"child1"];
+    MOPerson *child2 = [MOPerson personWithName:@"child2"];
+    
+    MOPerson *p1 = [MOPerson personWithName:@"momo"];
+    p1.age = 18;
+    p1.childens = [@[child1, child2] mutableCopy];
+    MOPerson *p2 = [MOPerson personWithName:@"lili"];
+    p2.age = 20;
+    p2.childens = [@[child2] mutableCopy];
+    self.persons = [@[p1, p2] mutableCopy];
+    
     [self setGet]; // 1. 访问对象属性
-    //  [self collection]; // 2. 访问集合属性
-    //  [self useOperators]; // 3. 使用集合运算符
-    //  [self wrapUnwrap]; // 4. 包装和解包
-    //  [self validation]; // 5. 属性验证 (Validating Properties)
-    //  [self testAccess]; // 6. 测试访问顺序 (Access Order)
+    [self collection]; // 2. 访问集合属性
+//    [self useOperators]; // 3. 使用集合运算符
+//    [self wrapUnwrap]; // 4. 包装和解包
+//    [self validation]; // 5. 属性验证 (Validating Properties)
+//    [self testAccess]; // 6. 测试访问顺序 (Access Order)
 }
 
 #pragma mark - 1. 访问对象属性
@@ -64,16 +76,6 @@ typedef struct {
 #pragma mark - 2. 访问集合属性
 
 - (void)collection {
-    // 初始化数据
-    MOPerson *child1 = [MOPerson personWithName:@"child1"];
-    MOPerson *child2 = [MOPerson personWithName:@"child2"];
-    
-    MOPerson *p1 = [MOPerson personWithName:@"momo"];
-    p1.childens = [@[child1, child2] mutableCopy];
-    MOPerson *p2 = [MOPerson personWithName:@"lili"];
-    p2.childens = [@[child2] mutableCopy];
-    self.persons = [@[p1, p2] mutableCopy];
-    
     // 访问
     NSLog(@"%@", [self mutableArrayValueForKey:@"persons"]);
     NSLog(@"%@", [self mutableArrayValueForKeyPath:@"persons.name"]);
@@ -82,8 +84,14 @@ typedef struct {
     // mutableArrayValueForKey addObject 可以触发KVO (调用完后地址会发生变化)
     [self addObserver:self forKeyPath:@"persons" options:NSKeyValueObservingOptionNew context:nil];
     //  [self.persons addObject: [MOPerson personWithName:@"coco"]];
-    [[self mutableArrayValueForKey:@"persons"] addObject:[MOPerson personWithName:@"momo"]];
+    MOPerson *p3 = [MOPerson personWithName:@"momo"];
+    p3.age = 33;
+    [[self mutableArrayValueForKey:@"persons"] addObject:p3];
     NSLog(@"%@", self.persons);
+    
+    // 获取数组里所有 person 的 name
+    NSArray<NSNumber *> *ages = [self.persons valueForKeyPath:@"age"];
+    NSLog(@"ages: %@", ages);
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
