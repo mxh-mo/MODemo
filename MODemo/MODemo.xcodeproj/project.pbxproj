@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -87,6 +87,7 @@
 		FD47CB14296549E100F3AF0A /* MOAlgorithmLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB13296549E100F3AF0A /* MOAlgorithmLists.swift */; };
 		FD47CB1729654D2700F3AF0A /* MOAlgorithmTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB1629654D2700F3AF0A /* MOAlgorithmTrees.swift */; };
 		FD59FC3A2BB26E8900824ADD /* MOGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD59FC392BB26E8900824ADD /* MOGradientView.m */; };
+		FD5EBD222C40DBA100365354 /* QMTPlayerFakeSystemViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5EBD212C40DBA100365354 /* QMTPlayerFakeSystemViewV2.m */; };
 		FD74074129888C34001E4A5E /* MOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD74074029888C34001E4A5E /* MOBaseViewController.m */; };
 		FD74074529888EF8001E4A5E /* MOAlorithm.c in Sources */ = {isa = PBXBuildFile; fileRef = FD74074429888EF8001E4A5E /* MOAlorithm.c */; };
 		FD740748298AAAF6001E4A5E /* MOAlgorithmLists.c in Sources */ = {isa = PBXBuildFile; fileRef = FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */; };
@@ -94,6 +95,10 @@
 		FD7554CF2AE7B8400062677E /* NSMutableDictionary+MOOSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7554CE2AE7B8400062677E /* NSMutableDictionary+MOOSafe.m */; };
 		FD7554D32AE7BA9C0062677E /* NSArray+MOOSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7554D22AE7BA9C0062677E /* NSArray+MOOSafe.m */; };
 		FD7554D92AE7BC470062677E /* NSMutableArray+MOOSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7554D82AE7BC470062677E /* NSMutableArray+MOOSafe.m */; };
+		FD82A88E2C2AA3650039C4B2 /* qmt_rate_fast_forward_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD82A88A2C2AA3650039C4B2 /* qmt_rate_fast_forward_icon.png */; };
+		FD82A88F2C2AA3650039C4B2 /* qmt_rate_fast_back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD82A88B2C2AA3650039C4B2 /* qmt_rate_fast_back_icon.png */; };
+		FD82A8902C2AA3650039C4B2 /* qmt_rate_fast_forward.json in Resources */ = {isa = PBXBuildFile; fileRef = FD82A88C2C2AA3650039C4B2 /* qmt_rate_fast_forward.json */; };
+		FD82A8912C2AA3650039C4B2 /* qmt_rate_fast_back.json in Resources */ = {isa = PBXBuildFile; fileRef = FD82A88D2C2AA3650039C4B2 /* qmt_rate_fast_back.json */; };
 		FDA55CCF26BCDED700F00633 /* MOExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA55CCE26BCDED700F00633 /* MOExtensions.swift */; };
 		FDB19C1626B3FB22009C49ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1526B3FB22009C49ED /* AppDelegate.swift */; };
 		FDB19C1826B3FB22009C49ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C1726B3FB22009C49ED /* SceneDelegate.swift */; };
@@ -298,6 +303,8 @@
 		FD47CB1629654D2700F3AF0A /* MOAlgorithmTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOAlgorithmTrees.swift; sourceTree = "<group>"; };
 		FD59FC382BB26E8900824ADD /* MOGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOGradientView.h; sourceTree = "<group>"; };
 		FD59FC392BB26E8900824ADD /* MOGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOGradientView.m; sourceTree = "<group>"; };
+		FD5EBD202C40DBA100365354 /* QMTPlayerFakeSystemViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTPlayerFakeSystemViewV2.h; sourceTree = "<group>"; };
+		FD5EBD212C40DBA100365354 /* QMTPlayerFakeSystemViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTPlayerFakeSystemViewV2.m; sourceTree = "<group>"; };
 		FD74073F29888C34001E4A5E /* MOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOBaseViewController.h; sourceTree = "<group>"; };
 		FD74074029888C34001E4A5E /* MOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBaseViewController.m; sourceTree = "<group>"; };
 		FD74074329888EF8001E4A5E /* MOAlorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAlorithm.h; sourceTree = "<group>"; };
@@ -313,6 +320,10 @@
 		FD7554D22AE7BA9C0062677E /* NSArray+MOOSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MOOSafe.m"; sourceTree = "<group>"; };
 		FD7554D72AE7BC470062677E /* NSMutableArray+MOOSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MOOSafe.h"; sourceTree = "<group>"; };
 		FD7554D82AE7BC470062677E /* NSMutableArray+MOOSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MOOSafe.m"; sourceTree = "<group>"; };
+		FD82A88A2C2AA3650039C4B2 /* qmt_rate_fast_forward_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qmt_rate_fast_forward_icon.png; sourceTree = "<group>"; };
+		FD82A88B2C2AA3650039C4B2 /* qmt_rate_fast_back_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qmt_rate_fast_back_icon.png; sourceTree = "<group>"; };
+		FD82A88C2C2AA3650039C4B2 /* qmt_rate_fast_forward.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = qmt_rate_fast_forward.json; sourceTree = "<group>"; };
+		FD82A88D2C2AA3650039C4B2 /* qmt_rate_fast_back.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = qmt_rate_fast_back.json; sourceTree = "<group>"; };
 		FDA55CCE26BCDED700F00633 /* MOExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOExtensions.swift; sourceTree = "<group>"; };
 		FDB19C1226B3FB22009C49ED /* MODemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MODemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB19C1526B3FB22009C49ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -411,6 +422,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FD305E3A2C1999B70020C65E /* rateLottie */ = {
+			isa = PBXGroup;
+			children = (
+				FD82A88B2C2AA3650039C4B2 /* qmt_rate_fast_back_icon.png */,
+				FD82A88D2C2AA3650039C4B2 /* qmt_rate_fast_back.json */,
+				FD82A88A2C2AA3650039C4B2 /* qmt_rate_fast_forward_icon.png */,
+				FD82A88C2C2AA3650039C4B2 /* qmt_rate_fast_forward.json */,
+			);
+			path = rateLottie;
+			sourceTree = "<group>";
+		};
 		FD4080EE298748DF00C83D11 /* MODemoOC */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +441,8 @@
 				FD74074229888ED8001E4A5E /* MOAlorithm */,
 				FD4080F42987499100C83D11 /* MOOCViewController.h */,
 				FD4080F32987499100C83D11 /* MOOCViewController.m */,
+				FD5EBD202C40DBA100365354 /* QMTPlayerFakeSystemViewV2.h */,
+				FD5EBD212C40DBA100365354 /* QMTPlayerFakeSystemViewV2.m */,
 				FD1883A52A63E9AE003245BB /* MOTableSourceDelegate.h */,
 				FD1883A62A63E9AE003245BB /* MOTableSourceDelegate.m */,
 				FD74073F29888C34001E4A5E /* MOBaseViewController.h */,
@@ -817,6 +841,7 @@
 				FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */,
 				FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */,
 				FDA55CCE26BCDED700F00633 /* MOExtensions.swift */,
+				FD305E3A2C1999B70020C65E /* rateLottie */,
 				FDB19C5A26B3FB65009C49ED /* MOTests */,
 				FDB19C1B26B3FB22009C49ED /* Main.storyboard */,
 				FDB19C1E26B3FB23009C49ED /* Assets.xcassets */,
@@ -1023,11 +1048,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD82A88F2C2AA3650039C4B2 /* qmt_rate_fast_back_icon.png in Resources */,
 				FDB19C2226B3FB23009C49ED /* LaunchScreen.storyboard in Resources */,
 				FD4081B2298749CA00C83D11 /* index.html in Resources */,
 				FDB19C1F26B3FB23009C49ED /* Assets.xcassets in Resources */,
 				FD4081B8298749CA00C83D11 /* TDD练习：火星车问题 in Resources */,
+				FD82A8912C2AA3650039C4B2 /* qmt_rate_fast_back.json in Resources */,
 				FD4081BE298749CA00C83D11 /* news.mp3 in Resources */,
+				FD82A88E2C2AA3650039C4B2 /* qmt_rate_fast_forward_icon.png in Resources */,
+				FD82A8902C2AA3650039C4B2 /* qmt_rate_fast_forward.json in Resources */,
 				FDB19C1D26B3FB22009C49ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1177,6 +1206,7 @@
 				FD408187298749C900C83D11 /* MOCircleLoadingView.m in Sources */,
 				FD408197298749CA00C83D11 /* MOBottomDrawerView.m in Sources */,
 				FD408195298749CA00C83D11 /* MODrawerViewController.m in Sources */,
+				FD5EBD222C40DBA100365354 /* QMTPlayerFakeSystemViewV2.m in Sources */,
 				FD4081A0298749CA00C83D11 /* MOResponderViewController.m in Sources */,
 				FDDBEE8F2917906800AAA80D /* MOFirstViewController.swift in Sources */,
 				FD7554CF2AE7B8400062677E /* NSMutableDictionary+MOOSafe.m in Sources */,

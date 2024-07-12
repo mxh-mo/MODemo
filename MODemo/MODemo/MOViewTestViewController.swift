@@ -75,10 +75,9 @@ class MOViewTestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         moPrint(self, #line, "viewDidLoad")
-
-        view.backgroundColor = .white
         
-        convertTest() // 坐标和布局转换+判断
+        buttonConfiguration() // UIButtonConfiguration 使用
+//        convertTest() // 坐标和布局转换+判断
 //        view.addSubview(self.screenshotImageView) // 捕获view部分区域绘制成image
 //        shadowTest()    // UIView 阴影
 //        swipeGestureTest(); // 解决：上滑手势 跟 按钮 cancel 手势 冲突
@@ -96,6 +95,39 @@ class MOViewTestViewController: UIViewController {
         super.viewDidAppear(animated)
         moPrint(self, #line, "viewDidAppear")
         captureViewToImage()
+    }
+    
+    // MARK: - iOS 15 后支持的 UIButtonConfiguration 使用测试
+    func buttonConfiguration() {
+        if #available(iOS 15.0, *) {
+            let plainButton = UIButton(configuration: .plain())
+            plainButton.frame = CGRect(x: 100.0, y: 100.0, width: 100.0, height: 50.0)
+            plainButton.setTitle("plain", for: .normal)
+            view.addSubview(plainButton)
+            
+            let tintedButton = UIButton(configuration: .tinted())
+            tintedButton.frame = CGRect(x: 100.0, y: 200.0, width: 100.0, height: 50.0)
+            tintedButton.setTitle("tinted", for: .normal)
+            view.addSubview(tintedButton)
+            
+            let grayButton = UIButton(configuration: .gray())
+            grayButton.frame = CGRect(x: 100.0, y: 300.0, width: 100.0, height: 50.0)
+            grayButton.setTitle("gray", for: .normal)
+            view.addSubview(grayButton)
+            
+            let filledButton = UIButton(configuration: .filled())
+            filledButton.frame = CGRect(x: 100.0, y: 400.0, width: 100.0, height: 50.0)
+            filledButton.setTitle("filled", for: .normal)
+            view.addSubview(filledButton)
+            
+            
+            var config = UIButton.Configuration.plain()
+            config.background = .listPlainCell()
+            let button = UIButton(configuration: config)
+            button.frame = CGRect(x: 100.0, y: 500.0, width: 100.0, height: 50.0)
+            button.setTitle("Custom", for: .normal)
+            view.addSubview(button)
+        }
     }
     
     // MARK: - 点、范围 测试

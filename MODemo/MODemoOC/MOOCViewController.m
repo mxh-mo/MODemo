@@ -12,6 +12,7 @@
 #include "MOAlgorithmLists.h"
 #import "MOAlgorithmList.h"
 #import "MOViewTestViewController.h"
+#import "QMTPlayerFakeSystemViewV2.h"
 
 @interface MOOCViewController ()
 
@@ -20,6 +21,12 @@
 
 /// test table view data source
 @property (nonatomic, strong) MOTableSourceDelegate *testTableSourceDelegate;
+
+@property (nonatomic, assign) CGFloat progress;
+@property (nonatomic, assign) BOOL fullScreen;
+@property (nonatomic, strong) QMTPlayerFakeSystemViewV2 *fakeSystemViewV2;
+
+@property (nonatomic, strong) UIImageView *imageView;
 
 @end
 
@@ -32,10 +39,107 @@
     [self setupView];
     [self setupDataSource];
     
+//    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 59.0, 400, 200)];
+//    self.imageView.image = [UIImage imageNamed:@"bg"];
+//    [self.view addSubview:self.imageView];
+//    
+//    UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    addBtn.backgroundColor = [UIColor redColor];
+//    [addBtn addTarget:self action:@selector(clickAdd) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:addBtn];
+//    addBtn.frame = CGRectMake(50, 200, 44, 44);
+//    
+//    UIButton *minusBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    minusBtn.backgroundColor = [UIColor blueColor];
+//    [minusBtn addTarget:self action:@selector(clickMinus) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:minusBtn];
+//    minusBtn.frame = CGRectMake(50, 250, 44, 44);
+    
     //    [MOAlgorithmList run];
     //    runAlorithm();
     //    runAlorithmLists();
 //    [self.navigationController pushViewController:[MOViewTestViewController new] animated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.fullScreen = YES;
+    [self displayViewWithType:QMTPlayerFakeSystemViewType_Volume progress:0.5 fullScreen:self.fullScreen];
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    
+    CGFloat originY = self.fullScreen ? self.view.safeAreaInsets.top : 0.0;
+    CGFloat height = self.fullScreen ? 200 : CGRectGetHeight(self.view.bounds);
+    self.imageView.frame = CGRectMake(0.0, originY, CGRectGetWidth(self.view.bounds), height);
+}
+
+- (void)clickAdd {
+    self.progress = MIN(self.progress + 0.06, 1.0);
+    [self displayViewWithType:QMTPlayerFakeSystemViewType_Volume progress:self.progress fullScreen:self.fullScreen];
+}
+
+- (void)clickMinus {
+    self.progress = MAX(self.progress - 0.06, 0.0);
+    [self displayViewWithType:QMTPlayerFakeSystemViewType_Volume progress:self.progress fullScreen:self.fullScreen];
+}
+
+- (void)displayViewWithType:(QMTPlayerFakeSystemViewType)type
+                   progress:(CGFloat)progress
+                 fullScreen:(BOOL)isFullScreen {
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hideFakeSystemViewV2) object:nil];
+    
+    UIView *superView = [self.class keyWindow];
+    BOOL isMaxStyle = YES;
+    if (self.fakeSystemViewV2.superview == superView) {
+        [superView bringSubviewToFront:self.fakeSystemViewV2];
+        isMaxStyle = NO;
+    } else {
+        isMaxStyle = YES;
+        [self.fakeSystemViewV2 removeFromSuperview];
+        [superView addSubview:self.fakeSystemViewV2];
+    }
+    CGFloat originY = isFullScreen ? 0.0 : self.view.window.safeAreaInsets.top;
+    CGFloat height = isFullScreen ? 96.0 : 59.0;
+    self.fakeSystemViewV2.frame = CGRectMake(0.0, originY, CGRectGetWidth(superView.bounds), height);
+
+    [self.fakeSystemViewV2 displayWithType:type progress:progress fullScreen:isFullScreen maxStyle:isMaxStyle];
+    [self performSelector:@selector(hideFakeSystemViewV2) withObject:nil afterDelay:1.5];
+}
+
+- (void)hideFakeSystemViewV2 {
+    [self.fakeSystemViewV2 dismissWithComplete:^{
+        [self.fakeSystemViewV2 removeFromSuperview];
+    }];
+}
+
+#pragma mark - Getter Methods
+
+- (QMTPlayerFakeSystemViewV2 *)fakeSystemViewV2 {
+    if (!_fakeSystemViewV2) {
+        QMTPlayerFakeSystemViewV2 *view = [[QMTPlayerFakeSystemViewV2 alloc] initWithFrame:CGRectZero];
+        _fakeSystemViewV2 = view;
+    }
+    return _fakeSystemViewV2;
+}
+
+#pragma mark - Helper Methods
+
++ (UIWindow *)keyWindow {
+    if (@available(iOS 13.0, *)) {
+        __block UIWindow *keyWindow = nil;
+        [UIApplication.sharedApplication.windows enumerateObjectsUsingBlock:^(__kindof UIWindow * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if (!obj.isKeyWindow) {
+                return;
+            }
+            keyWindow = obj;
+            *stop = YES;
+        }];
+        return keyWindow;
+    } else {
+        return UIApplication.sharedApplication.keyWindow;
+    }
 }
 
 - (void)viewSafeAreaInsetsDidChange {

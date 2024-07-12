@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 let cellIndentifier: String = "MOCellIndentifier"
 let headerIndentifier: String = "MOHeaderIndentifier"
@@ -17,10 +18,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupView()
 //        testAlgorithms()
-        
+        self.view.backgroundColor = .white
         /// 跳转 OC VC，测试 OC 代码
         self.navigationController?.pushViewController(MOOCViewController(), animated: true);
 //        self.navigationController?.pushViewController(MOViewTestViewController(), animated: true);
+        
+//        let lottieView = LottieAnimationView(name: "qmt_rate_fast_forward")
+//        lottieView.frame = CGRect(x: 100, y: 100, width: 200, height: 200)
+//        lottieView.center = self.view.center
+//        lottieView.loopMode = .loop
+//        view.addSubview(lottieView)
+//        lottieView.play()
+    
     }
     
     func testAlgorithms() {
