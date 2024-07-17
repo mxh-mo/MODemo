@@ -6,7 +6,7 @@ target 'MODemo' do
   use_frameworks!
 
   # Pods for MODemo
-#  pod 'Masonry'
+  pod 'Masonry'
   pod 'SnapKit', '~> 5.6.0'
   pod 'lottie-ios'
 
