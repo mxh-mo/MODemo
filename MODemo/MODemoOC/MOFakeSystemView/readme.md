@@ -1,4 +1,4 @@
 # 模拟系统音量/亮度视图
 
 效果演示：
-[示例视频](./full_volume.mp4)
+<img src=".full_volume.gif" style="zoom:80%;" />
