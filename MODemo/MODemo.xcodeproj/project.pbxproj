@@ -87,7 +87,7 @@
 		FD47CB14296549E100F3AF0A /* MOAlgorithmLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB13296549E100F3AF0A /* MOAlgorithmLists.swift */; };
 		FD47CB1729654D2700F3AF0A /* MOAlgorithmTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47CB1629654D2700F3AF0A /* MOAlgorithmTrees.swift */; };
 		FD59FC3A2BB26E8900824ADD /* MOGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD59FC392BB26E8900824ADD /* MOGradientView.m */; };
-		FD5EBD222C40DBA100365354 /* QMTPlayerFakeSystemViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5EBD212C40DBA100365354 /* QMTPlayerFakeSystemViewV2.m */; };
+		FD5EBD222C40DBA100365354 /* MOOFakeSystemView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5EBD212C40DBA100365354 /* MOOFakeSystemView.m */; };
 		FD74074129888C34001E4A5E /* MOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD74074029888C34001E4A5E /* MOBaseViewController.m */; };
 		FD74074529888EF8001E4A5E /* MOAlorithm.c in Sources */ = {isa = PBXBuildFile; fileRef = FD74074429888EF8001E4A5E /* MOAlorithm.c */; };
 		FD740748298AAAF6001E4A5E /* MOAlgorithmLists.c in Sources */ = {isa = PBXBuildFile; fileRef = FD740747298AAAF6001E4A5E /* MOAlgorithmLists.c */; };
@@ -132,6 +132,7 @@
 		FDB19C7726B4079F009C49ED /* MOTestsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */; };
 		FDB19C7926B407BE009C49ED /* MOUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C7826B407BE009C49ED /* MOUnitTests.swift */; };
 		FDB19CCC26B8E25C009C49ED /* MOScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */; };
+		FDDA7C0C2C956A00007220F8 /* MOOFakeSysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA7C0B2C956A00007220F8 /* MOOFakeSysViewController.m */; };
 		FDDBEE8F2917906800AAA80D /* MOFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBEE8E2917906800AAA80D /* MOFirstViewController.swift */; };
 		FDDBEE912917907200AAA80D /* MOSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBEE902917907200AAA80D /* MOSecondViewController.swift */; };
 		FDF5B5A12932148700E9855E /* MOPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5B5A02932148700E9855E /* MOPresentationController.swift */; };
@@ -303,8 +304,8 @@
 		FD47CB1629654D2700F3AF0A /* MOAlgorithmTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOAlgorithmTrees.swift; sourceTree = "<group>"; };
 		FD59FC382BB26E8900824ADD /* MOGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOGradientView.h; sourceTree = "<group>"; };
 		FD59FC392BB26E8900824ADD /* MOGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOGradientView.m; sourceTree = "<group>"; };
-		FD5EBD202C40DBA100365354 /* QMTPlayerFakeSystemViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTPlayerFakeSystemViewV2.h; sourceTree = "<group>"; };
-		FD5EBD212C40DBA100365354 /* QMTPlayerFakeSystemViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTPlayerFakeSystemViewV2.m; sourceTree = "<group>"; };
+		FD5EBD202C40DBA100365354 /* MOOFakeSystemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOFakeSystemView.h; sourceTree = "<group>"; };
+		FD5EBD212C40DBA100365354 /* MOOFakeSystemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOFakeSystemView.m; sourceTree = "<group>"; };
 		FD74073F29888C34001E4A5E /* MOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOBaseViewController.h; sourceTree = "<group>"; };
 		FD74074029888C34001E4A5E /* MOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBaseViewController.m; sourceTree = "<group>"; };
 		FD74074329888EF8001E4A5E /* MOAlorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAlorithm.h; sourceTree = "<group>"; };
@@ -363,6 +364,8 @@
 		FDB19C7626B4079F009C49ED /* MOTestsViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOTestsViewControllerUITests.swift; sourceTree = "<group>"; };
 		FDB19C7826B407BE009C49ED /* MOUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOUnitTests.swift; sourceTree = "<group>"; };
 		FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOScannerViewController.swift; sourceTree = "<group>"; };
+		FDDA7C0A2C956A00007220F8 /* MOOFakeSysViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOOFakeSysViewController.h; sourceTree = "<group>"; };
+		FDDA7C0B2C956A00007220F8 /* MOOFakeSysViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOFakeSysViewController.m; sourceTree = "<group>"; };
 		FDDBEE8E2917906800AAA80D /* MOFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOFirstViewController.swift; sourceTree = "<group>"; };
 		FDDBEE902917907200AAA80D /* MOSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOSecondViewController.swift; sourceTree = "<group>"; };
 		FDF5B5A02932148700E9855E /* MOPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOPresentationController.swift; sourceTree = "<group>"; };
@@ -441,8 +444,6 @@
 				FD74074229888ED8001E4A5E /* MOAlorithm */,
 				FD4080F42987499100C83D11 /* MOOCViewController.h */,
 				FD4080F32987499100C83D11 /* MOOCViewController.m */,
-				FD5EBD202C40DBA100365354 /* QMTPlayerFakeSystemViewV2.h */,
-				FD5EBD212C40DBA100365354 /* QMTPlayerFakeSystemViewV2.m */,
 				FD1883A52A63E9AE003245BB /* MOTableSourceDelegate.h */,
 				FD1883A62A63E9AE003245BB /* MOTableSourceDelegate.m */,
 				FD74073F29888C34001E4A5E /* MOBaseViewController.h */,
@@ -923,6 +924,17 @@
 			path = MOWebView;
 			sourceTree = "<group>";
 		};
+		FDDA7C082C9569C7007220F8 /* MOFakeSystemView */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA7C0A2C956A00007220F8 /* MOOFakeSysViewController.h */,
+				FDDA7C0B2C956A00007220F8 /* MOOFakeSysViewController.m */,
+				FD5EBD202C40DBA100365354 /* MOOFakeSystemView.h */,
+				FD5EBD212C40DBA100365354 /* MOOFakeSystemView.m */,
+			);
+			path = MOFakeSystemView;
+			sourceTree = "<group>";
+		};
 		FDDBEE8D29178F2900AAA80D /* MOCustomTransitionAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1206,7 +1218,7 @@
 				FD408187298749C900C83D11 /* MOCircleLoadingView.m in Sources */,
 				FD408197298749CA00C83D11 /* MOBottomDrawerView.m in Sources */,
 				FD408195298749CA00C83D11 /* MODrawerViewController.m in Sources */,
-				FD5EBD222C40DBA100365354 /* QMTPlayerFakeSystemViewV2.m in Sources */,
+				FD5EBD222C40DBA100365354 /* MOOFakeSystemView.m in Sources */,
 				FD4081A0298749CA00C83D11 /* MOResponderViewController.m in Sources */,
 				FDDBEE8F2917906800AAA80D /* MOFirstViewController.swift in Sources */,
 				FD7554CF2AE7B8400062677E /* NSMutableDictionary+MOOSafe.m in Sources */,
@@ -1246,6 +1258,7 @@
 				FDF5B5A529321F7C00E9855E /* MOPushOrPresentAnimator.swift in Sources */,
 				FDB19C5F26B3FB66009C49ED /* MOTouchIDViewController.swift in Sources */,
 				FD4080F52987499100C83D11 /* MOOCViewController.m in Sources */,
+				FDDA7C0C2C956A00007220F8 /* MOOFakeSysViewController.m in Sources */,
 				FD4081A7298749CA00C83D11 /* UINavigationItem+Swizzling.m in Sources */,
 				FD4081B6298749CA00C83D11 /* MOOCMockDemo.m in Sources */,
 				FDB19C1A26B3FB22009C49ED /* ViewController.swift in Sources */,
