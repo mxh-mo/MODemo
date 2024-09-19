@@ -49,6 +49,7 @@ static NSUInteger const MOOTagsViewButtonBaseTag = 10000;
 @property (nonatomic, assign) MOOTagsViewType type;
 
 /// 滑动视图
+/// 为什么没有使用 collectionView？因为 bar 和 list 样式的 尺寸 和 间距 无法对齐，导致动画不流畅（list样式的item需要左对齐）
 @property (nonatomic, strong) UIScrollView *scrollView;
 
 /// 展开/收起 按钮
