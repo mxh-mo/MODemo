@@ -133,6 +133,8 @@
 		FDB19C7926B407BE009C49ED /* MOUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19C7826B407BE009C49ED /* MOUnitTests.swift */; };
 		FDB19CCC26B8E25C009C49ED /* MOScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */; };
 		FDDA7C0C2C956A00007220F8 /* MOOFakeSysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA7C0B2C956A00007220F8 /* MOOFakeSysViewController.m */; };
+		FDDA7C0F2C958CFC007220F8 /* MOOTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA7C0E2C958CFC007220F8 /* MOOTagsView.m */; };
+		FDDA94C82C9BB842007220F8 /* MOOTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA94C72C9BB842007220F8 /* MOOTagsViewController.m */; };
 		FDDBEE8F2917906800AAA80D /* MOFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBEE8E2917906800AAA80D /* MOFirstViewController.swift */; };
 		FDDBEE912917907200AAA80D /* MOSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBEE902917907200AAA80D /* MOSecondViewController.swift */; };
 		FDF5B5A12932148700E9855E /* MOPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5B5A02932148700E9855E /* MOPresentationController.swift */; };
@@ -366,6 +368,10 @@
 		FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOScannerViewController.swift; sourceTree = "<group>"; };
 		FDDA7C0A2C956A00007220F8 /* MOOFakeSysViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOOFakeSysViewController.h; sourceTree = "<group>"; };
 		FDDA7C0B2C956A00007220F8 /* MOOFakeSysViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOFakeSysViewController.m; sourceTree = "<group>"; };
+		FDDA7C0D2C958CFC007220F8 /* MOOTagsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOOTagsView.h; sourceTree = "<group>"; };
+		FDDA7C0E2C958CFC007220F8 /* MOOTagsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOTagsView.m; sourceTree = "<group>"; };
+		FDDA94C62C9BB842007220F8 /* MOOTagsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOOTagsViewController.h; sourceTree = "<group>"; };
+		FDDA94C72C9BB842007220F8 /* MOOTagsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOTagsViewController.m; sourceTree = "<group>"; };
 		FDDBEE8E2917906800AAA80D /* MOFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOFirstViewController.swift; sourceTree = "<group>"; };
 		FDDBEE902917907200AAA80D /* MOSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOSecondViewController.swift; sourceTree = "<group>"; };
 		FDF5B5A02932148700E9855E /* MOPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOPresentationController.swift; sourceTree = "<group>"; };
@@ -450,6 +456,8 @@
 				FD74074029888C34001E4A5E /* MOBaseViewController.m */,
 				FD18839E2A63E6C7003245BB /* MOScreenRotationViewController.h */,
 				FD18839F2A63E6C7003245BB /* MOScreenRotationViewController.m */,
+				FDDA94C92C9BB847007220F8 /* MOOTagsView */,
+				FDDA7C082C9569C7007220F8 /* MOFakeSystemView */,
 				FD4080FF298749C900C83D11 /* MOBlock */,
 				FD408115298749C900C83D11 /* MOBottomDrawer */,
 				FD408171298749C900C83D11 /* MOControlCenter */,
@@ -935,6 +943,17 @@
 			path = MOFakeSystemView;
 			sourceTree = "<group>";
 		};
+		FDDA94C92C9BB847007220F8 /* MOOTagsView */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA7C0D2C958CFC007220F8 /* MOOTagsView.h */,
+				FDDA7C0E2C958CFC007220F8 /* MOOTagsView.m */,
+				FDDA94C62C9BB842007220F8 /* MOOTagsViewController.h */,
+				FDDA94C72C9BB842007220F8 /* MOOTagsViewController.m */,
+			);
+			path = MOOTagsView;
+			sourceTree = "<group>";
+		};
 		FDDBEE8D29178F2900AAA80D /* MOCustomTransitionAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1242,6 +1261,7 @@
 				FD408191298749CA00C83D11 /* MMNetworkManager.m in Sources */,
 				FD4081AA298749CA00C83D11 /* NSObject+property.m in Sources */,
 				FD3ABF4E2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift in Sources */,
+				FDDA7C0F2C958CFC007220F8 /* MOOTagsView.m in Sources */,
 				FDF5B5A92932206500E9855E /* MOPopOrDismissAnimator.swift in Sources */,
 				FD4081B7298749CA00C83D11 /* MOPerson+Tests.m in Sources */,
 				FDB19C6826B3FB66009C49ED /* MOAuthorizationCamera.swift in Sources */,
@@ -1321,6 +1341,7 @@
 				FD4081BB298749CA00C83D11 /* MOPrivateAPIViewController.m in Sources */,
 				FD1883A02A63E6C7003245BB /* MOScreenRotationViewController.m in Sources */,
 				FD4081A9298749CA00C83D11 /* UIButton+Swizzling.m in Sources */,
+				FDDA94C82C9BB842007220F8 /* MOOTagsViewController.m in Sources */,
 				FD4081BD298749CA00C83D11 /* MOControlCenterViewController.m in Sources */,
 				FDF5B5A12932148700E9855E /* MOPresentationController.swift in Sources */,
 			);

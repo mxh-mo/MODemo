@@ -39,25 +39,6 @@
 //    [self.navigationController pushViewController:[MOViewTestViewController new] animated:YES];
 }
 
-
-    
-}
-
-}
-
-}
-
-
-}
-
-}
-
-    }
-}
-
-    }
-}
-
 - (void)viewSafeAreaInsetsDidChange {
     [super viewSafeAreaInsetsDidChange];
     UIEdgeInsets insets = self.view.safeAreaInsets;
@@ -80,6 +61,7 @@
 
 - (void)setupDataSource {
     NSArray *firstSection = @[[MOCellModel modelWithTitle:@"UIView Test" jumpVCName:@"MOViewTestViewController"],
+                              [MOCellModel modelWithTitle:@"Tag list view" jumpVCName:@"MOOTagsViewController"],
                               [MOCellModel modelWithTitle:@"Fake system view" jumpVCName:@"MOOFakeSysViewController"],
                               [MOCellModel modelWithTitle:@"Screen Rotation" jumpVCName:@"MOScreenRotationViewController"],
                               [MOCellModel modelWithTitle:@"Water Ripple" jumpVCName:@"MOWaterRippleViewController"],
