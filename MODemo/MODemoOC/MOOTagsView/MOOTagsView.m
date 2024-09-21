@@ -281,7 +281,7 @@ static NSUInteger const MOOTagsViewButtonBaseTag = 10000;
     if (!_scrollView) {
         UIScrollView *view = [[UIScrollView alloc] initWithFrame:CGRectZero];
         view.showsVerticalScrollIndicator = NO;
-        view.showsVerticalScrollIndicator = NO;
+        view.showsHorizontalScrollIndicator = NO;
         _scrollView = view;
     }
     return _scrollView;
