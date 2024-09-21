@@ -12,10 +12,10 @@
 
 # 2. 方案决策
 
-1）为什么要用 scrollView，而不用 collectionView？
+1）为什么要用 `scrollView`，而不用 `collectionView`？
 
 * 主要原因：展开时`收起按钮`需要挤到最后一个`item`的位置。最后一行能放下`最后一个item `和`收起按钮`则放；否则都不放，另起一行
-* 次要原因：展开态每行的 item 需要左对齐，调整后会跟 收起态 item 的尺寸和间距 不痛，导致动画时能明显看出跳变
+* 次要原因：展开态每行的 `item` 需要左对齐，调整后会跟 收起态 `item` 的尺寸和间距 不同，导致动画时能明显看出跳变
 
 2）为什么要用两个实例？
 
@@ -57,8 +57,8 @@ contentWidth += obj.size.width + MOOTagsViewPadding;
 
 3）侧滑手势兼容
 
-问题：若当前 ViewController 有侧滑手势，且滑动手势在 本标签视图缩小态上时，就会存在手势冲突问题。
-解决：判断触摸点在 scrollView 内时，则禁用侧滑能力
+问题：若当前 `ViewController` 有侧滑手势，且滑动手势在 本标签视图缩小态上时，就会存在手势冲突问题。
+解决：判断触摸点在 `scrollView` 内时，则禁用侧滑能力
 
 为当前 VC 实现一个函数，表示是否禁用侧滑能力：
 ```
@@ -71,7 +71,7 @@ contentWidth += obj.size.width + MOOTagsViewPadding;
     return YES;
 }
 ```
-在 UINavigationViewController 的手势方法里，判断是否响应侧滑手势：
+在 `UINavigationViewController` 的手势方法里，判断是否响应侧滑手势：
 ```
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)panGestureRecognizer {
     UIViewController *controller = self.viewControllers.lastObject;
