@@ -2,10 +2,10 @@
 # 1. 演示录屏
 
 ## 1.1. whole show
-![whole_show](/assets/whole_show.gif)
+![whole_show](assets/whole_show.gif)
 
 ## 1.2. select likage
-![select_linkage](/assets/select_linkage.gif)
+![select_linkage](assets/select_linkage.gif)
 
 ## 1.3. lick item at bar style![lick_item_at_bar_style](/assets/lick_item_at_bar_style.gif)
 
