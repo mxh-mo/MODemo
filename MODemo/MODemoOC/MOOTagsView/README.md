@@ -7,7 +7,8 @@
 ## 1.2. select likage
 ![select_linkage](/assets/select_linkage.gif)
 
-## 1.3. lick item at bar style![lick_item_at_bar_style](/assets/lick_item_at_bar_style.gif)
+## 1.3. lick item at bar style
+![lick_item_at_bar_style](/assets/lick_item_at_bar_style.gif)
 
 
 # 2. 方案决策
