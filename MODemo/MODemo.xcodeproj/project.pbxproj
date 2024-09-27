@@ -137,6 +137,7 @@
 		FDDA94C82C9BB842007220F8 /* MOOTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA94C72C9BB842007220F8 /* MOOTagsViewController.m */; };
 		FDDBEE8F2917906800AAA80D /* MOFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBEE8E2917906800AAA80D /* MOFirstViewController.swift */; };
 		FDDBEE912917907200AAA80D /* MOSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDBEE902917907200AAA80D /* MOSecondViewController.swift */; };
+		FDE0B6882CA69C3100FE4424 /* MOImageOptimizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE0B6872CA69C3100FE4424 /* MOImageOptimizeViewController.swift */; };
 		FDF5B5A12932148700E9855E /* MOPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5B5A02932148700E9855E /* MOPresentationController.swift */; };
 		FDF5B5A529321F7C00E9855E /* MOPushOrPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5B5A429321F7C00E9855E /* MOPushOrPresentAnimator.swift */; };
 		FDF5B5A92932206500E9855E /* MOPopOrDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5B5A82932206500E9855E /* MOPopOrDismissAnimator.swift */; };
@@ -374,6 +375,7 @@
 		FDDA94C72C9BB842007220F8 /* MOOTagsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOTagsViewController.m; sourceTree = "<group>"; };
 		FDDBEE8E2917906800AAA80D /* MOFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOFirstViewController.swift; sourceTree = "<group>"; };
 		FDDBEE902917907200AAA80D /* MOSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOSecondViewController.swift; sourceTree = "<group>"; };
+		FDE0B6872CA69C3100FE4424 /* MOImageOptimizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOImageOptimizeViewController.swift; sourceTree = "<group>"; };
 		FDF5B5A02932148700E9855E /* MOPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOPresentationController.swift; sourceTree = "<group>"; };
 		FDF5B5A429321F7C00E9855E /* MOPushOrPresentAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOPushOrPresentAnimator.swift; sourceTree = "<group>"; };
 		FDF5B5A82932206500E9855E /* MOPopOrDismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOPopOrDismissAnimator.swift; sourceTree = "<group>"; };
@@ -834,6 +836,7 @@
 				FDB19C5D26B3FB66009C49ED /* MOArrayDataSource.swift */,
 				FDB19C5826B3FB65009C49ED /* MOFileManager.swift */,
 				FDB19C5526B3FB65009C49ED /* MOViewTestViewController.swift */,
+				FDE0B6872CA69C3100FE4424 /* MOImageOptimizeViewController.swift */,
 				FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */,
 				FDB19C4B26B3FB65009C49ED /* MOTableViewStyleViewController.swift */,
 				FDB19C5726B3FB65009C49ED /* MOShareDocumentViewController.swift */,
@@ -1286,6 +1289,7 @@
 				FDB19C6326B3FB66009C49ED /* MOTableViewStyleViewController.swift in Sources */,
 				FDB19C6026B3FB66009C49ED /* MOLocationManager.swift in Sources */,
 				FD40818B298749C900C83D11 /* UIColorExtension.swift in Sources */,
+				FDE0B6882CA69C3100FE4424 /* MOImageOptimizeViewController.swift in Sources */,
 				FD40818E298749CA00C83D11 /* ButtonLayer.swift in Sources */,
 				FD4081A5298749CA00C83D11 /* UITableView+Placeholder.m in Sources */,
 				FD4081AD298749CA00C83D11 /* NSObject+Swizzling.m in Sources */,

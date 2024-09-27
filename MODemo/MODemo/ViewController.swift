@@ -42,8 +42,9 @@ class ViewController: UIViewController {
     }
     
     private func setupView() {
-        let section0 = [ //
+        let section0 = [
             MOCellModel("OC Demo", "MOOCViewController"),
+            MOCellModel("Image Optimize", "MOImageOptimizeViewController"),
             MOCellModel("High-order Function", "MOHigherOrderFucViewController"),
             MOCellModel("View Test", "MOViewTestViewController"),
             MOCellModel("UITests", "MOUITestsViewController"),
