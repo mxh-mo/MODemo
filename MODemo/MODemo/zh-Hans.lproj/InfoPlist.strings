@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  MODemo
+
+  Created by mikimo on 2025/3/6.
+  Copyright © 2025 Mobi Technology. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "App名字";
+"NSCameraUsageDescription" = "App 需要访问您的相机来扫描二维码绑定设备";
+"NSContactsUsageDescription" = "App 需要访问您的通讯录来实现通讯录备份";
+"NSPhotoLibraryAddUsageDescription" = "App 需要访问您的相册来保存图片或视频";
+"NSPhotoLibraryUsageDescription" = "App 需要访问您的相册来发送图片或扫描二维码";
+"NSLocationWhenInUseUsageDescription" = "App 需要您允许定位以把位置保存到照片中";

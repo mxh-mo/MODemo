@@ -60,7 +60,8 @@
 }
 
 - (void)setupDataSource {
-    NSArray *firstSection = @[[MOCellModel modelWithTitle:@"UIView Test" jumpVCName:@"MOViewTestViewController"],
+    NSArray *firstSection = @[[MOCellModel modelWithTitle:@"Localizable" jumpVCName:@"MOOLocalizableViewController"],
+                              [MOCellModel modelWithTitle:@"UIView Test" jumpVCName:@"MOViewTestViewController"],
                               [MOCellModel modelWithTitle:@"Tag list view" jumpVCName:@"MOOTagsViewController"],
                               [MOCellModel modelWithTitle:@"Fake system view" jumpVCName:@"MOOFakeSysViewController"],
                               [MOCellModel modelWithTitle:@"Screen Rotation" jumpVCName:@"MOScreenRotationViewController"],

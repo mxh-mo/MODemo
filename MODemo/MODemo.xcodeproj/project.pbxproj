@@ -10,10 +10,15 @@
 		11413983D7272D865AB695C3 /* Pods_MODemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6064CDFF2F78E01F5AAC9F /* Pods_MODemoTests.framework */; };
 		4C662755A0DCC33C0DCE62C5 /* Pods_MODemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9794A26E5DAA8EA3E8204CF /* Pods_MODemo.framework */; };
 		7E39CACF1702F3B736938004 /* Pods_MODemo_MODemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4ECFA3E751DBF7A7311F27 /* Pods_MODemo_MODemoUITests.framework */; };
+		FD15518B2D798A76007338F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD1551892D798A76007338F7 /* Localizable.strings */; };
+		FD15518F2D798B4B007338F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD15518D2D798B4B007338F7 /* InfoPlist.strings */; };
+		FD1551922D798EBD007338F7 /* MOOLanguageSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1551912D798EBD007338F7 /* MOOLanguageSettingViewController.swift */; };
 		FD1883A02A63E6C7003245BB /* MOScreenRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD18839F2A63E6C7003245BB /* MOScreenRotationViewController.m */; };
 		FD1883A72A63E9AE003245BB /* MOTableSourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1883A62A63E9AE003245BB /* MOTableSourceDelegate.m */; };
 		FD2E57CB28FA54CA005F4C8E /* MOResponderChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */; };
 		FD3ABF4E2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */; };
+		FD3CEE352D7B5A0300695D8D /* MOOLocalizableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3CEE342D7B5A0300695D8D /* MOOLocalizableManager.m */; };
+		FD3CEE382D7B693800695D8D /* MOOLocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3CEE372D7B693800695D8D /* MOOLocalizableViewController.m */; };
 		FD4080F52987499100C83D11 /* MOOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080F32987499100C83D11 /* MOOCViewController.m */; };
 		FD408186298749C900C83D11 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FB298749C900C83D11 /* CircleLoadingView.swift */; };
 		FD408187298749C900C83D11 /* MOCircleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FC298749C900C83D11 /* MOCircleLoadingView.m */; };
@@ -170,6 +175,13 @@
 		AB2739E5B15905186A88D3AD /* Pods-MODemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo.debug.xcconfig"; path = "Target Support Files/Pods-MODemo/Pods-MODemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AD0FB419EB39483834A9B8BA /* Pods-MODemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo.release.xcconfig"; path = "Target Support Files/Pods-MODemo/Pods-MODemo.release.xcconfig"; sourceTree = "<group>"; };
 		F70E474EA380440DD78D3C87 /* Pods-MODemo-MODemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MODemo-MODemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MODemo-MODemoUITests/Pods-MODemo-MODemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD15517D2D798959007338F7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		FD15517E2D798959007338F7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FD15518A2D798A76007338F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FD15518C2D798A7A007338F7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		FD15518E2D798B4B007338F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD1551902D798B55007338F7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		FD1551912D798EBD007338F7 /* MOOLanguageSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOOLanguageSettingViewController.swift; sourceTree = "<group>"; };
 		FD18839E2A63E6C7003245BB /* MOScreenRotationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOScreenRotationViewController.h; sourceTree = "<group>"; };
 		FD18839F2A63E6C7003245BB /* MOScreenRotationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOScreenRotationViewController.m; sourceTree = "<group>"; };
 		FD1883A42A63E925003245BB /* MOConveniences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOConveniences.h; sourceTree = "<group>"; };
@@ -177,6 +189,10 @@
 		FD1883A62A63E9AE003245BB /* MOTableSourceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOTableSourceDelegate.m; sourceTree = "<group>"; };
 		FD2E57CA28FA54CA005F4C8E /* MOResponderChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOResponderChainViewController.swift; sourceTree = "<group>"; };
 		FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOHigherOrderFucViewController.swift; sourceTree = "<group>"; };
+		FD3CEE332D7B5A0300695D8D /* MOOLocalizableManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOOLocalizableManager.h; sourceTree = "<group>"; };
+		FD3CEE342D7B5A0300695D8D /* MOOLocalizableManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOLocalizableManager.m; sourceTree = "<group>"; };
+		FD3CEE362D7B693800695D8D /* MOOLocalizableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOOLocalizableViewController.h; sourceTree = "<group>"; };
+		FD3CEE372D7B693800695D8D /* MOOLocalizableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOLocalizableViewController.m; sourceTree = "<group>"; };
 		FD405250299E0FE100BC73D2 /* MODemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MODemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		FD4080F32987499100C83D11 /* MOOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCViewController.m; sourceTree = "<group>"; };
 		FD4080F42987499100C83D11 /* MOOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCViewController.h; sourceTree = "<group>"; };
@@ -444,9 +460,21 @@
 			path = rateLottie;
 			sourceTree = "<group>";
 		};
+		FD3CEE202D7B513000695D8D /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				FD3CEE332D7B5A0300695D8D /* MOOLocalizableManager.h */,
+				FD3CEE342D7B5A0300695D8D /* MOOLocalizableManager.m */,
+				FD3CEE362D7B693800695D8D /* MOOLocalizableViewController.h */,
+				FD3CEE372D7B693800695D8D /* MOOLocalizableViewController.m */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
 		FD4080EE298748DF00C83D11 /* MODemoOC */ = {
 			isa = PBXGroup;
 			children = (
+				FD3CEE202D7B513000695D8D /* Localizable */,
 				FD405250299E0FE100BC73D2 /* MODemo-Bridging-Header.h */,
 				FD1883A42A63E925003245BB /* MOConveniences.h */,
 				FD74074229888ED8001E4A5E /* MOAlorithm */,
@@ -853,12 +881,15 @@
 				FDB19CCB26B8E25C009C49ED /* MOScannerViewController.swift */,
 				FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */,
 				FDA55CCE26BCDED700F00633 /* MOExtensions.swift */,
+				FD1551912D798EBD007338F7 /* MOOLanguageSettingViewController.swift */,
 				FD305E3A2C1999B70020C65E /* rateLottie */,
 				FDB19C5A26B3FB65009C49ED /* MOTests */,
 				FDB19C1B26B3FB22009C49ED /* Main.storyboard */,
 				FDB19C1E26B3FB23009C49ED /* Assets.xcassets */,
 				FDB19C2026B3FB23009C49ED /* LaunchScreen.storyboard */,
 				FDB19C2326B3FB23009C49ED /* Info.plist */,
+				FD15518D2D798B4B007338F7 /* InfoPlist.strings */,
+				FD1551892D798A76007338F7 /* Localizable.strings */,
 			);
 			path = MODemo;
 			sourceTree = "<group>";
@@ -1064,6 +1095,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = FDB19C0926B3FB22009C49ED;
 			productRefGroup = FDB19C1326B3FB22009C49ED /* Products */;
@@ -1083,7 +1115,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD82A88F2C2AA3650039C4B2 /* qmt_rate_fast_back_icon.png in Resources */,
+				FD15518F2D798B4B007338F7 /* InfoPlist.strings in Resources */,
 				FDB19C2226B3FB23009C49ED /* LaunchScreen.storyboard in Resources */,
+				FD15518B2D798A76007338F7 /* Localizable.strings in Resources */,
 				FD4081B2298749CA00C83D11 /* index.html in Resources */,
 				FDB19C1F26B3FB23009C49ED /* Assets.xcassets in Resources */,
 				FD4081B8298749CA00C83D11 /* TDD练习：火星车问题 in Resources */,
@@ -1272,6 +1306,7 @@
 				FD4081AE298749CA00C83D11 /* MOImageButtonViewController.m in Sources */,
 				FD4081B1298749CA00C83D11 /* GCWebviewJSBridgeBase.m in Sources */,
 				FDB19C6B26B3FB66009C49ED /* MOViewTestViewController.swift in Sources */,
+				FD3CEE382D7B693800695D8D /* MOOLocalizableViewController.m in Sources */,
 				FD4081B9298749CA00C83D11 /* MOMarsRover.m in Sources */,
 				FDB19C6426B3FB66009C49ED /* MOReminderViewController.swift in Sources */,
 				FD4081AC298749CA00C83D11 /* NSObject+arrayContain.m in Sources */,
@@ -1296,6 +1331,7 @@
 				FD4081B4298749CA00C83D11 /* MOWaterRipperView.m in Sources */,
 				FDDBEE912917907200AAA80D /* MOSecondViewController.swift in Sources */,
 				FD4081BA298749CA00C83D11 /* MOLocksViewController.m in Sources */,
+				FD1551922D798EBD007338F7 /* MOOLanguageSettingViewController.swift in Sources */,
 				FD40819F298749CA00C83D11 /* MOResponderTestView.m in Sources */,
 				FDB19C5E26B3FB66009C49ED /* MOWKWebViewController.swift in Sources */,
 				FD408194298749CA00C83D11 /* NSObject+Extension.m in Sources */,
@@ -1307,6 +1343,7 @@
 				FD4081A8298749CA00C83D11 /* MORuntimeViewController.m in Sources */,
 				FD7554D92AE7BC470062677E /* NSMutableArray+MOOSafe.m in Sources */,
 				FDB19C6C26B3FB66009C49ED /* MOPopViewController.swift in Sources */,
+				FD3CEE352D7B5A0300695D8D /* MOOLocalizableManager.m in Sources */,
 				FDB19C6D26B3FB66009C49ED /* MOShareDocumentViewController.swift in Sources */,
 				FD4081C3298749CA00C83D11 /* NSTimer+MOBlock.m in Sources */,
 				FD40819C298749CA00C83D11 /* MOViewTestViewController.m in Sources */,
@@ -1390,10 +1427,29 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FD1551892D798A76007338F7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD15518A2D798A76007338F7 /* en */,
+				FD15518C2D798A7A007338F7 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FD15518D2D798B4B007338F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD15518E2D798B4B007338F7 /* en */,
+				FD1551902D798B55007338F7 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		FDB19C1B26B3FB22009C49ED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FDB19C1C26B3FB22009C49ED /* Base */,
+				FD15517D2D798959007338F7 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1402,6 +1458,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FDB19C2126B3FB23009C49ED /* Base */,
+				FD15517E2D798959007338F7 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1413,6 +1470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1474,6 +1532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1536,7 +1595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WUQQBVA6S;
 				INFOPLIST_FILE = MODemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1561,7 +1620,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WUQQBVA6S;
 				INFOPLIST_FILE = MODemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
