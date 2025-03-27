@@ -10,18 +10,27 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 语言已修改通知
+FOUNDATION_EXTERN NSString *const MOOLanguageDidChangeNotification;
+
 /// 获取本地化文案
 NSString *MOOLocalizableString(NSString *key);
 
 /// 语言枚举
-typedef NS_ENUM(NSUInteger, MOOLocalizableLanguage) {
-    MOOLocalizableLanguageUnknow,   // 未知
-    MOOLocalizableLanguageChinese,  // 中文
-    MOOLocalizableLanguageEnglish,  // 英文
+typedef NS_ENUM(NSUInteger, MOOLanguage) {
+    MOOLanguageAuto,     // 自动
+    MOOLanguageChinese,  // 中文
+    MOOLanguageChineseTraditional, // 中文繁体
+    MOOLanguageEnglish,  // 英文
+    MOOLanguageJapanese, // 日文
+    MOOLanguageKorean,   // 韩文
 };
 
 /// 本地化管理类
 @interface MOOLocalizableManager : NSObject
+
+/// 当前资源包
+@property (nonatomic, strong, readonly) NSBundle *currentBundle;
 
 /// 单例
 + (instancetype)sharedInstance;
@@ -30,7 +39,7 @@ typedef NS_ENUM(NSUInteger, MOOLocalizableLanguage) {
 - (NSString *)localizedStringForKey:(NSString *)key;
 
 /// 修改语言
-- (void)updateLanguage:(MOOLocalizableLanguage)language;
+- (void)updateLanguage:(MOOLanguage)language;
 
 @end
 

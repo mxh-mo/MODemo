@@ -19,6 +19,9 @@
 		FD3ABF4E2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3ABF4D2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift */; };
 		FD3CEE352D7B5A0300695D8D /* MOOLocalizableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3CEE342D7B5A0300695D8D /* MOOLocalizableManager.m */; };
 		FD3CEE382D7B693800695D8D /* MOOLocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3CEE372D7B693800695D8D /* MOOLocalizableViewController.m */; };
+		FD3CEE9E2D7C1D1900695D8D /* UIButton+MOOLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3CEE9D2D7C1D1900695D8D /* UIButton+MOOLocalizable.m */; };
+		FD3CEEA12D7C265500695D8D /* UILabel+MOOLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3CEEA02D7C265500695D8D /* UILabel+MOOLocalizable.m */; };
+		FD3CEEA72D7C4EF800695D8D /* UITextView+MOOLocalizable.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3CEEA62D7C4EF800695D8D /* UITextView+MOOLocalizable.m */; };
 		FD4080F52987499100C83D11 /* MOOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080F32987499100C83D11 /* MOOCViewController.m */; };
 		FD408186298749C900C83D11 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FB298749C900C83D11 /* CircleLoadingView.swift */; };
 		FD408187298749C900C83D11 /* MOCircleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4080FC298749C900C83D11 /* MOCircleLoadingView.m */; };
@@ -193,6 +196,16 @@
 		FD3CEE342D7B5A0300695D8D /* MOOLocalizableManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOLocalizableManager.m; sourceTree = "<group>"; };
 		FD3CEE362D7B693800695D8D /* MOOLocalizableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOOLocalizableViewController.h; sourceTree = "<group>"; };
 		FD3CEE372D7B693800695D8D /* MOOLocalizableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOOLocalizableViewController.m; sourceTree = "<group>"; };
+		FD3CEE9C2D7C1D1900695D8D /* UIButton+MOOLocalizable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MOOLocalizable.h"; sourceTree = "<group>"; };
+		FD3CEE9D2D7C1D1900695D8D /* UIButton+MOOLocalizable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MOOLocalizable.m"; sourceTree = "<group>"; };
+		FD3CEE9F2D7C265500695D8D /* UILabel+MOOLocalizable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+MOOLocalizable.h"; sourceTree = "<group>"; };
+		FD3CEEA02D7C265500695D8D /* UILabel+MOOLocalizable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MOOLocalizable.m"; sourceTree = "<group>"; };
+		FD3CEEA52D7C4EF800695D8D /* UITextView+MOOLocalizable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+MOOLocalizable.h"; sourceTree = "<group>"; };
+		FD3CEEA62D7C4EF800695D8D /* UITextView+MOOLocalizable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+MOOLocalizable.m"; sourceTree = "<group>"; };
+		FD3CEEA82D7C62C300695D8D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		FD3CEEA92D7C62C300695D8D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FD3CEEAA2D7C62C300695D8D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		FD3CEEAB2D7C62C300695D8D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FD405250299E0FE100BC73D2 /* MODemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MODemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		FD4080F32987499100C83D11 /* MOOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCViewController.m; sourceTree = "<group>"; };
 		FD4080F42987499100C83D11 /* MOOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCViewController.h; sourceTree = "<group>"; };
@@ -463,10 +476,16 @@
 		FD3CEE202D7B513000695D8D /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
-				FD3CEE332D7B5A0300695D8D /* MOOLocalizableManager.h */,
-				FD3CEE342D7B5A0300695D8D /* MOOLocalizableManager.m */,
 				FD3CEE362D7B693800695D8D /* MOOLocalizableViewController.h */,
 				FD3CEE372D7B693800695D8D /* MOOLocalizableViewController.m */,
+				FD3CEE332D7B5A0300695D8D /* MOOLocalizableManager.h */,
+				FD3CEE342D7B5A0300695D8D /* MOOLocalizableManager.m */,
+				FD3CEE9F2D7C265500695D8D /* UILabel+MOOLocalizable.h */,
+				FD3CEEA02D7C265500695D8D /* UILabel+MOOLocalizable.m */,
+				FD3CEE9C2D7C1D1900695D8D /* UIButton+MOOLocalizable.h */,
+				FD3CEE9D2D7C1D1900695D8D /* UIButton+MOOLocalizable.m */,
+				FD3CEEA52D7C4EF800695D8D /* UITextView+MOOLocalizable.h */,
+				FD3CEEA62D7C4EF800695D8D /* UITextView+MOOLocalizable.m */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -474,7 +493,6 @@
 		FD4080EE298748DF00C83D11 /* MODemoOC */ = {
 			isa = PBXGroup;
 			children = (
-				FD3CEE202D7B513000695D8D /* Localizable */,
 				FD405250299E0FE100BC73D2 /* MODemo-Bridging-Header.h */,
 				FD1883A42A63E925003245BB /* MOConveniences.h */,
 				FD74074229888ED8001E4A5E /* MOAlorithm */,
@@ -486,6 +504,7 @@
 				FD74074029888C34001E4A5E /* MOBaseViewController.m */,
 				FD18839E2A63E6C7003245BB /* MOScreenRotationViewController.h */,
 				FD18839F2A63E6C7003245BB /* MOScreenRotationViewController.m */,
+				FD3CEE202D7B513000695D8D /* Localizable */,
 				FDDA94C92C9BB847007220F8 /* MOOTagsView */,
 				FDDA7C082C9569C7007220F8 /* MOFakeSystemView */,
 				FD4080FF298749C900C83D11 /* MOBlock */,
@@ -1096,6 +1115,7 @@
 				en,
 				Base,
 				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = FDB19C0926B3FB22009C49ED;
 			productRefGroup = FDB19C1326B3FB22009C49ED /* Products */;
@@ -1298,6 +1318,7 @@
 				FD408191298749CA00C83D11 /* MMNetworkManager.m in Sources */,
 				FD4081AA298749CA00C83D11 /* NSObject+property.m in Sources */,
 				FD3ABF4E2A0752A300BE9A5D /* MOHigherOrderFucViewController.swift in Sources */,
+				FD3CEEA72D7C4EF800695D8D /* UITextView+MOOLocalizable.m in Sources */,
 				FDDA7C0F2C958CFC007220F8 /* MOOTagsView.m in Sources */,
 				FDF5B5A92932206500E9855E /* MOPopOrDismissAnimator.swift in Sources */,
 				FD4081B7298749CA00C83D11 /* MOPerson+Tests.m in Sources */,
@@ -1362,6 +1383,7 @@
 				FD40818A298749C900C83D11 /* MOMenuButtonViewController.m in Sources */,
 				FD40819E298749CA00C83D11 /* MOFollowLightView.m in Sources */,
 				FDB19C6226B3FB66009C49ED /* MOMultiDelegateViewController.swift in Sources */,
+				FD3CEEA12D7C265500695D8D /* UILabel+MOOLocalizable.m in Sources */,
 				FD40818F298749CA00C83D11 /* KYButtonDelegate.swift in Sources */,
 				FD740748298AAAF6001E4A5E /* MOAlgorithmLists.c in Sources */,
 				FDB19C7126B3FB66009C49ED /* MOUITestsViewController.swift in Sources */,
@@ -1378,6 +1400,7 @@
 				FD40818C298749C900C83D11 /* OverLayView.swift in Sources */,
 				FD4081C1298749CA00C83D11 /* MOTableViewOptimizeViewController.m in Sources */,
 				FD4081A3298749CA00C83D11 /* UIImage+image.m in Sources */,
+				FD3CEE9E2D7C1D1900695D8D /* UIButton+MOOLocalizable.m in Sources */,
 				FDA55CCF26BCDED700F00633 /* MOExtensions.swift in Sources */,
 				FD4081BB298749CA00C83D11 /* MOPrivateAPIViewController.m in Sources */,
 				FD1883A02A63E6C7003245BB /* MOScreenRotationViewController.m in Sources */,
@@ -1432,6 +1455,7 @@
 			children = (
 				FD15518A2D798A76007338F7 /* en */,
 				FD15518C2D798A7A007338F7 /* zh-Hans */,
+				FD3CEEAB2D7C62C300695D8D /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1441,6 +1465,7 @@
 			children = (
 				FD15518E2D798B4B007338F7 /* en */,
 				FD1551902D798B55007338F7 /* zh-Hans */,
+				FD3CEEAA2D7C62C300695D8D /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1450,6 +1475,7 @@
 			children = (
 				FDB19C1C26B3FB22009C49ED /* Base */,
 				FD15517D2D798959007338F7 /* zh-Hans */,
+				FD3CEEA82D7C62C300695D8D /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1459,6 +1485,7 @@
 			children = (
 				FDB19C2126B3FB23009C49ED /* Base */,
 				FD15517E2D798959007338F7 /* zh-Hans */,
+				FD3CEEA92D7C62C300695D8D /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

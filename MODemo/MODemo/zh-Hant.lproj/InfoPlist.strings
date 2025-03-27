@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  MODemo
+
+  Created by mikimo on 2025/3/6.
+  Copyright © 2025 Mobi Technology. All rights reserved.
+*/
+"CFBundleDisplayName" = "App Name";
+"NSCameraUsageDescription" = "App needs access to your camera to scan QR code binding devices";
+"NSContactsUsageDescription" = "App needs to access your address book to achieve address book backup";
+"NSPhotoLibraryAddUsageDescription" = "App needs access to your photo album to save images or videos";
+"NSPhotoLibraryUsageDescription" = "App needs to access your photo album to send pictures or scan QR code";
+"NSLocationWhenInUseUsageDescription" = "App requires you to allow positioning to save the location to the photo";

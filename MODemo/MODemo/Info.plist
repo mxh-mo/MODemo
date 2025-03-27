@@ -6,8 +6,8 @@
 	<string>获取相册权限</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>获取添加相册权限</string>
-	<key>NSCameraUsageDescription</key>
-	<string>获取相机权限</string>
+<!--	<key>NSCameraUsageDescription</key>-->
+<!--	<string>获取相机权限</string>-->
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

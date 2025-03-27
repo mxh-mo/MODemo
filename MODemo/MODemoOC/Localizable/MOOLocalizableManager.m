@@ -8,6 +8,8 @@
 
 #import "MOOLocalizableManager.h"
 
+NSString *const MOOLanguageDidChangeNotification = @"LanguageDidChangeNotification";
+
 /// 获取本地化文案
 NSString *MOOLocalizableString(NSString *key) {
     return [[MOOLocalizableManager sharedInstance] localizedStringForKey:key];
@@ -16,7 +18,7 @@ NSString *MOOLocalizableString(NSString *key) {
 @interface MOOLocalizableManager()
 
 /// 当前语言
-@property (nonatomic, assign) MOOLocalizableLanguage currentLanguage;
+@property (nonatomic, assign) MOOLanguage currentLanguage;
 
 /// 当前资源包
 @property (nonatomic, strong) NSBundle *currentBundle;
@@ -31,7 +33,7 @@ NSString *MOOLocalizableString(NSString *key) {
     return [self.currentBundle localizedStringForKey:key value:@"" table:@"Localizable"];
 }
 
-- (void)updateLanguage:(MOOLocalizableLanguage)language {
+- (void)updateLanguage:(MOOLanguage)language {
     _currentLanguage = language;
     [self updateBoundle];
 }
@@ -50,7 +52,8 @@ NSString *MOOLocalizableString(NSString *key) {
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _currentLanguage = MOOLocalizableLanguageChinese;
+        NSNumber *language = [[NSUserDefaults standardUserDefaults] objectForKey:@"MOOLanguageEnum"];
+        _currentLanguage = language.unsignedIntegerValue;
         [self updateBoundle];
     }
     return self;
@@ -58,16 +61,25 @@ NSString *MOOLocalizableString(NSString *key) {
 
 - (void)updateBoundle {
     NSString *resourceName = [MOOLocalizableManager resourceNameWithLanguage:self.currentLanguage];
-    NSString *boundlePath = [[NSBundle mainBundle] pathForResource:resourceName
-                                                            ofType:@"lproj"];
-    self.currentBundle = [NSBundle bundleWithPath:boundlePath];
+    NSString *boundlePath = [[NSBundle mainBundle] pathForResource:resourceName ofType:@"lproj"];
+    _currentBundle = [NSBundle bundleWithPath:boundlePath];
+    
+    // 修改 App 语言，但需要启动后才生效（仅影响 info.plist 文件的权限获取文案）
+    [[NSUserDefaults standardUserDefaults] setObject:@(self.currentLanguage) forKey:@"MOOLanguageEnum"];
+    [[NSUserDefaults standardUserDefaults] setObject:@[resourceName] forKey:@"AppleLanguages"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:MOOLanguageDidChangeNotification object:self];
 }
 
-+ (NSString *)resourceNameWithLanguage:(MOOLocalizableLanguage)language {
++ (NSString *)resourceNameWithLanguage:(MOOLanguage)language {
     switch (language) {
-        case MOOLocalizableLanguageUnknow:
-        case MOOLocalizableLanguageChinese: return @"zh-Hans";
-        case MOOLocalizableLanguageEnglish: return @"en";
+        case MOOLanguageAuto: // TODO: mikimo 跟产品要默认语言决策逻辑
+        case MOOLanguageChinese: return @"zh-Hans";
+        case MOOLanguageChineseTraditional: return @"zh-Hant";
+        case MOOLanguageEnglish: return @"en";
+        case MOOLanguageJapanese: return @"ja";
+        case MOOLanguageKorean: return @"ko";
     }
 }
 

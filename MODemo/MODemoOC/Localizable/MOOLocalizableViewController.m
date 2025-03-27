@@ -7,8 +7,12 @@
 //
 
 #import "MOOLocalizableViewController.h"
-#import "MOOLocalizableManager.h"
 #import <Masonry/Masonry.h>
+#import <AVFoundation/AVFoundation.h>
+#import "UILabel+MOOLocalizable.h"
+#import "UIButton+MOOLocalizable.h"
+#import "UITextView+MOOLocalizable.h"
+#import "MOOLocalizableManager.h"
 
 @interface MOOLocalizableViewController ()
 
@@ -22,48 +26,77 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self reloadViews];
-}
-
-- (void)reloadViews {
-    [self.englishButton removeFromSuperview];
-    [self.chineseButton removeFromSuperview];
-    self.englishButton = nil;
-    self.chineseButton = nil;
+    [MOOLocalizableManager sharedInstance]; // 初始化
+    
     [self.view addSubview:self.englishButton];
     [self.englishButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(100.0);
         make.left.mas_equalTo(16.0);
-        make.height.mas_equalTo(30.0);
-        make.width.mas_equalTo(100.0);
+        make.height.mas_equalTo(40.0);
     }];
     
     [self.view addSubview:self.chineseButton];
     [self.chineseButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(100.0);
-        make.left.equalTo(self.englishButton.mas_right).offset(4.0);
-        make.height.mas_equalTo(30.0);
-        make.width.mas_equalTo(100.0);
+        make.left.equalTo(self.englishButton.mas_right).offset(10.0);
+        make.height.mas_equalTo(40.0);
+    }];
+    
+    UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    textLabel.backgroundColor = [UIColor systemPinkColor];
+    textLabel.textLocalizableKey = @"UseLocation";
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didClickUseLocation)];
+    [textLabel addGestureRecognizer:tap];
+    textLabel.userInteractionEnabled = YES;
+    [self.view addSubview:textLabel];
+    [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.englishButton.mas_bottom).offset(10.0);
+        make.left.mas_equalTo(16.0);
+        make.height.mas_equalTo(40.0);
+    }];
+    
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectZero];
+    textView.backgroundColor = [UIColor systemGreenColor];
+    textView.textLocalizableKey = @"textViewText";
+    textView.textColor = [UIColor grayColor];
+    [self.view addSubview:textView];
+    [textView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(textLabel.mas_bottom).offset(10.0);
+        make.left.mas_equalTo(16.0);
+        make.height.mas_equalTo(40.0);
+        make.width.mas_equalTo(200.0);
     }];
 }
 
-- (void)changeLanguage:(MOOLocalizableLanguage)language {
+- (void)changeLanguage:(MOOLanguage)language {
     [[MOOLocalizableManager sharedInstance] updateLanguage:language];
-    [self reloadViews];
 }
 
 - (void)clickEnglish {
-    [self changeLanguage:MOOLocalizableLanguageEnglish];
+    [self changeLanguage:MOOLanguageEnglish];
 }
 
 - (void)clickChinese {
-    [self changeLanguage:MOOLocalizableLanguageChinese];
+    [self changeLanguage:MOOLanguageChinese];
 }
+
+- (void)didClickUseLocation {
+    [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
+        if (granted) {
+            NSLog(@"相机权限已授权");
+        } else {
+            NSLog(@"相机权限被拒绝");
+        }
+    }];
+}
+
+#pragma mark - CLLocationManagerDelegate
 
 - (UIButton *)englishButton {
     if (!_englishButton) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button setTitle:MOOLocalizableString(@"English") forState:UIControlStateNormal];
+        button.backgroundColor = [UIColor cyanColor];
+        [button setTitleLocalizableKey:@"English" forState:UIControlStateNormal];
         [button addTarget:self action:@selector(clickEnglish) forControlEvents:UIControlEventTouchUpInside];
         _englishButton = button;
     }
@@ -73,11 +106,14 @@
 - (UIButton *)chineseButton {
     if (!_chineseButton) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button setTitle:MOOLocalizableString(@"Chinese") forState:UIControlStateNormal];
+        button.backgroundColor = [UIColor systemGreenColor];
+        [button setTitleLocalizableKey:@"Chinese" forState:UIControlStateNormal];
         [button addTarget:self action:@selector(clickChinese) forControlEvents:UIControlEventTouchUpInside];
         _chineseButton = button;
     }
     return _chineseButton;
 }
+
+
 
 @end

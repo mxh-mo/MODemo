@@ -7,3 +7,6 @@
 */
 "English" = "英语";
 "Chinese" = "中文";
+"UseLocation" = "使用定位";
+"CameraPermission" = "我们需要访问您的相机以拍摄照片。";
+"textViewText" = "textView 测试文案。 测试文案。 测试文案。 测试文案。 测试文案。 测试文案。 测试文案。 ";
